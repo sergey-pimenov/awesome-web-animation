@@ -1,0 +1,57 @@
+.tools
+	width: 100%
+	position: relative
+	margin: 0 auto
+
+	.tool
+		width: 290px
+		margin-bottom: 50px
+		padding: 30px 30px
+		border: 1px black solid
+		font-family: 'Roboto', sans-serif
+		overflow: hidden
+
+		a
+			width: 100%
+			height: 100%
+			display: block
+			position: absolute
+			left: 0
+			top: 0
+			z-index: 2
+			background-color: rgba(250, 250, 250, 0.7)
+			background-image: url(../images/linkIcon.png)
+			background-size: 50px auto
+			background-repeat: no-repeat
+			background-position: center center
+			border: 2px black solid
+			opacity: 0
+			transition: opacity 0.15s
+		&:hover a
+			opacity: 1
+
+	.nameAndImg
+		width: 100%
+		height: 270px
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		h2
+			font-size: 27px
+			text-align: center
+			font-family: 'Playfair Display', serif
+
+		img
+			max-height: 130px
+			margin: auto 0
+			object-fit: contain
+			filter: grayscale(1)
+
+	.characteristicsAndDescription
+		margin-top: auto
+		display: flex
+		justify-content: space-between
+
+	.size::after
+		content: 'kb'

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display')
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+
+body
+	padding: 30px 6vw
+	overflow-x: hidden
+	font-family: 'Playfair Display', serif
+
+body::after
+	content: ''
+	width: 100vw
+	height: 100vh
+	position: fixed
+	left: 0
+	top: 0
+	background-color: white
+	opacity: 1
+	transition: opacity 0.3s 0.3s, width 0.01s 0.6s
+	z-index: 5
+
+body.showDoc::after
+	width: 0
+	opacity: 0
