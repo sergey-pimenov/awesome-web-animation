@@ -2,4 +2,6 @@
 
 **Current tools list:**
 ##### SVG:
- * [Snap.svg](https://google.ru)
+ * [Snap.svg](http://snapsvg.io/)
+ * [Velocity.js](http://velocityjs.org/)
+ * [Vivus.js](http://maxwellito.github.io/vivus/)
