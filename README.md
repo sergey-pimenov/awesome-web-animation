@@ -13,6 +13,7 @@
  * [SVG Morpheus](http://alexk111.github.io/SVG-Morpheus)
  * [Greensock MorphSVG](https://greensock.com/morphSVG)
  * [Two.js](https://two.js.org)
+ * [Animate Plus](https://github.com/bendc/animateplus)
  
 ##### DOM:
  * [GSAP](https://greensock.com)
@@ -23,6 +24,8 @@
  * [Firmin](http://extralogical.net/projects/firmin)
  * [AliceJS](http://blackberry.github.io/Alice)
  * [Motio](http://darsa.in/motio)
+ * [Animate Plus](https://github.com/bendc/animateplus)
+ * [Animatic](http://lvivski.com/animatic)
  
 ##### CSS:
  * [Animate.css](https://daneden.github.io/animate.css)
@@ -31,7 +34,8 @@
  * [Bouncejs](http://bouncejs.com)
  * [Buttons](http://unicorn-ui.com/buttons/builder)
  * [CSS loaders](https://projects.lukehaas.me/css-loaders)
-
+ * [Spinkit](http://tobiasahlin.com/spinkit)
+ * [CSS3 Animation Cheat Sheet](http://www.justinaguilar.com/animations)
  
 ##### Canvas:
  * [EaselJS](http://www.createjs.com/easeljs)
@@ -51,48 +55,13 @@
  * [ScrollReveal](https://scrollrevealjs.org)
  * [Scrollmagic](http://scrollmagic.io)
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+##### Easing:
+ * [Ceaser](https://matthewlein.com/ceaser/)
+ * [Cubic bezier](http://cubic-bezier.com)
+ * [Bezier easing](https://github.com/gre/bezier-easing)
+
+##### GUI tools:
+ * [Cssanimate](http://cssanimate.com)
+ * [CSS Animation Kit](http://angrytools.com/css/animation)
+ * [Stylie](http://jeremyckahn.github.io/stylie)
+ * [Keyframer](http://alexberg.in/keyframer)
