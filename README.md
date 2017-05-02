@@ -33,3 +33,23 @@
  * [Two.js](https://two.js.org)
  * [Ocanvas](http://ocanvas.org/)
  * [Tweenjs](http://www.createjs.com/tweenjs)
+
+##### Animate on scroll:
+ * [AOS](https://michalsnik.github.io/aos/)
+ * [Skrollr](http://prinzhorn.github.io/skrollr/)
+ * [WOW.js](http://mynameismatthieu.com/WOW/)
+ * [Superscrollorama](http://johnpolacek.github.io/superscrollorama/)
+ * [ScrollReveal](https://scrollrevealjs.org/)
+ * [Scrollmagic](http://scrollmagic.io/)
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
