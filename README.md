@@ -24,6 +24,15 @@
  * [AliceJS](http://blackberry.github.io/Alice)
  * [Motio](http://darsa.in/motio)
  
+##### CSS:
+ * [Animate.css](https://daneden.github.io/animate.css)
+ * [Motion UI](http://zurb.com/playground/motion-ui)
+ * [Magic Animations](https://minimamente.com/example/magic_animations)
+ * [Bouncejs](http://bouncejs.com)
+ * [Buttons](http://unicorn-ui.com/buttons/builder)
+ * [CSS loaders](https://projects.lukehaas.me/css-loaders)
+
+ 
 ##### Canvas:
  * [EaselJS](http://www.createjs.com/easeljs)
  * [Fabric.js](http://fabricjs.com)
@@ -35,14 +44,48 @@
  * [Tweenjs](http://www.createjs.com/tweenjs)
 
 ##### Animate on scroll:
- * [AOS](https://michalsnik.github.io/aos/)
- * [Skrollr](http://prinzhorn.github.io/skrollr/)
- * [WOW.js](http://mynameismatthieu.com/WOW/)
- * [Superscrollorama](http://johnpolacek.github.io/superscrollorama/)
- * [ScrollReveal](https://scrollrevealjs.org/)
- * [Scrollmagic](http://scrollmagic.io/)
+ * [AOS](https://michalsnik.github.io/aos)
+ * [Skrollr](http://prinzhorn.github.io/skrollr)
+ * [WOW.js](http://mynameismatthieu.com/WOW)
+ * [Superscrollorama](http://johnpolacek.github.io/superscrollorama)
+ * [ScrollReveal](https://scrollrevealjs.org)
+ * [Scrollmagic](http://scrollmagic.io)
 
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
