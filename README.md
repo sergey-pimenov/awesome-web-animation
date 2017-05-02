@@ -13,3 +13,21 @@
  * [SVG Morpheus](http://alexk111.github.io/SVG-Morpheus/)
  * [Greensock MorphSVG](https://greensock.com/morphSVG)
  
+##### DOM:
+ * [GSAP](https://greensock.com/)
+ * [Anime.js](http://anime-js.com/)
+ * [Animo.js](https://animo.js.org/)
+ * [Move.js](http://visionmedia.github.io/move.js/)
+ * [Textillate.js](http://textillate.js.org/)
+ * [Firmin](http://extralogical.net/projects/firmin/)
+ * [AliceJS](http://blackberry.github.io/Alice/)
+ * [Motio](http://darsa.in/motio/)
+ 
+##### Canvas:
+ * [EaselJS](http://www.createjs.com/easeljs)
+ * [Fabric.js](http://fabricjs.com)
+ * [Bhive](http://www.bhivecanvas.com/)
+ * [Paper.js](http://paperjs.org/features/)
+ 
+
+ 
