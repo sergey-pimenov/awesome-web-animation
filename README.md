@@ -1,6 +1,6 @@
-# Web-animation tools list
+** Web-animation tools list **
 
-## Current tools list:
+** Current tools list: **
 
 ##### SVG:
 	
