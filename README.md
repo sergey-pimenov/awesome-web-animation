@@ -21,6 +21,7 @@
  * [Animo.js](https://animo.js.org)
  * [Move.js](http://visionmedia.github.io/move.js)
  * [Textillate.js](http://textillate.js.org)
+ * [Velocity.js](http://velocityjs.org)
  * [Firmin](http://extralogical.net/projects/firmin)
  * [AliceJS](http://blackberry.github.io/Alice)
  * [Motio](http://darsa.in/motio)
@@ -31,11 +32,9 @@
  * [Animate.css](https://daneden.github.io/animate.css)
  * [Motion UI](http://zurb.com/playground/motion-ui)
  * [Magic Animations](https://minimamente.com/example/magic_animations)
- * [Bouncejs](http://bouncejs.com)
- * [Buttons](http://unicorn-ui.com/buttons/builder)
- * [CSS loaders](https://projects.lukehaas.me/css-loaders)
- * [Spinkit](http://tobiasahlin.com/spinkit)
+ * [Buttons](http://unicorn-ui.com/buttons)
  * [CSS3 Animation Cheat Sheet](http://www.justinaguilar.com/animations)
+ * [Animate Plus](https://github.com/bendc/animateplus)
  
 ##### Canvas:
  * [EaselJS](http://www.createjs.com/easeljs)
@@ -65,3 +64,6 @@
  * [CSS Animation Kit](http://angrytools.com/css/animation)
  * [Stylie](http://jeremyckahn.github.io/stylie)
  * [Keyframer](http://alexberg.in/keyframer)
+ * [Bouncejs](http://bouncejs.com)
+ * [CSS loaders](https://projects.lukehaas.me/css-loaders)
+ * [Spinkit](http://tobiasahlin.com/spinkit)
