@@ -54,7 +54,7 @@ function createTool(toolName, toolLogo, toolTechnologies, toolSize, toolLink) {
 	nameAndImg.appendChild(name);
 
 	var logo = document.createElement('img');
-	logo.setAttribute('src', toolLogo);
+	logo.setAttribute('src', 'images/logos/' + toolLogo);
 	nameAndImg.appendChild(logo);
 
 	tool.appendChild(nameAndImg);
@@ -68,16 +68,18 @@ function createTool(toolName, toolLogo, toolTechnologies, toolSize, toolLink) {
 
 	for(i = 0; i < toolTechnologies.length; i++) {
 		var b = document.createElement('b');
-		b.textContent = '#' + toolTechnologies[i] + ' ';
+		b.textContent = ' ' + toolTechnologies[i];
 		technologies.appendChild(b);
 		tool.classList.add(toolTechnologies[i]);
 	}
 	characteristicsAndDescription.appendChild(technologies);
 
-	var size = document.createElement('div');
-	size.classList.add('size');
-	size.textContent = toolSize;
-	characteristicsAndDescription.appendChild(size);
+	if(toolSize != 'none') {
+		var size = document.createElement('div');
+		size.classList.add('size');
+		size.textContent = toolSize;
+		characteristicsAndDescription.appendChild(size);
+	}
 
 	return tool;
 }
