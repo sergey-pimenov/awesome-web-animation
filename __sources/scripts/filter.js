@@ -44,6 +44,7 @@ function createTool(toolName, toolLogo, toolTechnologies, toolSize, toolLink) {
 
 	var link = document.createElement('a');
 	link.setAttribute('href', toolLink);
+	link.setAttribute('target', '_blank');
 	tool.appendChild(link);
 
 	var nameAndImg = document.createElement('div');
@@ -90,10 +91,10 @@ window.addEventListener('load', function() {
 	var fragment = document.createDocumentFragment();
 	for (var i = 0; i < toolsCount; i++) {
 	  var elem = createTool(toolsArr[i][0],
-	  											toolsArr[i][1],
-	  											toolsArr[i][2],
-	  											toolsArr[i][3],
-	  											toolsArr[i][4]);
+	  			toolsArr[i][1],
+	 			toolsArr[i][2],
+	 			toolsArr[i][3],
+	 			toolsArr[i][4]);
 	  fragment.appendChild(elem);
 	  tools.push(elem);
 	}
