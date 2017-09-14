@@ -1,0 +1,276 @@
+.tools
+	width: 100%
+	position: relative
+	margin: 0 auto
+
+	+bp(md)
+		width: 100% !important
+
+	.tool
+		width: 290px
+		height: 380px
+		margin-bottom: 50px
+		padding: 30px 30px 0 30px
+		display: flex
+		flex-direction: column
+		overflow: hidden
+		background: white
+		box-shadow: 3px 3px 3px rgb(190, 190, 190)
+
+		+bp(md)
+			width: calc(100% - 60px)
+			height: 300px
+			margin: 0 30px 30px 30px
+
+		a
+			width: 100%
+			height: 100%
+			display: block
+			position: absolute
+			left: 0
+			top: 0
+			z-index: 2
+			background-color: rgba(250, 250, 250, 0.7)
+			background-image: url(../images/linkIcon.png)
+			background-size: 50px auto
+			background-repeat: no-repeat
+			background-position: center center
+			// border: 2px white solid
+			opacity: 0
+			transition: all 0.15s
+
+		+bp(xl)
+			&:hover a
+				opacity: 1
+				// border: 1px rgb(200, 200, 200) solid
+
+	.nameAndImg
+		width: 100%
+		height: 260px
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		h2
+			font-size: 27px
+			text-align: center
+
+		img
+			max-width: 90%
+			max-height: 130px
+			margin: auto 0
+			object-fit: contain
+			-webkit-filter: grayscale(1)
+			filter: grayscale(1)
+
+	.characteristicsAndDescription
+		margin-top: auto
+		padding-bottom: 25px
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+
+		.technologies
+			max-width: 80%
+			font-weight: bold
+
+		.technologies *
+			display: inline-block
+			margin-bottom: 8px
+			margin-right: 10px
+			&:last-of-type
+				margin-right: 0
+
+	.size
+		margin-bottom: 8px
+
+	.hidedSize
+		display: none
+
+	.size::after
+		content: 'kb'
+
+.options
+	height: 38px
+	margin: 0 auto
+	margin-bottom: 65px
+	padding: 9px 5px
+	display: flex
+	align-items: center
+	background-color: black
+	color: white
+	position: -webkit-sticky
+	position: sticky
+	top: 0
+	z-index: 6
+
+	&::after
+		content: ''
+		width: 300%
+		height: 100%
+		position: absolute
+		left: -100%
+		top: 0
+		background-color: black
+		z-index: -1
+		box-shadow: 0 2px 3px rgb(170, 170, 170)
+
+		+bp(md)
+			display: none
+
+	+bp(lg)
+		width: 100% !important // Need for overwrite JS styles
+
+	+bp(md)
+		height: auto
+		margin-bottom: 30px
+		padding: 0
+		flex-wrap: wrap
+		position: static
+		background-color: transparent
+		box-shadow: none
+
+	.mobileWrapper
+		width: 100%
+		height: 100%
+		display: flex
+		align-items: center
+
+		+bp(md)
+			height: auto
+			padding: 10px 30px
+			display: none
+			flex-wrap: wrap
+			background-color: rgb(50, 50, 50)
+
+			&.show
+				display: flex
+
+
+		.done
+			display: none
+
+			+bp(md)
+				display: block
+				margin-bottom: 10px
+				background-color: black
+				color: white
+
+	.showFilter
+		display: none
+		background: black url(../images/sort.svg) 30px center no-repeat
+		background-size: 20px auto
+		color: white
+		z-index: 1
+		line-height: 1
+
+		+bp(md)
+			margin: 0
+			padding: 12px 30px
+			display: block
+			position: sticky
+			top: 0
+
+	h3
+		margin-right: 7px
+		display: flex
+		align-items: center
+		font-family: 'Roboto', sans-serif
+
+		+bp(md)
+			width: 100%
+			margin: 10px 0
+			font-size: 14px
+
+	.filters,
+	.sort,
+	.technologiesGroup
+		display: flex
+
+		+bp(md)
+			width: 100%
+			flex-wrap: wrap
+
+	button
+		min-height: 22px
+		margin-left: 15px
+		padding: 0 7px
+		display: flex
+		align-items: center
+		justify-content: center
+		border: none
+		line-height: 23px
+		background: transparent
+		cursor: pointer
+		outline: none
+		font-size: 16px
+		color: white
+		font-family: 'Roboto', sans-serif
+
+		+bp(md)
+			width: 100%
+			min-height: 0
+			padding: 5px 0
+			margin: 10px 0 0 0
+			display: inline-block
+			background-color: rgb(220, 220, 220)
+			font-size: 14px
+			color: black
+
+		+bp(xl)
+			&:hover
+				background-color: white
+				color: black
+
+	button.is-checked
+		background-color: white
+		color: black
+
+	.sort
+		margin-left: auto
+
+	button.size
+		padding-right: 30px
+		margin-left: auto
+		position: relative
+		background: url('../images/rect.svg') no-repeat right center
+		background-size: 18px 18px
+		color: white
+
+	button.size::after
+		content: ''
+		width: 11px
+		height: 1px
+		position: absolute
+		right: 1px
+		top: 8px
+		background-color: black
+		transform-origin: 0 0
+		transform: rotateZ(45deg) scaleX(0.5) translate(4px, 3px)
+		opacity: 0
+		transition: opacity 0.3s
+
+		+bp(md)
+			top: 13px
+
+	button.checked.size::after
+		opacity: 1
+
+	button.size::before
+		content: ''
+		width: 11px
+		height: 1px
+		position: absolute
+		right: 5px
+		top: 8px
+		background-color: black
+		transform-origin: 100% 0
+		transform: rotateZ(-55deg) scaleX(0.8) translate(1px, 0px)
+		opacity: 0
+		transition: opacity 0.3s
+
+		+bp(md)
+			top: 13px
+
+	button.checked.size::before
+		opacity: 1

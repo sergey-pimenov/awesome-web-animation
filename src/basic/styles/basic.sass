@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900')
+
+$bg-color: #e4e3e2
+
++bp(xl)
+	::-webkit-scrollbar
+		width: 7px
+
+	::-webkit-scrollbar-track
+		background-color: white
+		box-shadow: 3p 3px 3px red
+
+	::-webkit-scrollbar-thumb
+		background-color: black
+
+	::-webkit-scrollbar-thumb:hover
+		background-color: rgb(90, 90, 90)
+
+html
+	overflow-x: hidden
+
+body
+	min-height: 100vh
+	padding: 0 6vw
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	border-right: 1px rgb(240, 240, 240) solid
+	font-family: 'Roboto', sans-serif
+	background-color: $bg-color
+	-webkit-tap-highlight-color: rgba(150, 150, 150, 0.3)
+
+	+bp(lg)
+		padding: 0
+		border: none
+
+body::after
+	content: ''
+	width: 100vw
+	height: 100vh
+	position: fixed
+	left: 0
+	top: 0
+	background-color: white
+	opacity: 1
+	transition: opacity 0.3s 0.3s, width 0.01s 0.6s
+	z-index: 10
+
+main
+	// margin: auto 0
+
+	+bp(lg)
+		padding: 0 25px
+
+	+bp(md)
+		padding: 0
+
+*::selection
+	color: white
+	background-color: rgba(10, 10, 10, 0.7)
+
+body.showDoc::after
+	width: 0
+	opacity: 0
+
+#dynamicContent
+	position: relative
+
+	&::after
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		background-color: white
+		tranform: translateZ(0)
+		transition: opacity 0.2s 0.2s, transform 0.01 0.4s
+		z-index: 11
+
+	&.show::after
+		opacity: 0
+		transform: translateX(-100%)
+
+.goTop
+	width: 45px
+	height: calc(100vh - 38px)
+	position: fixed
+	left: 0
+	bottom: 0
+	z-index: 11
+	border: none
+	// border-right: 1px lightgrey solid
+	box-shadow: 0 3px 3px rgb(200, 200, 200)
+	outline: none
+	background: rgb(250,  250,  250) url(../images/up-arrow.svg) no-repeat center center
+	background-size: 20px auto
+	cursor: pointer
+	transform: translateX(-50px)
+	transition: transform 0.2s
+
+	+bp(md)
+		width: 100vw
+		height: 40px
+		left: 0
+		top: 0
+		bottom: auto
+		z-index: 2
+		transform: translateY(-50px)
+
+		&.show
+			transform: translateY(0)
+
+	&:hover
+		background-color: rgb(255, 255, 255)
+
+	&.show
+		transform: translateX(0)
+
+button
+	outline: none
+	&::-moz-focus-inner
+		border: 0

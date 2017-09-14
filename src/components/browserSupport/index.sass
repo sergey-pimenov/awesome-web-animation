@@ -1,0 +1,314 @@
+.browserSupport
+	margin: 0 auto
+	position: relative
+
+	&::after
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		background-color: white
+		transition: opacity 0.2s 0.2s
+		pointer-events: none
+		display: none
+
+	&.show::after
+		opacity: 0
+
+	.categories
+		height: 38px
+		margin-bottom: 65px
+		position: sticky
+		top: 0
+		z-index: 2
+		background-color: black
+		color: white
+		box-shadow: 0 2px 3px rgb(170, 170, 170)
+
+		+bp(md)
+			width: 100%
+			height: auto
+			margin-bottom: 30px
+			padding: 0
+			position: static
+			box-shadow: none
+
+		.mobileWrapper
+			width: 100%
+			height: 100%
+			display: flex
+			align-items: center
+
+			&.show
+				display: flex
+
+			+bp(md)
+				padding: 10px 30px 20px 30px
+				display: none
+				flex-direction: column
+				background-color: #323232
+
+		.goTo
+			width: auto
+			margin: 0 25px 0 25px
+			text-align: left
+			font-size: 16px
+			font-weight: normal
+
+			+bp(md)
+				width: 100%
+				margin: 7px 0
+				font-size: 14px
+
+		.showCategories
+			width: 100%
+			height: 100%
+			display: none
+			background: black url(../images/sort.svg) calc(30px) center no-repeat
+			background-size: 20px auto
+			font-size: 14px
+				
+			+bp(md)
+				padding: 11px 30px
+				display: block
+				position: sticky
+				top: 0
+				background-color: black
+				color: white
+				border: none
+				z-index: 1
+
+		.category
+			height: 24px
+			margin-right: 20px
+			padding: 0 7px
+			display: flex
+			align-items: center
+			position: relative
+			font-size: 15px
+			cursor: pointer
+
+			+bp(md)
+				width: 100%
+				height: auto
+				margin: 10px 0 0 0
+				padding: 5px 0
+				display: block
+				background-color: white
+				font-size: 14px
+				line-height: 23px
+				text-align: center
+				color: black
+
+			&::after
+				content: ''
+				width: calc(100% - 14px)
+				height: 1px
+				position: absolute
+				left: 7px
+				bottom: 3px
+				background-color: white
+				transform-origin: 50% 0
+
+				+bp(md)
+					display: none
+
+			&:hover::after
+				transform: scaleY(2)
+
+				+bp(sm)
+					transform: scaleY(1)
+
+	.aboutVersions
+		height: 31px
+		padding-right: 25px
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		position: fixed
+		bottom: 0
+		text-align: right
+		font-weight: bold
+		background: linear-gradient(to top, rgba(228, 227, 226, 1) 30%, rgba(228, 227, 226, 0.2))
+
+		+bp(md)
+			width: 100%
+			padding: 0 0 0 25px
+			justify-content: flex-start
+			font-size: 14px
+			display: none
+
+	.technology
+		margin-bottom: 50px
+		padding-bottom: 5px
+		position: relative
+		background-color: white
+		transition: all 0.2s
+		box-shadow: 3px 3px 3px rgb(190, 190, 190)
+
+		&.mark
+			transform: scale(1.03)
+
+		+bp(md)
+			width: calc(100% - 30px)
+			margin: 0 auto 35px auto
+			padding-bottom: 0
+			box-shadow: 3px 3px 3px #bebebe
+
+	.anchor
+		position: absolute
+		left: 0
+		top: -41px
+
+	.support
+		padding: 0 25px
+		margin: 25px 0
+
+		+bp(md)
+			margin: 0
+			padding: 0
+			display: flex
+			justify-content: space-around
+			flex-wrap: wrap
+
+	h2
+		height: 38px
+		margin-bottom: 45px
+		display: flex
+		align-items: center
+		justify-content: center
+		z-index: 1
+		font-size: 16px
+		color: white
+		background-color: rgb(45, 45, 45)
+
+		+bp(md)
+			margin-bottom: 25px
+			top: 0
+			font-size: 14px
+			background-color: rgb(45, 45, 45)
+
+	.platform
+		margin-bottom: 30px
+		display: flex
+		align-items: center
+
+		+bp(md)
+			width: 50%
+			margin-bottom: 0
+			flex-direction: column
+			flex-wrap: wrap
+			align-items: flex-start
+
+			&.desktop
+				padding-left: 25px
+
+			&.mobile
+				padding-right: 25px
+
+
+	h3
+		width: 150px
+		font-weight: 800
+
+		+bp(md)
+			width: 100%
+			margin-bottom: 15px
+			font-size: 14px
+
+	.browser
+		margin-right: 20px
+		display: flex
+		align-items: center
+		position: relative
+		background-color: rgb(225, 225, 225)
+		padding: 7px 14px
+		font-size: 14px
+
+		&:last-of-type
+			margin-right: 0
+
+		+bp(md)
+			margin-bottom: 10px
+			font-size: 14px
+			margin-right: 0
+
+		&::after
+			content: ''
+			position: absolute
+			right: 14px
+			top: 12px
+			width: 12px
+			height: 12px
+
+		&.true::after
+			background: url('/../assets/images/support.svg') no-repeat center center
+			background-size: auto 100%
+
+	.true
+		padding-right: 40px
+
+	.false
+		opacity: 0.5
+
+	.false::before
+		content: ''
+		width: calc(100% - 20px)
+		height: 2px
+		position: absolute
+		left: 10px
+		top: calc(50% - 1px)
+		background-color: black
+
+	.browserIcon
+		width: 15px
+		height: 15px
+		//max-width: 15px
+		//height: 15px
+		margin-right: 10px
+
+	.useful
+		display: flex
+
+		+bp(md)
+			width: 100%
+			margin-top: 15px
+			flex-direction: column
+
+	.usefulLink
+		margin: 10px 25px 0 0
+		display: block
+		// background: rgb(45, 45, 45) url(../images/link.svg) no-repeat 90% center // For IE
+		// background: rgb(45, 45, 45) url(../images/link.svg) no-repeat calc(100% - 15px) center
+		background-size: auto 11px
+		color: black
+		// box-shadow: 0px 3px 0 rgba(#e4e3e2, 0.8)
+
+		&:last-of-type
+				margin-bottom: 0
+				display: none
+
+		&:hover
+			// background-color: rgb(65, 65, 65)
+
+		+bp(md)
+			width: 100%
+			margin: 0 0 3px 0
+			padding: 12px 25px
+			font-size: 14px
+			color: white
+			background: rgb(45, 45, 45) url(../images/link.svg) no-repeat calc(100% - 25px) center
+			background-size: auto 11px
+			box-shadow: none
+
+			&:last-of-type
+				margin-bottom: 0
+				display: none
+
+			&:nth-of-type(2)
+				margin-bottom: 0
+
+			&:hover
+				background-color: rgb(45, 45, 45)
