@@ -7,7 +7,7 @@ import addUserAgent from './utils/scripts/addUserAgent.js';
 
 // Components
 import renderTools from './components/tools';
-import renderBrowserSupport from './components/browserSupport';
+// import renderBrowserSupport from './components/browserSupport';
 import renderBestArticles from './components/bestArticles';
 import renderNotExist from './components/notExist';
 
@@ -30,12 +30,6 @@ function route() {
 		  case '#':
 		    renderTools('.dynamicContent');
 		    selectNavItem('toolsNav');
-		    break;
-
-
-		  case '#browser-support':
-		   	renderBrowserSupport();
-		   	selectNavItem('supportNav')
 		    break;
 
 		  case '#best-articles':
