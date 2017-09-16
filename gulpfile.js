@@ -6,6 +6,11 @@ var gulp = require('gulp'),
     flatten = require('gulp-flatten'),
    	browserSync = require('browser-sync').create();
 
+// Production
+var uglify = require('gulp-uglify'),
+    pump = require('pump'),
+    cleanCSS = require('gulp-clean-css');
+
 
 ///// Set components /////
 var componentsDir = 'src/components/';
@@ -113,6 +118,27 @@ gulp.task('fontsTrans', function() {
   }))
 });
 
+///// Minify JS /////
+gulp.task('MinifyJS', function (cb) {
+  pump([
+        gulp.src('assets/scripts/index.js'),
+        uglify(),
+        gulp.dest('assets/scripts')
+    ],
+    cb
+  );
+});
+
+///// Minify CSS /////
+gulp.task('minifyCSS', function () {
+  return gulp.src('assets/styles/index.css')
+    .pipe(cleanCSS({debug: true}, function(details) {
+      console.log(details.name + ': ' + details.stats.originalSize);
+      console.log(details.name + ': ' + details.stats.minifiedSize);
+    }))
+  .pipe(gulp.dest('assets/styles'));
+});
+
 
 ///// Watch /////
 gulp.task('default', [
@@ -134,3 +160,8 @@ gulp.task('default', [
     gulp.watch(['src/**/*.{eot,woff2,woff,ttf,svg}'], ['fontsTrans']);
   	gulp.watch(['data/**/*json'], ['dataTrans']);
 });
+
+
+///// Production /////
+
+gulp.task('production', ['MinifyJS', 'minifyCSS']);
