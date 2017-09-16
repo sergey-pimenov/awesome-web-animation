@@ -17,6 +17,7 @@
     "gulp-clean-css": "^3.8.0",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-flatten": "^0.3.1",
+    "gulp-htmlmin": "^3.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",

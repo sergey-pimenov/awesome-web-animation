@@ -9,7 +9,8 @@ var gulp = require('gulp'),
 // Production
 var uglify = require('gulp-uglify'),
     pump = require('pump'),
-    cleanCSS = require('gulp-clean-css');
+    cleanCSS = require('gulp-clean-css'),
+    htmlmin = require('gulp-htmlmin');
 
 
 ///// Set components /////
@@ -139,6 +140,13 @@ gulp.task('minifyCSS', function () {
   .pipe(gulp.dest('assets/styles'));
 });
 
+///// Minify CSS /////
+gulp.task('minifyHTML', function() {
+  return gulp.src('index.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('./'));
+});
+
 
 ///// Watch /////
 gulp.task('default', [
@@ -164,4 +172,4 @@ gulp.task('default', [
 
 ///// Production /////
 
-gulp.task('production', ['MinifyJS', 'minifyCSS']);
+gulp.task('production', ['MinifyJS', 'minifyCSS', 'minifyHTML']);
