@@ -35,7 +35,7 @@ export default function() {
 						${ title }
 					</h3>
 					<time> ${ date } </time>
-					<a href="${ link }"></a>
+					<a href="${ link }" target="_blank"></a>
 				</article>
 			`;
 		} else {
@@ -46,7 +46,7 @@ export default function() {
 						${ title }
 					</h3>
 					<time> ${ date } </time>
-					<a href="${ link }"></a>
+					<a href="${ link }" target="_blank"></a>
 				</article>
 			`;
 		}

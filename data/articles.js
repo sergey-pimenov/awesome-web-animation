@@ -100,6 +100,24 @@ var articles = [
 				"type" : "text"
 			},
 			{
+				"title" : "SVG Line Animation Tutorial with CSS & Other Fun Stuff",
+				"date" : "27.04.14",
+				"link" : "https://www.youtube.com/watch?v=XBdbgD2BaEI",
+				"type" : "video"
+			},
+			{
+				"title" : "“Drawing On” Animation - CSS Experiments",
+				"date" : "21.07.15",
+				"link" : "https://www.youtube.com/watch?v=FGblL4QHrAw",
+				"type" : "video"
+			},
+			{
+				"title" : "Create a Single Animated SVG File Containing CSS, Fonts & JavaScript",
+				"date" : "08.07.15",
+				"link" : "https://www.youtube.com/watch?v=S6P_N2JWSrc",
+				"type" : "video"
+			},
+			{
 				"title" : "Transforms on SVG Elements",
 				"date" : "05.05.15",
 				"link" : "https://css-tricks.com/transforms-on-svg-elements/",
@@ -130,39 +148,27 @@ var articles = [
 				"type" : "text"
 			},
 			{
-				"title" : "Big hisory about development most popular animation library",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
-				"type" : "text"
-			},
-			{
-				"title" : "Big hisory about development most popular animation library",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
-				"type" : "text"
-			},
-			{
-				"title" : "Big hisory about development most popular animation library",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
-				"type" : "text"
-			},
-			{
-				"title" : "Big hisory about development most popular animation library",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
+				"title" : "Sarah Drasner: Intricate SVG Animations",
+				"date" : "04.08.16",
+				"link" : "https://www.youtube.com/watch?v=wc8ovZZ78SY",
 				"type" : "video"
 			},
 			{
-				"title" : "Big hisory about development most popular animation library",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
+				"title" : "The Simple Intro to SVG Animation",
+				"date" : "31.07.14",
+				"link" : "https://davidwalsh.name/svg-animation",
 				"type" : "text"
 			},
 			{
-				"title" : "Big hisory about development most popular animation library",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
+				"title" : "Masking SVG Animations",
+				"date" : "15.12.13",
+				"link" : "https://medium.com/@gordonnl/stylised-line-animations-ded23320ffe5",
+				"type" : "text"
+			},
+			{
+				"title" : "SVG Line Animation for the Uninitiated",
+				"date" : "12.11.16",
+				"link" : "https://medium.com/bitmatica-lab/svg-line-animation-for-the-uninitiated-5a65d91c6044",
 				"type" : "text"
 			}
 		]

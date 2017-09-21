@@ -562,9 +562,9 @@ exports.default = function () {
 
 	function articlesTemplate(title, date, link, type) {
 		if (type != 'video') {
-			return '\n\t\t\t\t<article>\n\t\t\t\t\t<h3>\n\t\t\t\t\t\t<img class="type" src="assets/images/textIcon.svg">\n\t\t\t\t\t\t' + title + '\n\t\t\t\t\t</h3>\n\t\t\t\t\t<time> ' + date + ' </time>\n\t\t\t\t\t<a href="' + link + '"></a>\n\t\t\t\t</article>\n\t\t\t';
+			return '\n\t\t\t\t<article>\n\t\t\t\t\t<h3>\n\t\t\t\t\t\t<img class="type" src="assets/images/textIcon.svg">\n\t\t\t\t\t\t' + title + '\n\t\t\t\t\t</h3>\n\t\t\t\t\t<time> ' + date + ' </time>\n\t\t\t\t\t<a href="' + link + '" target="_blank"></a>\n\t\t\t\t</article>\n\t\t\t';
 		} else {
-			return '\n\t\t\t\t<article>\n\t\t\t\t\t<h3>\n\t\t\t\t\t\t<img class="type" src="assets/images/videoIcon.svg">\n\t\t\t\t\t\t' + title + '\n\t\t\t\t\t</h3>\n\t\t\t\t\t<time> ' + date + ' </time>\n\t\t\t\t\t<a href="' + link + '"></a>\n\t\t\t\t</article>\n\t\t\t';
+			return '\n\t\t\t\t<article>\n\t\t\t\t\t<h3>\n\t\t\t\t\t\t<img class="type" src="assets/images/videoIcon.svg">\n\t\t\t\t\t\t' + title + '\n\t\t\t\t\t</h3>\n\t\t\t\t\t<time> ' + date + ' </time>\n\t\t\t\t\t<a href="' + link + '" target="_blank"></a>\n\t\t\t\t</article>\n\t\t\t';
 		}
 	}
 
