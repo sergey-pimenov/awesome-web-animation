@@ -35,7 +35,10 @@ export default function() {
 			var selectedItem = e.target.id;
 
 			var anchor = document.querySelector('#' + selectedItem + 'Anchor');
-			scroll.animateScroll(anchor, category[i]);
+			scroll.animateScroll(anchor, category[i], {
+				offset : 10
+			});
+
 		})
 	}
 
