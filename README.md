@@ -1,3 +1,5 @@
+![alt text](https://github.com/web-animation/web-animation.github.io/blob/master/assets/images/header.jpg)
+
 **Web-animation tools list:**  [web-animation.github.io](https://web-animation.github.io/)
 
 **Current tools list:**
