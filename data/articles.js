@@ -148,7 +148,7 @@ var articles = [
 				"type" : "text"
 			},
 			{
-				"title" : "Sarah Drasner: Intricate SVG Animations",
+				"title" : "Intricate SVG Animations",
 				"date" : "04.08.16",
 				"link" : "https://www.youtube.com/watch?v=wc8ovZZ78SY",
 				"type" : "video"

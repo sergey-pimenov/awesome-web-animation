@@ -1,6 +1,6 @@
 ![alt text](https://github.com/web-animation/web-animation.github.io/blob/master/assets/images/header.png)
 
-## [Awesome tools and tutorials for web-animation.](https://web-animation.github.io/)
+## [Awesome tools and materials for web-animation.](https://web-animation.github.io/)
 
 ### Current tools list:
 
@@ -70,3 +70,22 @@
  * [Bouncejs](http://bouncejs.com)
  * [CSS loaders](https://projects.lukehaas.me/css-loaders)
  * [Spinkit](http://tobiasahlin.com/spinkit)
+
+
+### Current materals (articles, videos):
+
+##### SVG:
+ * *Article:* [interactive Data Visualization: Animating the viewBox](https://css-tricks.com/interactive-data-visualization-animating-viewbox/)
+ * *Article:* [Animating SVG with CSS](https://css-tricks.com/animating-svg-css/)
+ * *Video:* [SVG Line Animation Tutorial with CSS & Other Fun Stuff](https://www.youtube.com/watch?v=XBdbgD2BaEI)
+ * *Video:* [Drawing On” Animation - CSS Experiments](https://www.youtube.com/watch?v=FGblL4QHrAw)
+ * *Video:* [Create a Single Animated SVG File Containing CSS, Fonts & JavaScript](https://www.youtube.com/watch?v=S6P_N2JWSrc)
+ * *Article:* [Transforms on SVG Elements](https://css-tricks.com/transforms-on-svg-elements/)
+ * *Article:* [How SVG Shape Morphing Works](https://css-tricks.com/svg-shape-morphing-works/)
+ * *Video:* [Three Ways to Animate SVG](https://css-tricks.com/video-screencasts/135-three-ways-animate-svg/)
+ * *Article:* [The Many Tools for Shape Morphing](https://css-tricks.com/many-tools-shape-morphing/)
+ * *Article:* [Weighing SVG Animation Techniques (with Benchmarks)](https://css-tricks.com/weighing-svg-animation-techniques-benchmarks/)
+ * *Video:* [Intricate SVG Animations](https://www.youtube.com/watch?v=wc8ovZZ78SY)
+ * *Article:* [The Simple Intro to SVG Animation](https://davidwalsh.name/svg-animation)
+ * *Article:* [Masking SVG Animations](https://medium.com/@gordonnl/stylised-line-animations-ded23320ffe5)
+ * *Article:* [SVG Line Animation for the Uninitiated](https://medium.com/bitmatica-lab/svg-line-animation-for-the-uninitiated-5a65d91c6044)
