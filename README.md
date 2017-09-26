@@ -1,8 +1,9 @@
 ![alt text](https://github.com/web-animation/web-animation.github.io/blob/master/assets/images/header.png)
 
-# [Awesome tools and tutorials for web-animation.](https://web-animation.github.io/)
+## [Awesome tools and tutorials for web-animation.](https://web-animation.github.io/)
 
-**Current tools list:**
+### Current tools list:
+
 ##### SVG:
  * [Svg.js](http://svgjs.com)
  * [Snap.svg](http://snapsvg.io)
