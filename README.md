@@ -1,8 +1,6 @@
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-
 ![Cover](https://github.com/web-animation/web-animation.github.io/blob/master/assets/images/header.png)
 
-## [Awesome tools and books/articles/videos for web-animation.](https://web-animation.github.io/)
+## [Awesome tools and books/articles/videos for web-animation.](https://web-animation.github.io/) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 ### Tools list:
 
