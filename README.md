@@ -109,3 +109,5 @@
  * *Article:* [Starting CSS Animations Mid-Way](https://css-tricks.com/starting-css-animations-mid-way/)
  * *Video:* [Silky Smooth Animation with CSS](https://www.youtube.com/watch?v=bEoLCZzWZX8)
  * *Video:* [CSS Animation Tricks](https://css-tricks.com/css-animation-tricks/)
+
+Made with ♥ by Sergey Pimenov
