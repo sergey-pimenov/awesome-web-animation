@@ -1,7 +1,7 @@
 ![Cover](https://github.com/web-animation/web-animation.github.io/blob/master/assets/images/header.png)
 
 ## [Awesome tools & books & articles & videos for web-animation.](https://web-animation.github.io/)
-### Tools list:
+### Tools:
 
 ##### SVG:
  * [Svg.js](http://svgjs.com)
@@ -71,7 +71,7 @@
  * [Spinkit](http://tobiasahlin.com/spinkit)
 
 
-### Books
+### Books:
 * [SVG animation](https://www.amazon.com/SVG-Animations-Implementations-Responsive-Animation/dp/1491939702)
 * [Creating Web Animations: Bringing Your UIs to Life](https://www.amazon.com/Creating-Web-Animations-Bringing-Your/dp/1491957514/)
 * [Transitions and Animations in CSS: Adding Motion with CSS](https://www.amazon.com/Transitions-Animations-CSS-Adding-Motion/dp/149192988X/)
