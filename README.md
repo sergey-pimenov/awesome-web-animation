@@ -1,8 +1,8 @@
-![alt text](https://github.com/web-animation/web-animation.github.io/blob/master/assets/images/header.png)
+![Cover](https://github.com/web-animation/web-animation.github.io/blob/master/assets/images/header.png)
 
-## [Awesome tools and materials for web-animation.](https://web-animation.github.io/)
+## [Awesome tools and books/articles/videos for web-animation.](https://web-animation.github.io/)
 
-### Current tools list:
+### Tools list:
 
 ##### SVG:
  * [Svg.js](http://svgjs.com)
@@ -72,7 +72,17 @@
  * [Spinkit](http://tobiasahlin.com/spinkit)
 
 
-### Current materals (articles, videos):
+### Books
+* [SVG animation](https://www.amazon.com/SVG-Animations-Implementations-Responsive-Animation/dp/1491939702)
+* [Creating Web Animations: Bringing Your UIs to Life](https://www.amazon.com/Creating-Web-Animations-Bringing-Your/dp/1491957514/)
+* [Transitions and Animations in CSS: Adding Motion with CSS](https://www.amazon.com/Transitions-Animations-CSS-Adding-Motion/dp/149192988X/)
+* [Designing Interface Animation: Meaningful Motion for User Experience](https://www.amazon.com/Designing-Interface-Animation-Meaningful-Experience/dp/1933820322/)
+* [Web Animation using JavaScript: Develop & Design](https://www.amazon.com/Web-Animation-using-JavaScript-Develop/dp/0134096665)
+* [CSS Animations and Transitions for the Modern Web](https://www.amazon.com/gp/product/0133980502/)
+* [Animation in HTML, CSS, and JavaScript](https://www.amazon.com/Animation-HTML-JavaScript-Kirupa-Chinnathambi/dp/1502548704)
+
+
+### Materials (articles, videos):
 
 ##### SVG:
  * *Article:* [interactive Data Visualization: Animating the viewBox](https://css-tricks.com/interactive-data-visualization-animating-viewbox/)
@@ -89,3 +99,14 @@
  * *Article:* [The Simple Intro to SVG Animation](https://davidwalsh.name/svg-animation)
  * *Article:* [Masking SVG Animations](https://medium.com/@gordonnl/stylised-line-animations-ded23320ffe5)
  * *Article:* [SVG Line Animation for the Uninitiated](https://medium.com/bitmatica-lab/svg-line-animation-for-the-uninitiated-5a65d91c6044)
+
+##### CSS:
+ * *Article:* [Scaling Responsive Animations](https://css-tricks.com/scaling-responsive-animations/)
+ * *Article:* [Swapping State with CSS Keyframes](https://css-tricks.com/swapping-state-css-keyframes/)
+ * *Article:* [The complete guide to getting 60fps animations with CSS](https://blog.gyrosco.pe/smooth-css-animations-7d8ffc2c1d29/)
+ * *Article:* [Using CSS Transitions on Auto Dimensions](https://css-tricks.com/using-css-transitions-auto-dimensions/)
+ * *Video:* [Complex Responsive Animations](https://www.youtube.com/watch?v=09_8edPAsR8)
+ * *Article:* [Debugging CSS Keyframe Animations](https://css-tricks.com/debugging-css-keyframe-animations/)
+ * *Article:* [Starting CSS Animations Mid-Way](https://css-tricks.com/starting-css-animations-mid-way/)
+ * *Video:* [Silky Smooth Animation with CSS](https://www.youtube.com/watch?v=bEoLCZzWZX8)
+ * *Video:* [CSS Animation Tricks](https://css-tricks.com/css-animation-tricks/)

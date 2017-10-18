@@ -1,5 +1,6 @@
 import render from './../../utils/scripts/render'
-import setWidth from './../../utils/scripts/setWidth.js';
+import setWidth from './../../utils/scripts/setWidth';
+import toolsData from './../../../data/toolsList';
 
 export default function() {
 	var dynamicContent = document.getElementById('dynamicContent');
@@ -76,7 +77,7 @@ export default function() {
 
 
 	// Create tool-card
-	var toolsCount = toolsArr.length;
+	var toolsCount = toolsData.length;
 	function createTool(toolName, toolLogo, toolTechnologies, toolSize, toolLink) {
 		var tool = document.createElement('div');
 		tool.classList.add('tool');
@@ -137,11 +138,11 @@ export default function() {
 		var tools = [];
 		var fragment = document.createDocumentFragment();
 		for (var i = 0; i < toolsCount; i++) {
-		  var elem = createTool(toolsArr[i][0],
-		  			toolsArr[i][1],
-		 			toolsArr[i][2],
-		 			toolsArr[i][3],
-		 			toolsArr[i][4]);
+		  var elem = createTool(toolsData[i][0],
+		  			toolsData[i][1],
+		 			toolsData[i][2],
+		 			toolsData[i][3],
+		 			toolsData[i][4]);
 		  fragment.appendChild(elem);
 		  tools.push(elem);
 		}
@@ -160,7 +161,7 @@ export default function() {
 	}
 
 	function onTechnologiesGroupClick(event) {
-	  // only button clicks
+	  // Only button clicks
 	  if (!matchesSelector( event.target, '.button')) {
 	    return;
 	  }

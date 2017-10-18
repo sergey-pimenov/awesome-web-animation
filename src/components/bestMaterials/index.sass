@@ -1,0 +1,398 @@
+.bestMaterials
+	margin: 0 auto
+
+	+bp(lg)
+		width: 100% !important
+
+	section
+		margin-bottom: 60px
+
+		+bp(lg)
+			margin-bottom: 40px
+
+	.categories
+		height: 38px
+		margin-bottom: 65px
+		padding-left: 5px
+		position: sticky
+		top: 0
+		z-index: 2
+		background-color: black
+		color: white
+
+		&::after
+			content: ''
+			width: 300%
+			height: 38px
+			position: absolute
+			left: -100%
+			top: 0
+			background-color: black
+			z-index: -1
+			box-shadow: 0 2px 3px rgb(170, 170, 170)
+
+			+bp(md)
+				display: none
+
+		+bp(lg)
+			width: 100%
+			padding-left: 0
+
+		+bp(md)
+			width: 100%
+			height: auto
+			margin-bottom: 30px
+			padding: 0
+			position: static
+			box-shadow: none
+
+		.mobileWrapper
+			width: 100%
+			height: 100%
+			display: flex
+			align-items: center
+
+			&.show
+				display: flex
+
+			+bp(lg)
+				padding: 0 5px
+
+			+bp(md)
+				padding: 10px 30px 20px 30px
+				display: none
+				flex-direction: column
+				background-color: #323232
+
+		.goTo
+			width: auto
+			margin: 0 20px 0 0
+			color: white
+			font-size: 16px
+			font-weight: normal
+
+			img
+				margin-left: 5px
+				position: relative
+				top: 2px
+				transform: scaleX(-1)
+
+			+bp(md)
+				width: 100%
+				margin: 7px 0
+				font-size: 14px
+
+		.showCategories
+			width: 100%
+			height: 100%
+			display: none
+			background: black url(../images/sort.svg) 30px center no-repeat
+			background-size: 20px auto
+			font-size: 14px
+				
+			+bp(md)
+				padding: 11px 30px
+				display: block
+				position: sticky
+				top: 0
+				background-color: black
+				color: white
+				border: none
+				z-index: 1
+
+		.category
+			margin-right: 20px
+			padding: 4px 7px
+			display: flex
+			align-items: center
+			position: relative
+			font-size: 16px
+			cursor: pointer
+
+			&:hover
+				background-color: white
+				color: black
+
+			&.selected
+				background-color: white
+				color: black
+
+			+bp(md)
+				width: 100%
+				height: auto
+				margin: 10px 0 0 0
+				padding: 5px 0
+				display: block
+				background-color: white
+				font-size: 14px
+				line-height: 23px
+				text-align: center
+				color: black
+
+			&::after
+				content: ''
+				width: calc(100% - 14px)
+				height: 1px
+				position: absolute
+				left: 7px
+				bottom: 3px
+				background-color: white
+				transform-origin: 50% 0
+				opacity: 0
+
+				+bp(md)
+						display: none
+
+				+bp(sm)
+					transform: scaleY(1)
+
+	.technology
+		margin: 30px 0 60px 0
+		position: relative
+
+		&:last-of-type
+			margin-bottom: 45px
+
+		+bp(lg)
+			margin-bottom: 50px
+		
+		.anchor
+			position: absolute
+			left: 0
+			top: -38px
+
+	h2
+		height: 38px
+		padding: 0 14px
+		display: flex
+		align-items: center
+		justify-content: center
+		position: relative
+		z-index: 1
+		background-color: rgb(45, 45, 45)
+		font-size: 16px
+		color: white
+		box-shadow: 0 2px 3px rgb(170, 170, 170)
+		background-color: rgb(45, 45, 45)
+
+		+bp(lg)
+			background-color: rgb(195, 195, 195)
+
+		+bp(md)
+			margin-bottom: 15px
+			font-size: 14px
+
+		&::before,
+		&::after
+			content: ''
+			width: 100%
+			height: 100%
+			position: absolute
+			left: 0
+			top: -3px
+			background-color: #e4e3e2
+			z-index: -1
+
+		&::after
+			background-color: rgb(45, 45, 45)
+			top: 0
+
+		+bp(lg)
+			&::after
+				background-color: rgb(75, 75, 75)
+
+	article
+		margin-top: 30px
+		padding: 20px
+		display: flex
+		align-items: center
+		jusify-content: flex-start
+		flex-wrap: wrap
+		position: relative
+		background-color: white
+		box-shadow: 3px 3px 3px rgb(190, 190, 190)
+
+		&:hover
+			background-color: rgb(251, 251, 251)
+
+		+bp(lg)
+			width: calc(100% - 16px)
+			margin: 10px auto 15px auto
+			padding: 12px 0 0 0
+			box-shadow: 0 3px 3px rgb(210, 210, 210)
+
+		h3
+			margin-right: 10px
+			display: flex
+			align-items: center
+			font-weight: bold
+
+			+bp(lg)
+				font-weight: normal
+				padding: 5px 30px
+
+			+bp(md)
+				align-items: flex-start
+				font-size: 14px
+				line-height: 1.3
+
+			.type
+				width: 25px
+				height: auto
+				margin-right: 20px
+
+		time
+			margin-left: auto
+			font-size: 14px
+
+			+bp(lg)
+				width: 100%
+				margin-top: 10px
+				padding: 8px 0
+				display: flex
+				justify-content: center
+				background: rgb(250, 250, 250)
+				font-size: 12px
+				color: grey
+
+		a
+			width: 100%
+			height: 100%
+			position: absolute
+			left: 0
+			top: 0
+
+	.title
+		height: 38px
+		margin-bottom: 30px
+		padding: 0 14px
+		display: flex
+		align-items: center
+		justify-content: center
+		position: relative
+		z-index: 1
+		background-color: rgb(45, 45, 45)
+		font-size: 16px
+		color: white
+		box-shadow: 0 2px 3px rgb(170, 170, 170)
+		background-color: rgb(45, 45, 45)
+
+		+bp(lg)
+			margin-bottom: 10px
+			background-color: rgb(195, 195, 195)
+
+		+bp(md)
+			font-size: 14px
+
+		&::before,
+		&::after
+			content: ''
+			width: 100%
+			height: 100%
+			position: absolute
+			left: 0
+			top: -3px
+			background-color: #e4e3e2
+			z-index: -1
+
+		&::after
+			background-color: rgb(45, 45, 45)
+			top: 0
+
+		+bp(lg)
+			&::after
+				background-color: rgb(75, 75, 75)
+
+	.books
+
+		.book
+			width: 100%;
+			min-height: 200px
+			margin-bottom: 35px
+			display: flex
+			align-items: flex-start
+			background-color: white
+			box-shadow: 3px 3px 3px #bebebe
+			position: relative
+
+			+bp(md)
+				width: calc(100% - 16px)
+				margin: auto auto 35px auto
+				flex-direction: column
+
+		.about
+			width: calc(100% - 200px)
+			min-height: 100%
+			padding: 20px 30px
+			display: flex
+			flex-direction: column
+			// position: absolute
+			right: 0
+			top: 0
+
+			+bp(md)
+				width: 100%
+
+		.cover
+			width: 200px
+			height: auto
+			border-left: 1px rgb(240, 240, 240) solid
+			border-right: 1px rgb(240, 240, 240) solid
+			object-fit: contain
+
+			+bp(md)
+				width: 50%
+				margin: 20px auto 0 auto
+				border: 1px rgb(240, 240, 240) solid
+
+		.name
+			margin-bottom: 15px
+			font-weight: bold
+
+			+bp(md)
+				line-height: 1.5
+
+		.description
+			font-size: 14px
+			line-height: 1.5
+
+			p
+				margin-bottom: 20px
+
+		.link
+			margin: auto 0 0 auto
+			padding: 7px 14px
+			font-weight: bold
+			font-size: 14px
+			background-color: #2d2d2d
+			color: white
+			position: absolute
+			right: 30px
+			bottom: 20px
+			transition: background-color 0.15s
+
+			&:hover
+				background-color: black
+
+			+bp(md)
+				width: 100%
+				padding: 10px 20px
+				position: static
+				background-color: #4b4b4b
+
+			// &::after
+			// 	content: ''
+			// 	width: 12px
+			// 	height: 12px
+			// 	margin-left: 5px
+			// 	display: inline-block
+			// 	position: relative
+			// 	top: 1px
+			// 	background: url(../images/link-icon.svg) no-repeat center center
+			// 	background-size: 12px auto
+
+
+html[data-useragent*='MSIE 10.0'] .bestArticles time
+	position: absolute
+	right: 20px
+	top: 40%		

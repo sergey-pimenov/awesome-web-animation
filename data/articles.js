@@ -4,82 +4,58 @@ var articles = [
 		"id" : "CSSAnimation",
 		"articles" : [
 			{
-				"title" : "Weighing SVG Animation Techniques (with Benchmarks)",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
+				"title" : "Scaling Responsive Animations",
+				"date" : "19.12.16",
+				"link" : "https://css-tricks.com/scaling-responsive-animations/",
+				"type" : "text"
+			},
+			{
+				"title" : "Swapping State with CSS Keyframes",
+				"date" : "22.11.16",
+				"link" : "https://css-tricks.com/swapping-state-css-keyframes/",
+				"type" : "text"
+			},
+			{
+				"title" : "The complete guide to getting 60fps animations with CSS",
+				"date" : "02.11.16",
+				"link" : "https://blog.gyrosco.pe/smooth-css-animations-7d8ffc2c1d29",
+				"type" : "text"
+			},
+			{
+				"title" : "Using CSS Transitions on Auto Dimensions",
+				"date" : "03.10.17",
+				"link" : "https://css-tricks.com/using-css-transitions-auto-dimensions/",
+				"type" : "text"
+			},
+			{
+				"title" : "Complex Responsive Animations",
+				"date" : "25.06.15",
+				"link" : "https://www.youtube.com/watch?v=09_8edPAsR8",
 				"type" : "video"
 			},
 			{
-				"title" : "How SVG Shape Morphing Works | CSS-Tricks",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
+				"title" : "Debugging CSS Keyframe Animations",
+				"date" : "03.08.15",
+				"link" : "https://css-tricks.com/debugging-css-keyframe-animations/",
 				"type" : "text"
 			},
 			{
-				"title" : "SVG Animation and CSS Transforms: A Complicated Love Story | CSS-Tricks",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
+				"title" : "Starting CSS Animations Mid-Way",
+				"date" : "19.08.2014",
+				"link" : "https://css-tricks.com/starting-css-animations-mid-way/",
 				"type" : "text"
 			},
 			{
-				"title" : "Big hisory about development most popular animation library",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
+				"title" : "Silky Smooth Animation with CSS",
+				"date" : "30.09.2016",
+				"link" : "https://www.youtube.com/watch?v=bEoLCZzWZX8",
 				"type" : "video"
 			},
 			{
-				"title" : "Big hisory about development most popular animation library",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
+				"title" : "CSS Animation Tricks",
+				"date" : "01.16.14",
+				"link" : "https://css-tricks.com/css-animation-tricks/",
 				"type" : "text"
-			},
-			{
-				"title" : "Big hisory about development most popular animation library",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
-				"type" : "text"
-			},
-			{
-				"title" : "Big hisory about development most popular animation library",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
-				"type" : "video"
-			},
-			{
-				"title" : "Big hisory about development most popular animation library",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
-				"type" : "text"
-			},
-			{
-				"title" : "Big hisory about development most popular animation library",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
-				"type" : "text"
-			},
-			{
-				"title" : "Big hisory about development most popular animation library",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
-				"type" : "text"
-			},
-			{
-				"title" : "Big hisory about development most popular animation library",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
-				"type" : "text"
-			},
-			{
-				"title" : "Big hisory about development most popular animation library",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
-				"type" : "text"
-			},
-			{
-				"title" : "Big hisory about development most popular animation library",
-				"date" : "12.07.17",
-				"link" : "https://google.com",
-				"type" : "video"
 			}
 		]
 	},
@@ -174,3 +150,5 @@ var articles = [
 		]
 	}
 ];
+
+export default articles;

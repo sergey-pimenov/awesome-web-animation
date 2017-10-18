@@ -47,3 +47,5 @@ var toolsArr = [
 	['Konvajs', 'konva.svg', ['Canvas'], '138', 'https://konvajs.github.io'],
 	['Bezier easing', 'beziereasing.svg', ['Easing'], '10000', 'https://github.com/gre/bezier-easing']
 ];
+
+export default toolsArr;

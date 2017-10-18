@@ -8,7 +8,7 @@ import addUserAgent from './utils/scripts/addUserAgent.js';
 // Components
 import renderTools from './components/tools';
 // import renderBrowserSupport from './components/browserSupport';
-import renderBestArticles from './components/bestArticles';
+import renderBestMaterials from './components/bestMaterials';
 import renderNotExist from './components/notExist';
 
 var dynamicContent = document.getElementById('dynamicContent');
@@ -32,9 +32,9 @@ function route() {
 		    selectNavItem('toolsNav');
 		    break;
 
-		  case '#best-articles':
-		   	renderBestArticles();
-		   	selectNavItem('articlesNav')
+		  case '#best-materials':
+		   	renderBestMaterials();
+		   	selectNavItem('materialsNav')
 		    break;
 
 		  default:

@@ -11,7 +11,7 @@ export default function() {
 			<div class="links">
 				<h2> Go to: </h2>
 				<a href="./#"> Best tools </a>
-				<a href="#best-articles"> Best materials </a>
+				<a href="#best-materials"> Best materials </a>
 			</div>
 		</div>
 	`;
