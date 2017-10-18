@@ -110,4 +110,4 @@
  * *Video:* [Silky Smooth Animation with CSS](https://www.youtube.com/watch?v=bEoLCZzWZX8)
  * *Video:* [CSS Animation Tricks](https://css-tricks.com/css-animation-tricks/)
 
-Made with ♥ by Sergey Pimenov
+Made with ♥ by Sergey Pimenov (pimenov.web@gmail.com)
