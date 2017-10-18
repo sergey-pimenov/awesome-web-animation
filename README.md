@@ -81,7 +81,7 @@
 * [Animation in HTML, CSS, and JavaScript](https://www.amazon.com/Animation-HTML-JavaScript-Kirupa-Chinnathambi/dp/1502548704)
 
 
-### Materials (articles, videos):
+### Materials (articles and videos):
 
 ##### SVG:
  * *Article:* [interactive Data Visualization: Animating the viewBox](https://css-tricks.com/interactive-data-visualization-animating-viewbox/)
@@ -110,4 +110,5 @@
  * *Video:* [Silky Smooth Animation with CSS](https://www.youtube.com/watch?v=bEoLCZzWZX8)
  * *Video:* [CSS Animation Tricks](https://css-tricks.com/css-animation-tricks/)
 
-Made with ♥ by Sergey Pimenov ( pimenov.web@gmail.com )
+Made with ♥ by Sergey Pimenov
+pimenov.web@gmail.com
