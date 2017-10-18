@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     webpackStream = require('webpack-stream'),
     webpack = require('webpack'),
     flatten = require('gulp-flatten'),
+    autoprefixer = require('gulp-autoprefixer'),
    	browserSync = require('browser-sync').create();
 
 // Production
@@ -11,17 +12,6 @@ var uglify = require('gulp-uglify'),
     pump = require('pump'),
     cleanCSS = require('gulp-clean-css'),
     htmlmin = require('gulp-htmlmin');
-
-
-///// Set components /////
-var componentsDir = 'src/components/';
-var templateComponents = ['header', 'map'];
-var fullComponents = []
-
-for( i = 0; i < templateComponents.length; i++ ) {
-  fullComponents.push(componentsDir + templateComponents[i]);
-}
-
 
 ///// Compile Sass /////
 gulp.task('compileSass', function () {
@@ -140,7 +130,17 @@ gulp.task('minifyCSS', function () {
   .pipe(gulp.dest('assets/styles'));
 });
 
-///// Minify CSS /////
+///// Set prefixes /////
+gulp.task('setPrefixes', function(){
+  return gulp.src('assets/styles/index.css')
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('assets/styles'))
+});
+
+///// Minify HTML /////
 gulp.task('minifyHTML', function() {
   return gulp.src('index.html')
     .pipe(htmlmin({collapseWhitespace: true}))
@@ -172,4 +172,4 @@ gulp.task('default', [
 
 ///// Production /////
 
-gulp.task('production', ['MinifyJS', 'minifyCSS', 'minifyHTML']);
+gulp.task('production', ['MinifyJS', 'minifyCSS', 'minifyHTML', 'setPrefixes']);

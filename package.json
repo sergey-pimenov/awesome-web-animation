@@ -14,6 +14,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
     "gulp-clean-css": "^3.8.0",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-flatten": "^0.3.1",
