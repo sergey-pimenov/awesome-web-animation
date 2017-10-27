@@ -1001,7 +1001,7 @@ footer {
     margin-bottom: 60px; }
     @media (max-width: 1150px) {
       .bestMaterials section {
-        margin-bottom: 0; } }
+        margin-bottom: 30px; } }
   .bestMaterials .categories {
     height: 43px;
     margin-bottom: 65px;
@@ -1184,6 +1184,7 @@ footer {
         background-color: #c3c3c3; } }
     @media (max-width: 900px) {
       .bestMaterials h2 {
+        margin-top: 40px;
         margin-bottom: 15px;
         font-size: 14px; } }
     .bestMaterials h2::before, .bestMaterials h2::after {
@@ -1237,7 +1238,6 @@ footer {
       font-weight: bold; }
       @media (max-width: 1150px) {
         .bestMaterials article h3 {
-          font-weight: normal;
           padding: 5px 30px; } }
       @media (max-width: 900px) {
         .bestMaterials article h3 {
@@ -1333,7 +1333,7 @@ footer {
     @media (max-width: 900px) {
       .bestMaterials .books .book {
         width: calc(100% - 30px);
-        margin: 20px auto 20px auto;
+        margin: 15px auto 30px auto;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
