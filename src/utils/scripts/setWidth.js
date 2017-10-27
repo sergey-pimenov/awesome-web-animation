@@ -6,14 +6,14 @@ export default function(elementToSize) {
 			return;
 		}
 
-		var initWidth = 650;
+		var initWidth = 630;
 		var lastWidth = 0;
 		var bodyPaddings = Math.ceil(document.body.clientWidth * 0.06) * 2;
 
 		if(windowWidth => 1200) {
 			while(windowWidth - bodyPaddings >= initWidth) {
 				lastWidth = initWidth;
-				initWidth += 360;
+				initWidth += 340;
 				if(windowWidth - bodyPaddings <= initWidth) {
 					elementToSize.style.width = lastWidth + 'px';
 				}

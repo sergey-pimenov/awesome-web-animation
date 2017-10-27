@@ -17,7 +17,7 @@ export default function() {
 				<button class="showCategories"> Show categories </button>
 				<div class="mobileWrapper">
 					<h3 class="goTo">
-						Go to
+						Scroll to
 						<img width="15px" height="auto" src="assets/images/goTo.svg">
 					</h3>
 					<span class="category" id="books"> Books </span>

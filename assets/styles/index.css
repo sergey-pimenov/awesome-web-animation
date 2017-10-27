@@ -191,7 +191,7 @@ button {
 
 header {
   height: 133px;
-  padding: 30px 5px;
+  padding: 30px 0;
   margin: 0 auto;
   position: relative;
   background-color: white; }
@@ -492,8 +492,8 @@ header {
           .titleAndNav nav a:not(.selected) .bagWrapperText {
             opacity: 0; }
           .titleAndNav nav a:not(.selected).toolsNav {
-            -webkit-transform: translateX(-35px) scale(0.45);
-            transform: translateX(-35px) scale(0.45); } }
+            -webkit-transform: translateX(-25px) scale(0.45);
+            transform: translateX(-25px) scale(0.45); } }
     @media (min-width: 801px) and (max-width: 1150px) {
       .titleAndNav nav a:not(.selected).toolsNav {
         -webkit-transform: translateX(0px) scale(0.45);
@@ -565,7 +565,7 @@ footer {
       width: 100% !important; } }
   .tools .tool {
     width: 290px;
-    height: 380px;
+    height: 370px;
     margin-bottom: 50px;
     padding: 30px 30px 0 30px;
     display: -webkit-box;
@@ -607,7 +607,7 @@ footer {
         opacity: 1; } }
   .tools .nameAndImg {
     width: 100%;
-    height: 260px;
+    height: 270px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -619,16 +619,14 @@ footer {
     -ms-flex-align: center;
     align-items: center; }
     .tools .nameAndImg h2 {
-      font-size: 27px;
+      font-size: 24px;
       text-align: center; }
     .tools .nameAndImg img {
-      max-width: 90%;
-      max-height: 130px;
+      max-width: 60%;
+      max-height: 110px;
       margin: auto 0;
       -o-object-fit: contain;
-      object-fit: contain;
-      -webkit-filter: grayscale(1);
-      filter: grayscale(1); }
+      object-fit: contain; }
   .tools .characteristicsAndDescription {
     margin-top: auto;
     padding-bottom: 25px;
@@ -651,17 +649,19 @@ footer {
       .tools .characteristicsAndDescription .technologies *:last-of-type {
         margin-right: 0; }
   .tools .size {
-    margin-bottom: 8px; }
+    margin-bottom: 8px;
+    position: relative;
+    font-size: 12px; }
   .tools .hidedSize {
     display: none; }
   .tools .size::after {
-    content: 'kb'; }
+    content: ' kb'; }
 
 .options {
-  height: 38px;
+  height: 43px;
   margin: 0 auto;
   margin-bottom: 65px;
-  padding: 9px 5px;
+  padding: 9px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -677,7 +677,7 @@ footer {
   .options::after {
     content: '';
     width: 300%;
-    height: 38px;
+    height: 43px;
     position: absolute;
     left: -100%;
     top: 0;
@@ -775,7 +775,7 @@ footer {
         flex-wrap: wrap; } }
   .options button {
     min-height: 22px;
-    margin-left: 15px;
+    margin-right: 15px;
     padding: 0 7px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -793,7 +793,8 @@ footer {
     outline: none;
     font-size: 16px;
     color: white;
-    font-family: 'Roboto', sans-serif; }
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0; }
     @media (max-width: 900px) {
       .options button {
         width: 100%;
@@ -812,9 +813,77 @@ footer {
     background-color: white;
     color: black; }
   .options .sort {
-    margin-left: auto; }
+    margin-left: auto;
+    position: relative; }
+    .options .sort::after {
+      content: 'Gui and Easing tools not support sorting by size';
+      width: 220px;
+      padding: 6px 5px 6px 18px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      top: calc(100% + 20px);
+      font-size: 10px;
+      color: white;
+      background: grey url(../images/exclamation.svg) no-repeat 5px center;
+      background-size: 10px auto;
+      -webkit-box-shadow: 3px 3px 3px #bebebe;
+      box-shadow: 3px 3px 3px #bebebe;
+      opacity: 0;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%; }
+    @media (max-width: 900px) {
+      .options .sort::after {
+        right: auto;
+        left: calc(63px + 30px);
+        top: 15px;
+        background: white url(../images/exclamation.svg) no-repeat 5px center;
+        color: black;
+        -webkit-box-shadow: none;
+        box-shadow: none; } }
+    @media all and (max-width: 400px) {
+      .options .sort.alert {
+        padding-bottom: 45px; }
+      .options .sort::after {
+        width: calc(100% - 28px);
+        height: 27px;
+        padding: 2px 0 0 28px;
+        left: 0;
+        top: 53px;
+        -webkit-transition: none;
+        transition: none;
+        background: white url(../images/exclamation-dark.svg) no-repeat 10px center;
+        background-size: 10px auto; } }
+    .options .sort.alert::after {
+      opacity: 1;
+      -webkit-animation: show-alert 0.3s;
+      animation: show-alert 0.3s; }
+
+@-webkit-keyframes show-alert {
+  20%, 60%, 100% {
+    -webkit-transform: rotateZ(1deg);
+    transform: rotateZ(1deg); }
+  40%, 80% {
+    -webkit-transform: rotateZ(-1deg);
+    transform: rotateZ(-1deg); } }
+
+@keyframes show-alert {
+  20%, 60%, 100% {
+    -webkit-transform: rotateZ(1deg);
+    transform: rotateZ(1deg); }
+  40%, 80% {
+    -webkit-transform: rotateZ(-1deg);
+    transform: rotateZ(-1deg); } }
   .options button.size {
     padding-right: 30px;
+    margin-right: 0;
     margin-left: auto;
     position: relative;
     background: url("../images/rect.svg") no-repeat right center;
@@ -930,9 +999,9 @@ footer {
     margin-bottom: 60px; }
     @media (max-width: 1150px) {
       .bestMaterials section {
-        margin-bottom: 40px; } }
+        margin-bottom: 0; } }
   .bestMaterials .categories {
-    height: 38px;
+    height: 43px;
     margin-bottom: 65px;
     padding-left: 5px;
     position: -webkit-sticky;
@@ -944,7 +1013,7 @@ footer {
     .bestMaterials .categories::after {
       content: '';
       width: 300%;
-      height: 38px;
+      height: 43px;
       position: absolute;
       left: -100%;
       top: 0;
@@ -1083,7 +1152,7 @@ footer {
       margin-bottom: 45px; }
     @media (max-width: 1150px) {
       .bestMaterials .technology {
-        margin-bottom: 50px; } }
+        margin: 20px 0 20px 0; } }
     .bestMaterials .technology .anchor {
       position: absolute;
       left: 0;
@@ -1150,8 +1219,8 @@ footer {
       background-color: #fbfbfb; }
     @media (max-width: 1150px) {
       .bestMaterials article {
-        width: calc(100% - 16px);
-        margin: 10px auto 15px auto;
+        width: calc(100% - 30px);
+        margin: 20px auto 20px auto;
         padding: 12px 0 0 0;
         -webkit-box-shadow: 0 3px 3px #d2d2d2;
         box-shadow: 0 3px 3px #d2d2d2; } }
@@ -1170,11 +1239,11 @@ footer {
           padding: 5px 30px; } }
       @media (max-width: 900px) {
         .bestMaterials article h3 {
-          -webkit-box-align: start;
-          -ms-flex-align: start;
-          align-items: flex-start;
-          font-size: 14px;
-          line-height: 1.3; } }
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          font-size: 12px;
+          line-height: 1.5; } }
       .bestMaterials article h3 .type {
         width: 25px;
         height: auto;
@@ -1261,12 +1330,14 @@ footer {
     position: relative; }
     @media (max-width: 900px) {
       .bestMaterials .books .book {
-        width: calc(100% - 16px);
-        margin: auto auto 35px auto;
+        width: calc(100% - 30px);
+        margin: 20px auto 20px auto;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column; } }
+        flex-direction: column; }
+        .bestMaterials .books .book:last-of-type {
+          margin-bottom: 0; } }
   .bestMaterials .books .about {
     width: calc(100% - 200px);
     min-height: 100%;
@@ -1289,14 +1360,12 @@ footer {
     border-left: 1px #f0f0f0 solid;
     border-right: 1px #f0f0f0 solid;
     -o-object-fit: contain;
-    object-fit: contain;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1); }
+    object-fit: contain; }
     @media (max-width: 900px) {
       .bestMaterials .books .cover {
         width: 50%;
-        margin: 20px auto 0 auto;
-        border: 1px #f0f0f0 solid; } }
+        margin: 20px auto 0 30px;
+        border: 1px #fafafa solid; } }
   .bestMaterials .books .name {
     margin-bottom: 15px;
     font-weight: bold; }
@@ -1306,6 +1375,9 @@ footer {
   .bestMaterials .books .description {
     font-size: 14px;
     line-height: 1.5; }
+    @media (max-width: 900px) {
+      .bestMaterials .books .description {
+        font-size: 12px; } }
     .bestMaterials .books .description p {
       margin-bottom: 20px; }
   .bestMaterials .books .link {

@@ -12,7 +12,6 @@ export default function() {
 				<button class="showFilter"> Show filter </button>
 				<div class="mobileWrapper">
 			    <div class="filters">
-				  	<h3> Sort: </h3>
 				  	<div class="technologiesGroup">
 					   	<button class="button showAll is-checked" data-filter="*"> All </button>
 					   	<button class="button" data-filter=".CSS"> CSS </button>
@@ -44,35 +43,55 @@ export default function() {
 	  masonry: {
 	  	fitWidth: true,
 		  columnWidth: 290,
-		  gutter: 70
+		  gutter: 50
 		}
 	});
 
 
 	// Filters
 	var filters = document.querySelector('.filters');
+	var sort = document.querySelector('.sort');
+	var sizeButton = document.querySelector('.button.size');
+
 	filters.addEventListener('click', function(event) {
 	  if (!matchesSelector(event.target, 'button')) {
 	    return;
 	  }
 	  var filterValue = event.target.getAttribute('data-filter');
 	  iso.arrange({ filter: filterValue });
+
+	  if((filterValue == '.Easing' || filterValue == '.GUI') && sizeButton.classList.contains('checked')) {
+	  	sort.classList.add('alert');
+	  } else {
+	  	sort.classList.remove('alert');
+	  }
 	});
 
 
 	// Sort
-	var sort = document.querySelector('.sort');
 	sort.addEventListener('click', function(event) {
 	  if (!matchesSelector(event.target, 'button')) {
 	    return;
 	  }
+
 	  event.target.classList.toggle('checked');
+
 	  if(event.target.classList.contains('checked')) {
 	  	var sortValue = event.target.getAttribute('data-sort-value');
 	  } else {
 	  	sortValue = 'original-order';
 	  }
+
 	  iso.arrange({ sortBy: sortValue });
+
+	  var selectedElement = document.querySelector('.is-checked');
+	  var filterValue = selectedElement.getAttribute('data-filter');
+	  console.log(filterValue)
+	  if((filterValue == '.Easing' || filterValue == '.GUI') && sizeButton.classList.contains('checked')) {
+	  	sort.classList.add('alert');
+	  } else {
+	  	sort.classList.remove('alert');
+	  }
 	});
 
 
@@ -139,10 +158,10 @@ export default function() {
 		var fragment = document.createDocumentFragment();
 		for (var i = 0; i < toolsCount; i++) {
 		  var elem = createTool(toolsData[i][0],
-		  			toolsData[i][1],
-		 			toolsData[i][2],
-		 			toolsData[i][3],
-		 			toolsData[i][4]);
+										  			toolsData[i][1],
+											 			toolsData[i][2],
+											 			toolsData[i][3],
+											 			toolsData[i][4]);
 		  fragment.appendChild(elem);
 		  tools.push(elem);
 		}
