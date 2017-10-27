@@ -156,6 +156,8 @@ body.showDoc::after {
   -webkit-box-shadow: 0 3px 3px #c8c8c8;
   box-shadow: 0 3px 3px #c8c8c8;
   outline: none;
+  padding: 0;
+  border-radius: 0;
   background: #fafafa url(../images/up-arrow.svg) no-repeat center center;
   background-size: 20px auto;
   cursor: pointer;
