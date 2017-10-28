@@ -16,6 +16,7 @@
  * [Greensock MorphSVG](https://greensock.com/morphSVG)
  * [Two.js](https://two.js.org)
  * [Animate Plus](https://github.com/bendc/animateplus)
+ * [mo.js](http://mojs.io)
  
 ##### DOM:
  * [GSAP](https://greensock.com)
@@ -29,6 +30,7 @@
  * [Motio](http://darsa.in/motio)
  * [Animate Plus](https://github.com/bendc/animateplus)
  * [Animatic](http://lvivski.com/animatic)
+ * [Just Animate](https://just-animate.github.io/)
  
 ##### CSS:
  * [Animate.css](https://daneden.github.io/animate.css)
