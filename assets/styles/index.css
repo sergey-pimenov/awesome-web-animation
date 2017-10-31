@@ -82,6 +82,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  overflow: hidden;
   border-right: 1px #f0f0f0 solid;
   font-family: 'Roboto', sans-serif;
   background-color: #e4e3e2;
