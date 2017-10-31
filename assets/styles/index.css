@@ -168,7 +168,7 @@ body.showDoc::after {
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s; }
-  @media (max-width: 900px) {
+  @media (max-width: 1150px) {
     .goTop {
       width: 100vw;
       height: 40px;
@@ -1182,6 +1182,7 @@ footer {
     background-color: #2d2d2d; }
     @media (max-width: 1150px) {
       .bestMaterials h2 {
+        margin: 40px 15px 20px 15px;
         background-color: #c3c3c3; } }
     @media (max-width: 900px) {
       .bestMaterials h2 {
@@ -1298,7 +1299,7 @@ footer {
     background-color: #2d2d2d; }
     @media (max-width: 1150px) {
       .bestMaterials .title {
-        margin-bottom: 10px;
+        margin: 40px 15px 20px 15px;
         background-color: #c3c3c3; } }
     @media (max-width: 900px) {
       .bestMaterials .title {
