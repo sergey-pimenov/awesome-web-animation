@@ -17,7 +17,7 @@
  * [Two.js](https://two.js.org)
  * [Animate Plus](https://github.com/bendc/animateplus)
  * [mo.js](http://mojs.io)
- 
+
 ##### DOM:
  * [GSAP](https://greensock.com)
  * [Anime.js](http://anime-js.com)
@@ -39,7 +39,7 @@
  * [Buttons](http://unicorn-ui.com/buttons)
  * [CSS3 Animation Cheat Sheet](http://www.justinaguilar.com/animations)
  * [Animate Plus](https://github.com/bendc/animateplus)
- 
+
 ##### Canvas:
  * [EaselJS](http://www.createjs.com/easeljs)
  * [Fabric.js](http://fabricjs.com)
@@ -81,6 +81,7 @@
 * [Web Animation using JavaScript: Develop & Design](https://www.amazon.com/Web-Animation-using-JavaScript-Develop/dp/0134096665)
 * [CSS Animations and Transitions for the Modern Web](https://www.amazon.com/gp/product/0133980502/)
 * [Animation in HTML, CSS, and JavaScript](https://www.amazon.com/Animation-HTML-JavaScript-Kirupa-Chinnathambi/dp/1502548704)
+* [Foundation HTML5 Animation with JavaScript](https://www.amazon.com/Foundation-HTML5-Animation-JavaScript-Lamberta/dp/1430236655/)
 
 
 ### Materials (articles and videos):
