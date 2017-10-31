@@ -45,7 +45,9 @@ var toolsArr = [
 	['FabricJS', 'fabricjs.svg', ['Canvas'], '248', 'http://fabricjs.com'],
 	['PaperJS', 'paperjs.svg', ['Canvas'], '277', 'http://paperjs.org'],
 	['Konvajs', 'konva.svg', ['Canvas'], '138', 'https://konvajs.github.io'],
-	['Bezier easing', 'beziereasing.svg', ['Easing'], '10000', 'https://github.com/gre/bezier-easing']
+	['Bezier easing', 'beziereasing.svg', ['Easing'], '10000', 'https://github.com/gre/bezier-easing'],
+	['Just animate', 'just-animate.svg', ['DOM'], '14', 'https://just-animate.github.io/'],
+	['Mo.js', 'mojs.svg', ['SVG'], '130', 'http://mojs.io/']
 ];
 
 export default toolsArr;
