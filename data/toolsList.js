@@ -1,4 +1,4 @@
-var toolsArr = [
+﻿var toolsArr = [
 	['Snap.svg', 'snapsvg.png', ['SVG'], '81', 'http://snapsvg.io'],
 	['Svg.js', 'svgjs.png', ['SVG'], '64', 'http://svgjs.com'],
 	['GSAP', 'gsap.jpg', ['DOM', 'SVG'], '41', 'https://greensock.com'],
@@ -20,7 +20,7 @@ var toolsArr = [
 	['Keyframer', 'keyframer.svg', ['GUI'], '10000', 'http://alexberg.in/keyframer'],
 	['Animateplus', 'animateplus.svg', ['SVG', 'CSS'], '9', 'https://github.com/bendc/animateplus'],
 	['Vivus', 'vivus.png', ['SVG'], '11', 'http://maxwellito.github.io/vivus'],
-	['Raphaël', 'raphaël.svg', ['SVG'], '11', 'http://dmitrybaranovskiy.github.io/raphael'],
+	['Raphaël', 'raphaël.svg', ['SVG'], '91', 'http://dmitrybaranovskiy.github.io/raphael'],
 	['Walkway', 'walkway.svg', ['SVG'], '4', 'https://connoratherton.com/walkway'],
 	['BonsaiJS', 'bonsaijs.svg', ['SVG'], '130', 'http://bonsaijs.org'],
 	['ProgressbarJS', 'progressbarjs.svg', ['SVG'], '21', 'http://kimmobrunfeldt.github.io/progressbar.js'],
@@ -33,7 +33,7 @@ var toolsArr = [
 	['Motio', 'motio.svg', ['DOM'], '4', 'http://darsa.in/motio'],
 	['Animatic', 'animaticjs.svg', ['DOM'], '22', 'http://lvivski.com/animatic'],
 	['Animate.css', 'animatecss.svg', ['CSS'], '17', 'https://daneden.github.io/animate.css'],
-	['Motion UI', 'motionui.svg', ['CSS'], '17', 'http://zurb.com/playground/motion-ui'],
+	['Motion UI', 'motionui.svg', ['CSS'], '23', 'http://zurb.com/playground/motion-ui'],
 	['CSS loaders', 'cssloaders.svg', ['GUI'], '10000', 'https://projects.lukehaas.me/css-loaders'],
 	['BounceJS', 'bouncejs.svg', ['GUI'], '10000', 'http://bouncejs.com'],
 	['Spinkit', 'spinkit.svg', ['GUI', 'CSS'], '10000', 'http://tobiasahlin.com/spinkit'],
@@ -47,7 +47,9 @@ var toolsArr = [
 	['Konvajs', 'konva.svg', ['Canvas'], '138', 'https://konvajs.github.io'],
 	['Bezier easing', 'beziereasing.svg', ['Easing'], '10000', 'https://github.com/gre/bezier-easing'],
 	['Just animate', 'just-animate.svg', ['DOM'], '14', 'https://just-animate.github.io/'],
-	['Mo.js', 'mojs.svg', ['SVG'], '130', 'http://mojs.io/']
+	['Mo.js', 'mojs.svg', ['SVG'], '130', 'http://mojs.io/'],
+	['Popmotion', 'popmotion.svg', ['DOM', 'SVG'], '41', 'https://popmotion.io/'],
+	['PixiJS', 'pixi.png', ['Canvas'], '415', 'http://www.pixijs.com/']
 ];
 
 export default toolsArr;
