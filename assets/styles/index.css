@@ -1346,8 +1346,9 @@ footer {
           margin-bottom: 0; } }
   .bestMaterials .books .about {
     width: calc(100% - 200px);
+    max-width: 1000px;
     min-height: 100%;
-    padding: 20px 30px;
+    padding: 20px 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1373,7 +1374,7 @@ footer {
         margin: 20px auto 0 30px;
         border: 1px #fafafa solid; } }
   .bestMaterials .books .name {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-weight: bold; }
     @media (max-width: 900px) {
       .bestMaterials .books .name {
@@ -1385,7 +1386,7 @@ footer {
       .bestMaterials .books .description {
         font-size: 12px; } }
     .bestMaterials .books .description p {
-      margin-bottom: 20px; }
+      margin-bottom: 15px; }
   .bestMaterials .books .link {
     margin: auto 0 0 auto;
     padding: 7px 14px;
