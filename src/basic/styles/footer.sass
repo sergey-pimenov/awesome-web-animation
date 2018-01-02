@@ -6,6 +6,16 @@ footer
 	font-weight: 700
 	color: black
 
+	a
+		display: inline-block
+		transform-origin: 0 50%
+		transition: transform 0.2s
+
+	+bp(xl)
+		a:focus
+			text-transform: uppercase
+			text-decoration: underline
+
 	img
 		height: 1em
 		display: inline-block

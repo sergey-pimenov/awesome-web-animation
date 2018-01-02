@@ -20,8 +20,8 @@ export default function() {
 						Scroll to
 						<img width="15px" height="auto" src="assets/images/goTo.svg">
 					</h3>
-					<span class="category" id="books"> Books </span>
-					<span class="category" id="articlesAndVideos"> Articles and videos </span>
+					<span class="category" id="books" tabindex="0"> Books </span>
+					<span class="category" id="articlesAndVideos" tabindex="0"> Articles and videos </span>
 				</div>
 			</div>
 
@@ -42,6 +42,20 @@ export default function() {
 
 	for(var i = 0; i < category.length; i++) {
 		category[i].addEventListener('click', function(e) {
+			var scroll = new SmoothScroll();
+
+			var selectedItem = e.target.id;
+
+			var anchor = document.querySelector('#' + selectedItem + 'Title');
+			scroll.animateScroll(anchor, category[i], {
+				offset : 65
+			});
+
+		})
+
+		category[i].addEventListener('keydown', function(e) {
+			if(e.keyCode != 13) return;
+			
 			var scroll = new SmoothScroll();
 
 			var selectedItem = e.target.id;

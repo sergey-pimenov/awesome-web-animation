@@ -108,10 +108,17 @@
 			position: relative
 			font-size: 16px
 			cursor: pointer
+			transition: transform 0.2s
 
 			&:hover
 				background-color: white
 				color: black
+
+			+bp(xl)
+				&:focus
+					background-color: white
+					color: black
+					transform: scale(1.1)
 
 			&.selected
 				background-color: white
@@ -263,9 +270,14 @@
 		a
 			width: 100%
 			height: 100%
+			display: block
 			position: absolute
 			left: 0
 			top: 0
+
+			+bp(xl)
+				&:focus
+					background: rgba(150, 150, 150, 0.1)
 
 	.title
 		height: 38px
@@ -384,10 +396,15 @@
 			position: absolute
 			right: 30px
 			bottom: 20px
-			transition: background-color 0.15s
+			transition: all 0.15s
 
 			&:hover
 				background-color: black
+
+			+bp(xl)
+				&:focus
+						opacity: 1
+						transform: scale(1.1)
 
 			+bp(md)
 				width: 100%

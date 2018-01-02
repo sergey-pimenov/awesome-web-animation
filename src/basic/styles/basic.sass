@@ -120,7 +120,25 @@ body.showDoc::after
 	&.show
 		transform: translateX(0)
 
-button
+	+bp(xl)
+		&:focus::after
+			content: ''
+			width: calc(100% - 4px)
+			height: calc(100% - 4px)
+			position: absolute
+			left: 0
+			top: 0
+			border: 2px black dashed
+			
+
+	// @keyframes blink
+	// 	100%
+	// 		background-color: rgb(235, 235, 255)
+
+button,
+a,
+span
 	outline: none
+
 	&::-moz-focus-inner
 		border: 0

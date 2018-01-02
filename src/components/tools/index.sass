@@ -40,6 +40,11 @@
 			opacity: 0
 			transition: all 0.15s
 
+			+bp(xl)
+				&:focus
+						opacity: 1
+						transform: scale(1.1)
+
 		+bp(xl)
 			&:hover a
 				opacity: 1
@@ -208,6 +213,12 @@
 		color: white
 		font-family: 'Roboto', sans-serif
 		border-radius: 0 // For mobile FF
+		transition: transform 0.2s
+
+		&:focus
+			background-color: white
+			color: black
+			transform: scale(1.1)
 
 		+bp(md)
 			width: 100%

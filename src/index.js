@@ -25,21 +25,25 @@ function route() {
 		  case '':
 		    renderTools('.dynamicContent');
 		    selectNavItem('toolsNav');
+		    focusOnlyWithKeys();
 		    break;
 
 		  case '#':
 		    renderTools('.dynamicContent');
 		    selectNavItem('toolsNav');
+		    focusOnlyWithKeys();
 		    break;
 
 		  case '#best-materials':
 		   	renderBestMaterials();
-		   	selectNavItem('materialsNav')
+		   	selectNavItem('materialsNav');
+		   	focusOnlyWithKeys();
 		    break;
 
 		  default:
 		  	renderNotExist();
-		  	selectNavItem('hideAll')
+		  	selectNavItem('hideAll');
+		  	focusOnlyWithKeys();
 		    break;
 		}
 	}, 200)
@@ -59,3 +63,30 @@ addUserAgent();
 setTimeout( () => {
 	document.body.classList.add('showDoc');
 }, 300);
+
+
+// Disable focus after mouse click
+// From: https://www.darrenlester.com/blog/focus-only-on-tab
+function focusOnlyWithKeys() {
+	let mouseDown = false;
+
+	var focusableNodes = document.querySelectorAll('button, a');
+
+	for( var i = 0; i < focusableNodes.length; i++) {
+		focusableNodes[i].addEventListener('mousedown', () => {
+		  mouseDown = true;
+		});
+
+		focusableNodes[i].addEventListener('mouseup', () => {
+		  mouseDown = false;
+		});
+
+		focusableNodes[i].addEventListener('focus', (event) => {
+		  if (mouseDown) {
+		    event.target.blur();
+		  }
+		});
+	}
+}
+
+focusOnlyWithKeys();

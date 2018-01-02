@@ -186,10 +186,23 @@ body.showDoc::after {
   .goTop.show {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
+  @media (min-width: 1151px) {
+    .goTop:focus::after {
+      content: '';
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 2px black dashed; } }
 
-button {
+button,
+a,
+span {
   outline: none; }
-  button::-moz-focus-inner {
+  button::-moz-focus-inner,
+  a::-moz-focus-inner,
+  span::-moz-focus-inner {
     border: 0; }
 
 header {
@@ -300,6 +313,21 @@ header {
         left: 0;
         -webkit-transform-origin: 0 50%;
         transform-origin: 0 50%; }
+        .titleAndNav nav a.toolsNav::before {
+          content: '';
+          width: 90%;
+          height: 130%;
+          display: block;
+          position: absolute;
+          right: -3.5%;
+          top: -20%;
+          border: 2px black dashed;
+          z-index: -1;
+          opacity: 0;
+          -webkit-transition: opacity 0.5s;
+          transition: opacity 0.5s; }
+        .titleAndNav nav a.toolsNav:focus::before {
+          opacity: 1; }
         @media (max-width: 1150px) {
           .titleAndNav nav a.toolsNav {
             padding: 0; } }
@@ -308,6 +336,21 @@ header {
         right: 0;
         -webkit-transform-origin: 100% 50%;
         transform-origin: 100% 50%; }
+        .titleAndNav nav a.materialsNav::before {
+          content: '';
+          width: 85%;
+          height: 130%;
+          display: block;
+          position: absolute;
+          left: -5%;
+          top: -20%;
+          border: 2px black dashed;
+          z-index: -1;
+          -webkit-transition: opacity 0.5s;
+          transition: opacity 0.5s;
+          opacity: 0; }
+        .titleAndNav nav a.materialsNav:focus::before {
+          opacity: 1; }
         @media (max-width: 1150px) {
           .titleAndNav nav a.materialsNav {
             padding: 0; } }
@@ -540,6 +583,18 @@ footer {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: black; }
+  footer a {
+    display: inline-block;
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s; }
+  @media (min-width: 1151px) {
+    footer a:focus {
+      text-transform: uppercase;
+      text-decoration: underline; } }
   footer img {
     height: 1em;
     display: inline-block;
@@ -605,6 +660,11 @@ footer {
       opacity: 0;
       -webkit-transition: all 0.15s;
       transition: all 0.15s; }
+      @media (min-width: 1151px) {
+        .tools .tool a:focus {
+          opacity: 1;
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1); } }
     @media (min-width: 1151px) {
       .tools .tool:hover a {
         opacity: 1; } }
@@ -796,7 +856,16 @@ footer {
     font-size: 16px;
     color: white;
     font-family: 'Roboto', sans-serif;
-    border-radius: 0; }
+    border-radius: 0;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s; }
+    .options button:focus {
+      background-color: white;
+      color: black;
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
     @media (max-width: 900px) {
       .options button {
         width: 100%;
@@ -1110,10 +1179,20 @@ footer {
       align-items: center;
       position: relative;
       font-size: 16px;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-transition: -webkit-transform 0.2s;
+      transition: -webkit-transform 0.2s;
+      transition: transform 0.2s;
+      transition: transform 0.2s, -webkit-transform 0.2s; }
       .bestMaterials .categories .category:hover {
         background-color: white;
         color: black; }
+      @media (min-width: 1151px) {
+        .bestMaterials .categories .category:focus {
+          background-color: white;
+          color: black;
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1); } }
       .bestMaterials .categories .category.selected {
         background-color: white;
         color: black; }
@@ -1273,9 +1352,13 @@ footer {
     .bestMaterials article a {
       width: 100%;
       height: 100%;
+      display: block;
       position: absolute;
       left: 0;
       top: 0; }
+      @media (min-width: 1151px) {
+        .bestMaterials article a:focus {
+          background: rgba(150, 150, 150, 0.1); } }
   .bestMaterials .title {
     height: 38px;
     margin-bottom: 30px;
@@ -1397,10 +1480,15 @@ footer {
     position: absolute;
     right: 30px;
     bottom: 20px;
-    -webkit-transition: background-color 0.15s;
-    transition: background-color 0.15s; }
+    -webkit-transition: all 0.15s;
+    transition: all 0.15s; }
     .bestMaterials .books .link:hover {
       background-color: black; }
+    @media (min-width: 1151px) {
+      .bestMaterials .books .link:focus {
+        opacity: 1;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); } }
     @media (max-width: 900px) {
       .bestMaterials .books .link {
         width: 100%;

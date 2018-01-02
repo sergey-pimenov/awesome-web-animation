@@ -99,6 +99,7 @@ export default function() {
 	var toolsCount = toolsData.length;
 	function createTool(toolName, toolLogo, toolTechnologies, toolSize, toolLink) {
 		var tool = document.createElement('div');
+		tool.setAttribute('tabindex', '-1');
 		tool.classList.add('tool');
 
 		var link = document.createElement('a');
