@@ -1,13 +1,17 @@
 footer
-	margin: auto 0 65px 0
-	padding-top: 15px
+	margin: auto 0 40px 0
+	padding: 15px 30px 0 30px
 	text-align: center
 	font-family: 'Roboto', sans-serif
 	font-weight: 700
 	color: black
 
+	+bp(md)
+		margin-bottom: 20px
+
 	a
 		display: inline-block
+		margin-bottom: 25px
 		transform-origin: 0 50%
 		transition: transform 0.2s
 
@@ -27,3 +31,24 @@ footer
 	@keyframes heartAnim
 		to
 			transform: scale(0.85, 0.85)
+
+.github
+	margin-left: 30px
+	display: inline-block
+	position: relative
+
+	+bp(moreThanMd)
+		&:hover
+			text-decoration: underline
+
+	&::before
+		content: url(../images/code.svg)
+		width: 18px
+		margin-right: 10px
+		float: left
+		position: relative
+		top: -1px
+	
+	// @media all and (max-width: 420)
+	// 	width: 
+	// 	display: block

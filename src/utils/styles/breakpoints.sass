@@ -15,6 +15,10 @@
     @media (max-width: 900px)
       @content
 
+  @else if $class == moreThanMd
+    @media (min-width: 901px)
+      @content
+
   @else if $class == lg
     @media (max-width: 1150px)
       @content
