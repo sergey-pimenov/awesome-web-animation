@@ -32,6 +32,8 @@
  * [Two.js](https://two.js.org)
  * [Animate Plus](https://github.com/bendc/animateplus)
  * [mo.js](http://mojs.io)
+ 
+ ---
 
 ##### DOM:
  * [GSAP](https://greensock.com)
@@ -47,6 +49,8 @@
  * [Animatic](http://lvivski.com/animatic)
  * [Just Animate](https://just-animate.github.io/)
  
+---
+ 
 ##### CSS:
  * [Animate.css](https://daneden.github.io/animate.css)
  * [Motion UI](http://zurb.com/playground/motion-ui)
@@ -54,6 +58,8 @@
  * [Buttons](http://unicorn-ui.com/buttons)
  * [CSS3 Animation Cheat Sheet](http://www.justinaguilar.com/animations)
  * [Animate Plus](https://github.com/bendc/animateplus)
+ 
+---
 
 ##### Canvas:
  * [EaselJS](http://www.createjs.com/easeljs)
@@ -64,6 +70,8 @@
  * [Two.js](https://two.js.org)
  * [Ocanvas](http://ocanvas.org/)
  * [Tweenjs](http://www.createjs.com/tweenjs)
+ 
+---
 
 ##### Animate on scroll:
  * [AOS](https://michalsnik.github.io/aos)
@@ -73,10 +81,14 @@
  * [ScrollReveal](https://scrollrevealjs.org)
  * [Scrollmagic](http://scrollmagic.io)
 
+---
+
 ##### Easing:
  * [Ceaser](https://matthewlein.com/ceaser/)
  * [Cubic bezier](http://cubic-bezier.com)
  * [Bezier easing](https://github.com/gre/bezier-easing)
+
+---
 
 ##### GUI tools:
  * [Cssanimate](http://cssanimate.com)
@@ -87,6 +99,7 @@
  * [CSS loaders](https://projects.lukehaas.me/css-loaders)
  * [Spinkit](http://tobiasahlin.com/spinkit)
 
+---
 
 ### Books:
 * [SVG animation](https://www.amazon.com/SVG-Animations-Implementations-Responsive-Animation/dp/1491939702)
@@ -98,6 +111,7 @@
 * [Animation in HTML, CSS, and JavaScript](https://www.amazon.com/Animation-HTML-JavaScript-Kirupa-Chinnathambi/dp/1502548704)
 * [Foundation HTML5 Animation with JavaScript](https://www.amazon.com/Foundation-HTML5-Animation-JavaScript-Lamberta/dp/1430236655/)
 
+---
 
 ### Useful materials (articles and videos):
 
@@ -117,6 +131,8 @@
  * *Article:* [Masking SVG Animations](https://medium.com/@gordonnl/stylised-line-animations-ded23320ffe5)
  * *Article:* [SVG Line Animation for the Uninitiated](https://medium.com/bitmatica-lab/svg-line-animation-for-the-uninitiated-5a65d91c6044)
 
+---
+
 ##### CSS:
  * *Article:* [Scaling Responsive Animations](https://css-tricks.com/scaling-responsive-animations/)
  * *Article:* [Swapping State with CSS Keyframes](https://css-tricks.com/swapping-state-css-keyframes/)
@@ -127,6 +143,8 @@
  * *Article:* [Starting CSS Animations Mid-Way](https://css-tricks.com/starting-css-animations-mid-way/)
  * *Video:* [Silky Smooth Animation with CSS](https://www.youtube.com/watch?v=bEoLCZzWZX8)
  * *Video:* [CSS Animation Tricks](https://css-tricks.com/css-animation-tricks/)
+
+---
 
 Made with ♥ by Sergey Pimenov
 pimenov.web@gmail.com
