@@ -1,6 +1,11 @@
 ![Cover](https://github.com/web-animation/web-animation.github.io/blob/master/assets/images/header.png)
 
 ## [Awesome tools & books & articles & videos for web-animation.](https://web-animation.github.io/)
+
+### Categories:
+[Tools](#Tools:)
+- [SVG](#SVG)
+
 ### Tools:
 
 ##### SVG:
