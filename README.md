@@ -12,7 +12,9 @@
 - [Easing](#easing)
 - [GUI tools](#gui-tools)
 #### [Books](#books)
-#### [Useful materials](#useful-materials-(articles-and-videos))
+#### [Useful materials](#useful-materials-articles-and-videos)
+
+---
 
 ### Tools:
 
