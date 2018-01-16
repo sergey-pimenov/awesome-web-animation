@@ -3,10 +3,10 @@
 ## [Awesome tools & books & articles & videos for web-animation.](https://web-animation.github.io/)
 
 ### Categories:
-[Tools](#Tools)
-- [SVG](#SVG)
+[Tools](#tools:)
+- [SVG](#svg)
 
-### Tools
+### Tools:
 
 ##### SVG:
  * [Svg.js](http://svgjs.com)
