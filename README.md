@@ -3,7 +3,7 @@
 ## [Awesome tools & books & articles & videos for web-animation.](https://web-animation.github.io/)
 
 ### Categories:
-#### [Tools](#tools:)
+#### [Tools](#tools)
 - [SVG](#svg)
 - [DOM](#dom)
 - [CSS](#css)
@@ -11,8 +11,8 @@
 - [Animate on scroll](#animate-on-scroll)
 - [Easing](#easing)
 - [GUI tools](#gui-tools)
-#### [Books](#books:)
-#### [Useful materials](#useful-materials-(articles-and-videos):)
+#### [Books](#books)
+#### [Useful materials](#useful-materials-(articles-and-videos))
 
 ### Tools:
 
