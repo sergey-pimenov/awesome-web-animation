@@ -1,4 +1,4 @@
-var books = [
+var booksList = [
 	{
 		"name" : "SVG animation",
 		"cover" : "assets/images/svg-animations.png",
@@ -109,5 +109,3 @@ var books = [
         "link" : "https://www.amazon.com/Foundation-HTML5-Animation-JavaScript-Lamberta/dp/1430236655/"
 	}
 ];
-
-export default books;

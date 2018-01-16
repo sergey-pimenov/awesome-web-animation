@@ -1,10 +1,8 @@
-import booksData from './../../../../data/books';
-
 export default function books() {
 	function renderBooks() {
 		var books = '';
-		for(var i = 0; i < booksData.length; i++) {
-			books += booksTemplate(booksData[i].name, booksData[i].cover, booksData[i].description, booksData[i].link);
+		for(var i = 0; i < booksList.length; i++) {
+			books += booksTemplate(booksList[i].name, booksList[i].cover, booksList[i].description, booksList[i].link);
 		}
 		return books;
 	}

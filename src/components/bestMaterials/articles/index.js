@@ -1,10 +1,8 @@
-import articlesData from './../../../../data/articles';
-
 export default function() {
 	function renderArticlesBlock() {
 		var articlesBlock = '';
-		for(var i = 0; i < articlesData.length; i++) {
-			articlesBlock += articlesBlockTemplate(articlesData[i].id, articlesData[i].name, articlesData[i].articles);
+		for(var i = 0; i < articlesList.length; i++) {
+			articlesBlock += articlesBlockTemplate(articlesList[i].id, articlesList[i].name, articlesList[i].articles);
 		}
 		return articlesBlock;
 	}

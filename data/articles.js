@@ -1,4 +1,4 @@
-var articles = [
+var articlesList = [
 	{
 		"name" : "CSS Animation",
 		"id" : "CSSAnimation",
@@ -150,5 +150,3 @@ var articles = [
 		]
 	}
 ];
-
-export default articles;

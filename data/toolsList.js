@@ -1,4 +1,4 @@
-﻿var toolsArr = [
+﻿var toolsList = [
 	['Snap.svg', 'snapsvg.png', ['SVG'], '81', 'http://snapsvg.io'],
 	['Svg.js', 'svgjs.png', ['SVG'], '64', 'http://svgjs.com'],
 	['GSAP', 'gsap.jpg', ['DOM', 'SVG'], '41', 'https://greensock.com'],
@@ -51,5 +51,3 @@
 	['Popmotion', 'popmotion.svg', ['DOM', 'SVG'], '41', 'https://popmotion.io/'],
 	['PixiJS', 'pixi.png', ['Canvas'], '415', 'http://www.pixijs.com/']
 ];
-
-export default toolsArr;

@@ -4,9 +4,6 @@ import renderArticlesBlock from './articles';
 import renderBooks from './books';
 import scrollMonitor from 'scrollMonitor';
 
-// Articles
-import books from './../../../data/books.js';
-
 export default function() {
 	var dynamicContent = document.getElementById('dynamicContent');
 	render('', dynamicContent);
@@ -55,7 +52,7 @@ export default function() {
 
 		category[i].addEventListener('keydown', function(e) {
 			if(e.keyCode != 13) return;
-			
+
 			var scroll = new SmoothScroll();
 
 			var selectedItem = e.target.id;

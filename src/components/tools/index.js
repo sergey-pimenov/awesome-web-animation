@@ -1,6 +1,5 @@
 import render from './../../utils/scripts/render'
 import setWidth from './../../utils/scripts/setWidth';
-import toolsData from './../../../data/toolsList';
 
 export default function() {
 	var dynamicContent = document.getElementById('dynamicContent');
@@ -96,7 +95,7 @@ export default function() {
 
 
 	// Create tool-card
-	var toolsCount = toolsData.length;
+	var toolsCount = toolsList.length;
 	function createTool(toolName, toolLogo, toolTechnologies, toolSize, toolLink) {
 		var tool = document.createElement('div');
 		tool.setAttribute('tabindex', '-1');
@@ -158,11 +157,11 @@ export default function() {
 		var tools = [];
 		var fragment = document.createDocumentFragment();
 		for (var i = 0; i < toolsCount; i++) {
-		  var elem = createTool(toolsData[i][0],
-										  			toolsData[i][1],
-											 			toolsData[i][2],
-											 			toolsData[i][3],
-											 			toolsData[i][4]);
+		  var elem = createTool(toolsList[i][0],
+										  			toolsList[i][1],
+											 			toolsList[i][2],
+											 			toolsList[i][3],
+											 			toolsList[i][4]);
 		  fragment.appendChild(elem);
 		  tools.push(elem);
 		}
@@ -172,7 +171,7 @@ export default function() {
 	}
 
 	renderCards();
-	
+
 
 	// Filter button states
 	var technologiesGroup = document.querySelectorAll('.technologiesGroup');
