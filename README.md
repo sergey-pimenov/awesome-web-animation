@@ -3,8 +3,16 @@
 ## [Awesome tools & books & articles & videos for web-animation.](https://web-animation.github.io/)
 
 ### Categories:
-[Tools](#tools:)
+#### [Tools](#tools:)
 - [SVG](#svg)
+- [DOM](#dom)
+- [CSS](#css)
+- [Canvas](#canvas)
+- [Animate on scroll](#animate-on-scroll)
+- [Easing](#easing)
+- [GUI tools](#gui-tools)
+#### [Books](#books:)
+#### [Useful materials](#useful-materials-(articles-and-videos):)
 
 ### Tools:
 
@@ -89,7 +97,7 @@
 * [Foundation HTML5 Animation with JavaScript](https://www.amazon.com/Foundation-HTML5-Animation-JavaScript-Lamberta/dp/1430236655/)
 
 
-### Materials (articles and videos):
+### Useful materials (articles and videos):
 
 ##### SVG:
  * *Article:* [interactive Data Visualization: Animating the viewBox](https://css-tricks.com/interactive-data-visualization-animating-viewbox/)
