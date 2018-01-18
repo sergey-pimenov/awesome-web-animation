@@ -1,4 +1,29 @@
-﻿var toolsList = [
+﻿/*** GUIDE
+	Add tool in the end of object toolsList. It must be the array with
+	5 elements.	
+
+	Example of tool:
+	['Snap.svg', 'snapsvg.png', ['SVG'], '81', 'http://snapsvg.io']
+
+	Explanation:
+	[ | Name(1) |, | Logo(2) |, | Tags(3) | , | Size kb (4) |, | Link (5) |]
+
+	1. Name of tool. Type: String. Must start with a capital letter;
+
+	2. Logo of tool. Type: String. Name of image that	located in 'data/logos/'.
+		 You don't need define path to image, just declatate name and extention. For example: 'snapsvg.png';
+
+	3. Tags. Type: Array. Technologies/tags of tool. Available tags: 'SVG',
+		 'DOM', 'CSS', 'Canvas', 'Scroll', 'Easing', 'GUI'. At now use only these tags;
+
+	4. Size of tool. Type: String. Define size of tool in kilobytes. Use value 'none'
+		 if tool doesn't have size;
+
+	5. Link to tool. Type: String. Define absolute url to tool.
+		 Please don't use reference links.
+***/
+
+var toolsList = [
 	['Snap.svg', 'snapsvg.png', ['SVG'], '81', 'http://snapsvg.io'],
 	['Svg.js', 'svgjs.png', ['SVG'], '64', 'http://svgjs.com'],
 	['GSAP', 'gsap.jpg', ['DOM', 'SVG'], '41', 'https://greensock.com'],
@@ -12,12 +37,12 @@
 	['Wow.js', 'wow-logo.jpg', ['Scroll'], '13', 'http://mynameismatthieu.com/WOW'],
 	['ScrollReveal', 'scrollrevealjs.svg', ['Scroll'], '9', 'https://scrollrevealjs.org'],
 	['Scroll magic', 'scrollmagic.png', ['Scroll'], '17', 'http://scrollmagic.io'],
-	['Ceaser', 'ceaser.svg', ['Easing'], '10000', 'https://matthewlein.com/ceaser'],
+	['Ceaser', 'ceaser.svg', ['Easing'], 'none', 'https://matthewlein.com/ceaser'],
 	['Magic Animations', 'magicanimations.png', ['CSS'], '16', 'https://minimamente.com/example/magic_animations'],
-	['Cubic Bezier', 'cubicbezier.svg', ['Easing'], '10000', 'http://cubic-bezier.com'],
+	['Cubic Bezier', 'cubicbezier.svg', ['Easing'], 'none', 'http://cubic-bezier.com'],
 	['Buttons', 'buttons.png', ['CSS'], '80', 'http://unicorn-ui.com/buttons'],
-	['Stylie', 'stylie.png', ['GUI'], '10000', 'http://jeremyckahn.github.io/stylie'],
-	['Keyframer', 'keyframer.svg', ['GUI'], '10000', 'http://alexberg.in/keyframer'],
+	['Stylie', 'stylie.png', ['GUI'], 'none', 'http://jeremyckahn.github.io/stylie'],
+	['Keyframer', 'keyframer.svg', ['GUI'], 'none', 'http://alexberg.in/keyframer'],
 	['Animateplus', 'animateplus.svg', ['SVG', 'CSS'], '9', 'https://github.com/bendc/animateplus'],
 	['Vivus', 'vivus.png', ['SVG'], '11', 'http://maxwellito.github.io/vivus'],
 	['Raphaël', 'raphaël.svg', ['SVG'], '91', 'http://dmitrybaranovskiy.github.io/raphael'],
@@ -34,18 +59,18 @@
 	['Animatic', 'animaticjs.svg', ['DOM'], '22', 'http://lvivski.com/animatic'],
 	['Animate.css', 'animatecss.svg', ['CSS'], '17', 'https://daneden.github.io/animate.css'],
 	['Motion UI', 'motionui.svg', ['CSS'], '23', 'http://zurb.com/playground/motion-ui'],
-	['CSS loaders', 'cssloaders.svg', ['GUI'], '10000', 'https://projects.lukehaas.me/css-loaders'],
-	['BounceJS', 'bouncejs.svg', ['GUI'], '10000', 'http://bouncejs.com'],
-	['Spinkit', 'spinkit.svg', ['GUI', 'CSS'], '10000', 'http://tobiasahlin.com/spinkit'],
-	['Cssanimate', 'cssanimate.svg', ['GUI', 'CSS'], '10000', 'http://cssanimate.com'],
-	['CSS Animation Kit', 'cssanimationkit.svg', ['GUI', 'CSS'], '10000', 'http://angrytools.com/css/animation'],
+	['CSS loaders', 'cssloaders.svg', ['GUI'], 'none', 'https://projects.lukehaas.me/css-loaders'],
+	['BounceJS', 'bouncejs.svg', ['GUI'], 'none', 'http://bouncejs.com'],
+	['Spinkit', 'spinkit.svg', ['GUI', 'CSS'], 'none', 'http://tobiasahlin.com/spinkit'],
+	['Cssanimate', 'cssanimate.svg', ['GUI', 'CSS'], 'none', 'http://cssanimate.com'],
+	['CSS Animation Kit', 'cssanimationkit.svg', ['GUI', 'CSS'], 'none', 'http://angrytools.com/css/animation'],
 	['Superscrollorama', 'superscrollorama.svg', ['Scroll'], '16', 'http://johnpolacek.github.io/superscrollorama'],
 	['CSS3 Animation Cheat Sheet', 'CSS3AnimationCheatSheet.svg', ['CSS'], '12', 'http://www.justinaguilar.com/animations'],
 	['Skrollr', 'skrollr.svg', ['Scroll'], '12', 'http://prinzhorn.github.io/skrollr'],
 	['FabricJS', 'fabricjs.svg', ['Canvas'], '248', 'http://fabricjs.com'],
 	['PaperJS', 'paperjs.svg', ['Canvas'], '277', 'http://paperjs.org'],
 	['Konvajs', 'konva.svg', ['Canvas'], '138', 'https://konvajs.github.io'],
-	['Bezier easing', 'beziereasing.svg', ['Easing'], '10000', 'https://github.com/gre/bezier-easing'],
+	['Bezier easing', 'beziereasing.svg', ['Easing'], 'none', 'https://github.com/gre/bezier-easing'],
 	['Just animate', 'just-animate.svg', ['DOM'], '14', 'https://just-animate.github.io/'],
 	['Mo.js', 'mojs.svg', ['SVG'], '130', 'http://mojs.io/'],
 	['Popmotion', 'popmotion.svg', ['DOM', 'SVG'], '41', 'https://popmotion.io/'],

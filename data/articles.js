@@ -1,3 +1,24 @@
+/*** GUIDE
+	Add article in the end of object articlesList. It must be the object with 4 properties.
+
+	Example of article:
+	{
+		"title" : "Scaling Responsive Animations", // 1
+		"date" : "19.12.16", // 2
+		"link" : "https://css-tricks.com/scaling-responsive-animations/", // 3
+		"type" : "text" // 4
+	}
+
+	Explanation:
+	1. Title of article. Type: String.
+
+	2. Date of publishing article. Type: String. Format: dd.mm.yy
+
+	3. Link to article. Type: String. Define absolute url to article. Please don't use reference links.
+
+	4. Media-type of article. Type: String. Values: "text", "video".
+***/
+
 var articlesList = [
 	{
 		"name" : "CSS Animation",

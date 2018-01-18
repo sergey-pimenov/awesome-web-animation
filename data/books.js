@@ -1,7 +1,35 @@
+/*** GUIDE
+	Add book in the end of object booksList. It must be the object with 4 properties.
+
+	Example of book:
+	{
+		"name" : "SVG animation", // 1
+		"cover" : "svg-animations.png", // 2
+		"description" : `<p> // 3
+							 SVG is extremely powerful, with its reduced HTTP requests and
+							 crispness on any display. It becomes increasingly more interesting
+							 as you explore its capabilities for responsive animation and
+							 performance boons.
+						 </p>`,
+    "link" : "https://www.amazon.com/SVG-Animations-Implementations-Responsive-Animation/dp/1491939702" // 4
+	}
+
+	Explanation:
+	1. Name of the book. Type: String.
+
+	2. Books cover. Type: String. Name of image that	located in 'data/covers/'.
+		You don't need define path to image, just declatate name and extention. For example: 'bestbook.png';
+
+	3. Description. Type: String. Please use slanting quotes (`example`) for multilines support.
+		 Please, add clear description and not more than 400 symbols.
+
+	5. Link to book. Type: String. Define absolute url to tool. Please don't use reference links.
+***/
+
 var booksList = [
 	{
 		"name" : "SVG animation",
-		"cover" : "assets/images/svg-animations.png",
+		"cover" : "svg-animations.png",
 		"description" : `<p>
 							 SVG is extremely powerful, with its reduced HTTP requests and
 							 crispness on any display. It becomes increasingly more interesting
@@ -14,11 +42,11 @@ var booksList = [
 							 solve these problems with stability, performance,
 							 and creativity in mind.
 						 </p>`,
-        "link" : "https://www.amazon.com/SVG-Animations-Implementations-Responsive-Animation/dp/1491939702"
+    "link" : "https://www.amazon.com/SVG-Animations-Implementations-Responsive-Animation/dp/1491939702"
 	},
 	{
 		"name" : "Creating Web Animations: Bringing Your UIs to Life",
-		"cover" : "assets/images/Creating-Web-Animations.png",
+		"cover" : "Creating-Web-Animations.png",
 		"description" : `<p>
 							Thanks to faster browsers, better web standards support,
 							and more powerful devices, the web now defines the next
@@ -32,7 +60,7 @@ var booksList = [
 	},
 	{
 		"name" : "Transitions and Animations in CSS: Adding Motion with CSS",
-		"cover" : "assets/images/trans.jpg",
+		"cover" : "trans.jpg",
 		"description" : `<p>
 							Add life and depth to your web applications and improve user
 							experience through the discrete use of CSS transitions and
@@ -46,7 +74,7 @@ var booksList = [
 	},
 	{
 		"name" : "Designing Interface Animation: Meaningful Motion for User Experience",
-		"cover" : "assets/images/experience.jpg",
+		"cover" : "experience.jpg",
 		"description" : `<p>
 							Effective interface animation deftly combines form and
 							function to improve feedback, aid in orientation, direct
@@ -61,7 +89,7 @@ var booksList = [
 	},
 	{
 		"name" : "Web Animation using JavaScript: Develop & Design",
-		"cover" : "assets/images/web.png",
+		"cover" : "web.png",
 		"description" : `<p>
 							We've come a long way since the days of flashing banner ads
 							and scrolling news tickers. Today, the stunning motion design
@@ -75,7 +103,7 @@ var booksList = [
 	},
 	{
 		"name" : "CSS Animations and Transitions for the Modern Web",
-		"cover" : "assets/images/modern.png",
+		"cover" : "modern.png",
 		"description" : `<p>
 							Modern websites use a variety of animated effects not only to
 							improve usability but also to delight and surprise users. Some
@@ -89,7 +117,7 @@ var booksList = [
 	},
 	{
 		"name" : "Animation in HTML, CSS, and JavaScript",
-		"cover" : "assets/images/anhtml.png",
+		"cover" : "anhtml.png",
 		"description" : `<p>
 							This book will help you create practical / usable / wickedly-cool
 							animations in HTML, CSS, and JavaScript. Each chapter is
@@ -102,7 +130,7 @@ var booksList = [
 	},
 	{
 		"name" : "Foundation HTML5 Animation with JavaScript",
-		"cover" : "assets/images/Foundation-HTML5-Animation-with-JavaScript.jpg",
+		"cover" : "Foundation-HTML5-Animation-with-JavaScript.jpg",
 		"description" : `<p>
 							Foundation HTML5 Animation with JavaScript covers everything that you need to know to create dynamic scripted animation using the HTML5 canvas. It provides information on all the relevant math you'll need, before moving on to physics concepts like acceleration, velocity, easing, springs, collision detection, conservation of momentum, 3D, and forward and inverse kinematics. Foundation HTML5 Animation with JavaScript is a fantastic resource for all web developers working in HTML5 or switching over from Flash to create standards-compliant games, applications, and animations that will work across all modern browsers and most mobile devices, including iPhones, iPads, and Android devices.
 						 </p>`,

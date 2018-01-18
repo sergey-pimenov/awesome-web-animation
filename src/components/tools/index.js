@@ -114,7 +114,7 @@ export default function() {
 		nameAndImg.appendChild(name);
 
 		var logo = document.createElement('img');
-		logo.setAttribute('src', 'assets/images/' + toolLogo);
+		logo.setAttribute('src', 'data/logos/' + toolLogo);
 		nameAndImg.appendChild(logo);
 
 		tool.appendChild(nameAndImg);
@@ -134,7 +134,7 @@ export default function() {
 		}
 		characteristicsAndDescription.appendChild(technologies);
 
-		if(toolSize != '10000') {
+		if(toolSize != 'none') {
 			var size = document.createElement('div');
 			size.classList.add('size');
 			size.textContent = toolSize;

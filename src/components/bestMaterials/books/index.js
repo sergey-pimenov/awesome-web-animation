@@ -10,7 +10,7 @@ export default function books() {
 	function booksTemplate(name, cover, description, link) {
 		var book = `
 			<div class="book">
-				<img class="cover" src="${cover}">
+				<img class="cover" src="data/covers/${cover}">
 				<div class="about">
 					<h3 class="name"> ${name} </h3>
 					<div class="description"> ${description} </div>
