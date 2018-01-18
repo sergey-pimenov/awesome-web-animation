@@ -13,7 +13,7 @@
 - [GUI tools](#gui-tools)
 #### [Books](#books-1)
 #### [Useful materials](#useful-materials-articles-and-videos)
-
+#### [Contributing](https://github.com/web-animation/web-animation.github.io/blob/master/CONTRIBUTING.md)
 ---
 
 ### Tools:
