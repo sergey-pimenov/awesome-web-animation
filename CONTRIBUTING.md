@@ -3,6 +3,9 @@ You can do all steps directly at github. Use Github live-edit for this.
 Example:
 
 ![Icon](https://raw.githubusercontent.com/web-animation/web-animation.github.io/master/assets/images/live-edit-icon.jpg)
+
+---
+
 ![Profit](https://raw.githubusercontent.com/web-animation/web-animation.github.io/master/assets/images/profit.jpg)
 
 #### Add tool
