@@ -1,5 +1,5 @@
 If you want to add tool, book or article use the following instruction.
-You can do all steps directly at github. Use Github live-edit for this.
+You can do all steps directly at Github. Use Github online editing for this.
 Example:
 
 ![Icon](https://raw.githubusercontent.com/web-animation/web-animation.github.io/master/assets/images/live-edit-icon.jpg)
