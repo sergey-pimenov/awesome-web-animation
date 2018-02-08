@@ -1,6 +1,6 @@
 ﻿/*** GUIDE
 	Add tool in the end of object toolsList. It must be the array with
-	5 elements.	
+	5 elements.
 
 	Example of tool:
 	['Snap.svg', 'snapsvg.png', ['SVG'], '81', 'http://snapsvg.io']
@@ -74,5 +74,6 @@ var toolsList = [
 	['Just animate', 'just-animate.svg', ['DOM'], '14', 'https://just-animate.github.io/'],
 	['Mo.js', 'mojs.svg', ['SVG'], '130', 'http://mojs.io/'],
 	['Popmotion', 'popmotion.svg', ['DOM', 'SVG'], '41', 'https://popmotion.io/'],
-	['PixiJS', 'pixi.png', ['Canvas'], '415', 'http://www.pixijs.com/']
+	['PixiJS', 'pixi.png', ['Canvas'], '415', 'http://www.pixijs.com/'],
+	['Glsl easings', 'glsl.svg', ['Easing'], 'none', 'https://github.com/glslify/glsl-easings']
 ];

@@ -32,7 +32,7 @@
  * [Two.js](https://two.js.org)
  * [Animate Plus](https://github.com/bendc/animateplus)
  * [mo.js](http://mojs.io)
- 
+
  ---
 
 ##### DOM:
@@ -48,9 +48,9 @@
  * [Animate Plus](https://github.com/bendc/animateplus)
  * [Animatic](http://lvivski.com/animatic)
  * [Just Animate](https://just-animate.github.io/)
- 
+
 ---
- 
+
 ##### CSS:
  * [Animate.css](https://daneden.github.io/animate.css)
  * [Motion UI](http://zurb.com/playground/motion-ui)
@@ -58,7 +58,7 @@
  * [Buttons](http://unicorn-ui.com/buttons)
  * [CSS3 Animation Cheat Sheet](http://www.justinaguilar.com/animations)
  * [Animate Plus](https://github.com/bendc/animateplus)
- 
+
 ---
 
 ##### Canvas:
@@ -70,7 +70,7 @@
  * [Two.js](https://two.js.org)
  * [Ocanvas](http://ocanvas.org/)
  * [Tweenjs](http://www.createjs.com/tweenjs)
- 
+
 ---
 
 ##### Animate on scroll:
@@ -87,6 +87,7 @@
  * [Ceaser](https://matthewlein.com/ceaser/)
  * [Cubic bezier](http://cubic-bezier.com)
  * [Bezier easing](https://github.com/gre/bezier-easing)
+ * [Glsl easings](https://github.com/glslify/glsl-easings)
 
 ---
 
