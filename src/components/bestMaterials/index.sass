@@ -1,6 +1,13 @@
 .bestMaterials
 	margin: 0 auto
 
+	// .categories,
+	.books,
+	.articlesAndVideos
+		max-width: 1200px
+		margin-left: auto
+		margin-right: auto
+
 	+bp(lg)
 		width: 100% !important
 
@@ -11,7 +18,7 @@
 			margin-bottom: 30px
 
 	.categories
-		height: 43px
+		height: 55px
 		margin-bottom: 65px
 		padding-left: 5px
 		position: sticky
@@ -23,7 +30,7 @@
 		&::after
 			content: ''
 			width: 300%
-			height: 43px
+			height: 55px
 			position: absolute
 			left: -100%
 			top: 0
@@ -62,7 +69,7 @@
 				padding: 10px 30px 20px 30px
 				display: none
 				flex-direction: column
-				background-color: #323232
+				background-color: #d9d9d9
 
 		.goTo
 			width: auto
@@ -91,18 +98,22 @@
 			font-size: 14px
 
 			+bp(md)
+				height: 45px
 				padding: 11px 30px
 				display: block
 				position: sticky
 				top: 0
-				background-color: black
+				background: rgb(100, 100, 100) url(../images/sort.svg) 30px center no-repeat
+				background-size: 20px auto
 				color: white
 				border: none
 				z-index: 1
+				box-shadow: 0px 3px 3px #bebebe
 
 		.category
+			min-height: 26px
 			margin-right: 20px
-			padding: 4px 7px
+			padding: 0 13px
 			display: flex
 			align-items: center
 			position: relative
@@ -126,15 +137,19 @@
 
 			+bp(md)
 				width: 100%
-				height: auto
+				height: 38px
 				margin: 10px 0 0 0
 				padding: 5px 0
-				display: block
+				display: flex
+				justify-content: center
+				align-items: center
 				background-color: white
 				font-size: 14px
 				line-height: 23px
 				text-align: center
 				color: black
+				box-shadow: 3px 3px 3px rgba(190, 190, 190, 0.5)
+				font-size: 13px
 
 			&::after
 				content: ''
@@ -169,7 +184,7 @@
 			top: -38px
 
 	h2
-		height: 38px
+		height: 45px
 		margin-bottom: 30px
 		padding: 0 14px
 		display: flex
@@ -191,7 +206,8 @@
 		+bp(md)
 			margin-top: 40px
 			margin-bottom: 15px
-			font-size: 14px
+			background-color: rgb(180, 180, 180)
+			box-shadow: 2px 2px 3px #d2d2d2
 
 		&::before,
 		&::after
@@ -201,8 +217,11 @@
 			position: absolute
 			left: 0
 			top: -3px
-			background-color: #e4e3e2
+			background-color: #red
 			z-index: -1
+
+			+bp(md)
+				display: none
 
 
 		&::after
@@ -231,7 +250,7 @@
 			width: calc(100% - 30px)
 			margin: 20px auto 20px auto
 			padding: 12px 0 0 0
-			box-shadow: 0 3px 3px rgb(210, 210, 210)
+			box-shadow: 3px 3px 3px #bebebe
 
 		h3
 			margin-right: 10px
@@ -280,7 +299,7 @@
 					background: rgba(150, 150, 150, 0.1)
 
 	.title
-		height: 38px
+		height: 45px
 		margin-bottom: 30px
 		padding: 0 14px
 		display: flex
@@ -294,12 +313,12 @@
 		box-shadow: 0 2px 3px rgb(170, 170, 170)
 		background-color: rgb(45, 45, 45)
 
-		+bp(lg)
-			margin: 40px 15px 20px 15px
-			background-color: rgb(195, 195, 195)
-
 		+bp(md)
+			width: calc(100% - 30px);
+			margin: 0 auto 30px auto
 			font-size: 14px
+			background-color: rgb(180, 180, 180)
+			box-shadow: 2px 2px 3px rgb(210, 210, 210)
 
 		&::before,
 		&::after
@@ -311,6 +330,9 @@
 			top: -3px
 			background-color: #e4e3e2
 			z-index: -1
+
+			+bp(md)
+				display: none
 
 
 		&::after
@@ -388,9 +410,8 @@
 
 		.link
 			margin: auto 0 0 auto
-			padding: 7px 14px
-			font-weight: bold
-			font-size: 14px
+			padding: 9px 14px
+			font-size: 12px
 			background-color: #2d2d2d
 			color: white
 			position: absolute
@@ -407,8 +428,8 @@
 						transform: scale(1.1)
 
 			+bp(md)
-				width: 100%
-				padding: 10px 20px
+				width: auto
+				padding: 12px 25px
 				position: static
 				background-color: #4b4b4b
 

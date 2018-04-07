@@ -15,6 +15,10 @@ footer
 		transform-origin: 0 50%
 		transition: transform 0.2s
 
+		+bp(moreThanMd)
+			&:hover
+				text-decoration: underline
+
 	+bp(xl)
 		a:focus
 			text-transform: uppercase
@@ -37,10 +41,6 @@ footer
 	display: inline-block
 	position: relative
 
-	+bp(moreThanMd)
-		&:hover
-			text-decoration: underline
-
 	&::before
 		content: url(../images/code.svg)
 		width: 18px
@@ -48,7 +48,3 @@ footer
 		float: left
 		position: relative
 		top: -1px
-	
-	// @media all and (max-width: 420)
-	// 	width: 
-	// 	display: block

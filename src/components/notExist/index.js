@@ -7,9 +7,9 @@ export default function() {
 
 	var notExist = `
 		<div class="notExist">
-			<h1> Page not exist. </h1>
+			<h1> Page not exist </h1>
 			<div class="links">
-				<h2> Go to: </h2>
+				<h2> Go to </h2>
 				<a href="./#"> Best tools </a>
 				<a href="#best-materials"> Best materials </a>
 			</div>
