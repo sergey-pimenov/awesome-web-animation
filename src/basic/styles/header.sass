@@ -92,14 +92,19 @@ header
 				justify-content: center
 				position: static
 				box-shadow: 3px 3px 3px #bebebe
+				margin-bottom: 0 !important
+				box-shadow: none
+
+			+bp(sm)
+				box-shadow: 3px 3px 3px #bebebe
 
 			&.toolsNav
 				padding-left: 75px
 				left: 0
 				transform-origin: 0 50%
 
-				+bp(md)
-					margin-bottom: 17px
+				+bp(sm)
+					margin-bottom: 17px !important
 
 				&::before
 					content: ''
