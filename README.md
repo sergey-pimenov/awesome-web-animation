@@ -10,6 +10,8 @@
 - [Canvas](#canvas)
 - [Animate on scroll](#animate-on-scroll)
 - [Easing](#easing)
+- [Text](#text)
+- [Images](#images)
 - [GUI tools](#gui-tools)
 #### [Books](#books-1)
 #### [Useful materials](#useful-materials-articles-and-videos)
@@ -100,6 +102,13 @@
  * [Txt.wav](http://www.stilllife.studio/txtwav)
  * [Baffle](https://camwiegert.github.io/baffle/)
  * [Blotter](https://github.com/bradley/Blotter)
+
+---
+
+##### Images
+
+* [Hover-effect](https://github.com/robin-dela/hover-effect)
+* [Curtainsjs](https://www.martin-laxenaire.fr/libs/curtainsjs/)
 
 ---
 

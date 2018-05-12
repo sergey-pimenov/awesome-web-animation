@@ -20,7 +20,8 @@ export default function() {
 					   	<button class="button" data-filter=".Scroll"> Scroll </button>
 					   	<button class="button" data-filter=".Easing"> Easing </button>
 					   	<button class="button" data-filter=".GUI"> GUI </button>
-					   	<button class="button" data-filter=".Text"> Text </button></div>
+					   	<button class="button" data-filter=".Text"> Text </button>
+					   	<button class="button" data-filter=".Images"> Images </button></div>
 			    </div>
 			    <div class="sort">
 			      <div class="button-group">
