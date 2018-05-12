@@ -15,11 +15,12 @@ export default function() {
 					   	<button class="button showAll is-checked" data-filter="*"> All </button>
 					   	<button class="button" data-filter=".CSS"> CSS </button>
 					   	<button class="button" data-filter=".SVG"> SVG </button>
-					   	<button class="button" data-filter=".DOM"> DOM </button>
+					   	<button class="button" data-filter=".Engine"> Engine </button>
 					   	<button class="button" data-filter=".Canvas"> Canvas </button>
 					   	<button class="button" data-filter=".Scroll"> Scroll </button>
 					   	<button class="button" data-filter=".Easing"> Easing </button>
-					   	<button class="button" data-filter=".GUI"> GUI </button></div>
+					   	<button class="button" data-filter=".GUI"> GUI </button>
+					   	<button class="button" data-filter=".Text"> Text </button></div>
 			    </div>
 			    <div class="sort">
 			      <div class="button-group">

@@ -35,12 +35,11 @@
 
  ---
 
-##### DOM:
+##### Engine:
  * [GSAP](https://greensock.com)
  * [Anime.js](http://anime-js.com)
  * [Animo.js](https://animo.js.org)
  * [Move.js](http://visionmedia.github.io/move.js)
- * [Textillate.js](http://textillate.js.org)
  * [Velocity.js](http://velocityjs.org)
  * [Firmin](http://extralogical.net/projects/firmin)
  * [AliceJS](http://blackberry.github.io/Alice)
@@ -88,6 +87,18 @@
  * [Cubic bezier](http://cubic-bezier.com)
  * [Bezier easing](https://github.com/gre/bezier-easing)
  * [Glsl easings](https://github.com/glslify/glsl-easings)
+
+---
+
+##### Text
+
+ * [Textillate.js](http://textillate.js.org)
+ * [Malarkey](https://github.com/yuanqing/malarkey)
+ * [Typed.js](https://mattboldt.com/demos/typed-js/)
+ * [ShuffleText](https://github.com/ics-ikeda/shuffle-text)
+ * [Typebot](https://github.com/akzhy/typebot)
+ * [Txt.wav](http://www.stilllife.studio/txtwav)
+ * [Baffle](https://camwiegert.github.io/baffle/)
 
 ---
 
