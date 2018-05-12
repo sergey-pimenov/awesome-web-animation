@@ -99,6 +99,7 @@
  * [Typebot](https://github.com/akzhy/typebot)
  * [Txt.wav](http://www.stilllife.studio/txtwav)
  * [Baffle](https://camwiegert.github.io/baffle/)
+ * [Blotter](https://github.com/bradley/Blotter)
 
 ---
 

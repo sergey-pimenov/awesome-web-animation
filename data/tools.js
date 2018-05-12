@@ -66,6 +66,7 @@ var toolsList = [
 	['Spinkit', 'spinkit.svg', ['GUI', 'CSS'], 'none', 'http://tobiasahlin.com/spinkit'],
 	['Cssanimate', 'cssanimate.svg', ['GUI', 'CSS'], 'none', 'http://cssanimate.com'],
 	['CSS Animation Kit', 'cssanimationkit.svg', ['GUI', 'CSS'], 'none', 'http://angrytools.com/css/animation'],
+	['Blotter', 'blotter.svg', ['Text'], '3', 'https://github.com/bradley/Blotter'],
 	['Baffle', 'baffle.svg', ['Text'], '5', 'https://camwiegert.github.io/baffle/'],
 	['Superscrollorama', 'superscrollorama.svg', ['Scroll'], '16', 'http://johnpolacek.github.io/superscrollorama'],
 	['Typedjs', 'typed.png', ['Text'], '12', 'https://mattboldt.com/demos/typed-js/'],
