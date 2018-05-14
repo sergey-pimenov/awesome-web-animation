@@ -5,7 +5,7 @@
 ### Categories:
 #### [Tools](#tools-1)
 - [SVG](#svg)
-- [DOM](#dom)
+- [Engines](#engines)
 - [CSS](#css)
 - [Canvas](#canvas)
 - [Animate on scroll](#animate-on-scroll)
@@ -37,7 +37,7 @@
 
  ---
 
-##### Engine:
+##### Engines:
  * [GSAP](https://greensock.com)
  * [Anime.js](http://anime-js.com)
  * [Animo.js](https://animo.js.org)
