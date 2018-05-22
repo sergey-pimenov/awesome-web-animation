@@ -13,7 +13,14 @@ export default function(elementToSize) {
 		if(windowWidth => 1200) {
 			while(windowWidth - bodyPaddings >= initWidth) {
 				lastWidth = initWidth;
-				initWidth += 340;
+
+				if (document.body.getBoundingClientRect().width <= 1490 &&
+					  document.body.getBoundingClientRect().width > 1397) {
+					initWidth += 300;
+				} else {
+					initWidth += 340;
+				}
+
 				if(windowWidth - bodyPaddings <= initWidth) {
 					elementToSize.style.width = lastWidth + 'px';
 				}

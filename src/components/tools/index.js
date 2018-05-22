@@ -35,6 +35,16 @@ export default function() {
 		</div>`;
 
 
+	var cardWidth = 290;
+	
+	if(document.body.getBoundingClientRect().width <= 1490) {
+		cardWidth = 270;
+	}
+
+	if (document.body.getBoundingClientRect().width <= 1397) {
+		cardWidth = 290;
+	}
+
 	// Init grid and filters
 	var grid = document.querySelector('.tools');
 	var iso = new Isotope(grid, {
@@ -43,7 +53,7 @@ export default function() {
 	  },
 	  masonry: {
 	  	fitWidth: true,
-		  columnWidth: 290,
+			columnWidth: cardWidth,
 		  gutter: 50
 		}
 	});
