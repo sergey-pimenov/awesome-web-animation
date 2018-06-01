@@ -56,7 +56,6 @@
  * [Animate.css](https://daneden.github.io/animate.css)
  * [Motion UI](http://zurb.com/playground/motion-ui)
  * [Magic Animations](https://minimamente.com/example/magic_animations)
- * [Buttons](http://unicorn-ui.com/buttons)
  * [CSS3 Animation Cheat Sheet](http://www.justinaguilar.com/animations)
  * [Animate Plus](https://github.com/bendc/animateplus)
 

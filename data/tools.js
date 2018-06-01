@@ -41,7 +41,6 @@ var toolsList = [
 	['Magic Animations', 'magicanimations.png', ['CSS'], '16', 'https://minimamente.com/example/magic_animations'],
 	['Cubic Bezier', 'cubicbezier.svg', ['Easing'], 'none', 'http://cubic-bezier.com'],
 	['Shuffle text', 'shuffle.svg', ['Text'], '2', 'https://github.com/ics-ikeda/shuffle-text'],
-	['Buttons', 'buttons.png', ['CSS'], '80', 'http://unicorn-ui.com/buttons'],
 	['Stylie', 'stylie.png', ['GUI'], 'none', 'http://jeremyckahn.github.io/stylie'],
 	['Keyframer', 'keyframer.svg', ['GUI'], 'none', 'http://alexberg.in/keyframer'],
 	['Animateplus', 'animateplus.svg', ['SVG', 'CSS'], '9', 'https://github.com/bendc/animateplus'],
