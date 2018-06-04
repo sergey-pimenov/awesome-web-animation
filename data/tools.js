@@ -29,7 +29,7 @@ var toolsList = [
 	['GSAP', 'gsap.jpg', ['Engine', 'SVG'], '41', 'https://greensock.com'],
 	['Anime.js', 'animeJs.png', ['Engine'], '11', 'http://anime-js.com'],
 	['Animo.js', 'animojs.svg', ['Engine'], '6', 'https://animo.js.org'],
-	['Haiku Core', 'haiku.svg', ['Engine'], '3.5', 'https://github.com/HaikuTeam/core'],
+	['Haiku Core', 'haiku.svg', ['Engine'], '214', 'https://github.com/HaikuTeam/core'],
 	['CreateJs', 'createjs.svg', ['Canvas', 'Engine'], '186', 'http://www.createjs.com'],
 	['Bhive', 'bhive.png', ['Canvas'], '36', 'http://www.bhivecanvas.com'],
 	['Two.js', 'twojs.png', ['Canvas'], '50', 'https://two.js.org'],
