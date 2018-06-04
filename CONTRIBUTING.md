@@ -17,4 +17,4 @@ If tool haven't logo use some of free logo generators, draw it yourself or ask f
 0. Make sure that a good article that will be actual at least 3 years future
 1. Add article to [README](https://github.com/web-animation/web-animation.github.io/blob/master/README.md)
 
-**Please optimize all images you downloading**. For exapmle [tinypng](https://tinypng.com/) and [svgomg](https://jakearchibald.github.io/svgomg/)
+**Please optimize all images you downloading**. For example [tinypng](https://tinypng.com/) and [svgomg](https://jakearchibald.github.io/svgomg/)
