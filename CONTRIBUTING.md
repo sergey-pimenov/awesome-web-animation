@@ -1,12 +1,12 @@
 If you want to add tool, book or article use the following instruction.
--You can do all steps directly at Github. Use Github online editing for this.
--Example:
+You can do all steps directly at Github. Use Github online editing for this.
+Example:
  
--![Icon](https://raw.githubusercontent.com/web-animation/web-animation.github.io/master/assets/images/live-edit-icon.jpg)
--
+![Icon](https://raw.githubusercontent.com/web-animation/web-animation.github.io/master/assets/images/live-edit-icon.jpg)
+
 ----
--
--![Profit](https://raw.githubusercontent.com/web-animation/web-animation.github.io/master/assets/images/profit.jpg)
+
+![Profit](https://raw.githubusercontent.com/web-animation/web-animation.github.io/master/assets/images/profit.jpg)
 
 
 #### Add tool:
