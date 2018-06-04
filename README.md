@@ -49,6 +49,7 @@
  * [Animate Plus](https://github.com/bendc/animateplus)
  * [Animatic](http://lvivski.com/animatic)
  * [Just Animate](https://just-animate.github.io/)
+ * [Haiku Core](https://github.com/HaikuTeam/core)
 
 ---
 
