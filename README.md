@@ -50,6 +50,7 @@
  * [Animatic](http://lvivski.com/animatic)
  * [Just Animate](https://just-animate.github.io/)
  * [Haiku Core](https://github.com/HaikuTeam/core)
+ * [Between.js](https://github.com/sasha240100/between.js)
 
 ---
 

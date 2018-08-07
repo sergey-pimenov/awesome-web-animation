@@ -38,6 +38,7 @@ var toolsList = [
 	['Wow.js', 'wow-logo.jpg', ['Scroll'], '13', 'http://mynameismatthieu.com/WOW'],
 	['ScrollReveal', 'scrollrevealjs.svg', ['Scroll'], '9', 'https://scrollrevealjs.org'],
 	['Scroll magic', 'scrollmagic.png', ['Scroll'], '17', 'http://scrollmagic.io'],
+  ['Between.js', 'between.png', ['Engine'], '8', 'https://github.com/sasha240100/between.js'],
 	['Ceaser', 'ceaser.svg', ['Easing'], 'none', 'https://matthewlein.com/ceaser'],
 	['Motus', 'motus.png', ['Scroll'], '6', 'https://alexcambose.github.io/motus'],
 	['Magic Animations', 'magicanimations.png', ['CSS'], '16', 'https://minimamente.com/example/magic_animations'],
