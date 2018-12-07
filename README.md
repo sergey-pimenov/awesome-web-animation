@@ -1,6 +1,6 @@
 ![Cover](https://github.com/web-animation/web-animation.github.io/blob/master/assets/images/header.png)
 
-## [Awesome tools & books & articles & videos for web-animation](https://web-animation.github.io/)
+## [Awesome tools & books & articles & videos for web-animation](https://sergey-pimenov.github.io/web-animation)
 
 ### Categories:
 #### [Tools](#tools-1)
