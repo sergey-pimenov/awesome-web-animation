@@ -1,7 +1,6 @@
 export function getData(url, callback) {
 	var xhr = new XMLHttpRequest();
 
-	// 2. Конфигурируем его: GET-запрос на URL 'phones.json'
 	xhr.open('GET', url, true);
 
 	xhr.onload = function(e) {
@@ -10,6 +9,5 @@ export function getData(url, callback) {
     }
 	}
 
-	// 3. Отсылаем запрос
 	xhr.send(null);
 }
