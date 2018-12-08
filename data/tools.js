@@ -86,5 +86,6 @@ var toolsList = [
 	['Popmotion', 'popmotion.svg', ['Engine', 'SVG'], '41', 'https://popmotion.io/'],
 	['PixiJS', 'pixi.png', ['Canvas'], '415', 'http://www.pixijs.com/'],
 	['Glsl easings', 'glsl.svg', ['Easing'], 'none', 'https://github.com/glslify/glsl-easings'],
-	['Txtwav', 'txtwav.svg', ['Text'], '9', 'http://www.stilllife.studio/txtwav']
+	['Txtwav', 'txtwav.svg', ['Text'], '9', 'http://www.stilllife.studio/txtwav'],
+	['Sal.js', 'saljs.svg', ['Scroll'], '3', 'https://mciastek.github.io/sal']
 ];
