@@ -83,6 +83,7 @@
  * [ScrollReveal](https://scrollrevealjs.org)
  * [Scrollmagic](http://scrollmagic.io)
  * [Motus](https://alexcambose.github.io/motus)
+ * [Sal.js](https://mciastek.github.io/sal)
 
 ---
 
