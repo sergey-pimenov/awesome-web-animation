@@ -748,7 +748,7 @@ footer {
       font-size: 24px;
       text-align: center; }
     .tools .nameAndImg img {
-      max-width: 60%;
+      width: 60%;
       max-height: 110px;
       margin: auto 0;
       -o-object-fit: contain;

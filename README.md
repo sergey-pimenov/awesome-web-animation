@@ -78,6 +78,7 @@
 ##### Animate on scroll:
  * [AOS](https://michalsnik.github.io/aos)
  * [Skrollr](http://prinzhorn.github.io/skrollr)
+ * [Laxxx](https://alexfox.dev/laxxx/)
  * [WOW.js](http://mynameismatthieu.com/WOW)
  * [Superscrollorama](http://johnpolacek.github.io/superscrollorama)
  * [ScrollReveal](https://scrollrevealjs.org)
