@@ -5,23 +5,39 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html --host 127.0.0.1",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build src/index.html --public-url ./",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "NODE_ENV=production lint-staged"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/web-animation/web-animation.github.io.git"
   },
-  "author": "",
+  "author": "Sergey Pimenov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/web-animation/web-animation.github.io/issues"
   },
   "homepage": "https://github.com/web-animation/web-animation.github.io#readme",
   "dependencies": {
-    "react": "^16.10.1",
-    "react-dom": "^16.10.1"
+    "autoprefixer": "^9.7.0",
+    "basic": "^2.0.3",
+    "minireset.css": "0.0.6",
+    "postcss-modules": "^1.4.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.3"
+    "babel-eslint": "^10.0.3",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.18.2"
   }
 }
