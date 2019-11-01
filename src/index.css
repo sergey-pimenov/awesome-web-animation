@@ -1,0 +1,7 @@
+@import "minireset.css";
+@import "./basic/styles/global.css";
+
+h1 {
+  font-size: 100px;
+  color: green;
+}
