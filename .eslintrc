@@ -1,7 +1,11 @@
 {
+  "env": {
+    "es6": true,
+    "browser": true
+  },
   "parser": "babel-eslint",
   "extends": ["airbnb", "prettier", "prettier/react"],
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "jsx-a11y", "react", "prettier"],
   "rules": {
     "react/jsx-filename-extension": [
       1,
@@ -13,7 +17,8 @@
     "no-underscore-dangle": 0,
     "import/imports-first": ["error", "absolute-first"],
     "import/newline-after-import": "error",
-    "import/no-unresolved": 0
+    "import/no-unresolved": 0,
+    "eol-last": ["error", "always"]
   },
   "globals": {
     "window": true,
