@@ -4,7 +4,7 @@ import Header from './header';
 import './index.css';
 
 function App() {
-  return <Header/>;
+  return <Header />;
 }
 
 reactDOM.render(<App />, document.getElementById('app'));
