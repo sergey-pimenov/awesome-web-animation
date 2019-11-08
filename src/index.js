@@ -4,9 +4,7 @@ import Header from './header';
 import './index.css';
 
 function App() {
-  const testVar = 'test content';
-
-  return <Header title={testVar} />;
+  return <Header/>;
 }
 
 reactDOM.render(<App />, document.getElementById('app'));
