@@ -1,10 +1,11 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": ["stylelint-config-standard", "stylelint-config-rational-order"],
+  "plugins": ["stylelint-prettier", "stylelint-order", "stylelint-config-rational-order/plugin"],
   "rules": {
+    "prettier/prettier": true,
     "indentation": 2,
     "string-quotes": "single",
     "no-duplicate-selectors": true,
-    "selector-no-id": true,
     "selector-combinator-space-after": "always",
     "declaration-block-trailing-semicolon": "always",
     "declaration-no-important": true,
