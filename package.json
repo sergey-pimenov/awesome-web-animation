@@ -26,6 +26,15 @@
       "git add"
     ]
   },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "data",
+        "staticOutDir": "data"
+      }
+    ],
+    "watcherGlob": "**"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/web-animation/web-animation.github.io.git"
@@ -37,10 +46,14 @@
   },
   "homepage": "https://github.com/web-animation/web-animation.github.io#readme",
   "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
     "autoprefixer": "^9.7.0",
     "babel-eslint": "^10.0.3",
     "basic": "^2.0.3",
@@ -54,10 +67,12 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
     "minireset.css": "0.0.6",
     "parcel-bundler": "^1.12.3",
+    "parcel-plugin-static-files-copy": "^2.2.1",
     "postcss-modules": "^1.4.1",
     "prettier": "^1.18.2",
     "stylelint": "^11.1.1",
