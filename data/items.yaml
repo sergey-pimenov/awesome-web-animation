@@ -1,0 +1,7 @@
+---
+svg:
+  categoryTitle: SVG
+  list:
+  - name: snap.svg
+    website: https://github.com/snapsvg
+    repo: adobe-webplatform/Snap.svg
