@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html --host 127.0.0.1",
+    "start:localhost": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "prettier --write src/*.js src/**/*.js",
