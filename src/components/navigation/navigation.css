@@ -1,17 +1,17 @@
 .navigation {
-  margin-bottom: 35px;
-  padding: 15px 0;
-  display: flex;
-  justify-content: center;
   position: sticky;
   top: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+  padding: 15px 0;
   background-color: white;
   box-shadow: 0 5px 5px white;
 }
 
 .item {
-  font-size: 20px;
   font-weight: 900;
+  font-size: 20px;
 }
 
 .item:not(:last-child) {
@@ -19,9 +19,9 @@
 }
 
 .item::before {
-  content: '#';
   color: lightgray;
   font-weight: 400;
+  content: '#';
 }
 
 .item:nth-child(1) {
