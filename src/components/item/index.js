@@ -12,9 +12,7 @@ function Item({name, website, repo, stars}) {
   function fetchData() {
     fetch(`${API}${repo}`, {
       headers: new Headers({
-        "Authorization": "token 7706ae46d4b5dd21f2294f11de07633177d796ae",
-        "Accept": "application/vnd.github.v3+json",
-        "User-Agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 YaBrowser/16.3.0.7146 Yowser/2.5 Safari/537.36"
+        "Authorization": "token 7706ae46d4b5dd21f2294f11de07633177d796ae"
       }),
     })
       .then(response => response.json())
