@@ -1,0 +1,19 @@
+.category {
+  margin-top: 60px;
+}
+
+.title {
+  margin-bottom: 30px;
+  color: rgb(77, 77, 77);
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin: 0 30px 30px 0;
+}
