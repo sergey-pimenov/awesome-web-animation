@@ -1,0 +1,25 @@
+.header {
+  margin: 70px 0 70px 0;
+}
+
+.appTitle {
+  font-weight: 600;
+  font-weight: 900;
+  font-size: 4vw;
+  line-height: 1.4;
+  text-align: center;
+}
+
+strong {
+  font-weight: 900;
+  font-size: 8vw;
+  background: linear-gradient(
+    45deg,
+    rgb(233, 112, 173) 15%,
+    rgb(19, 202, 235) 50%,
+    orange 75%,
+    yellow
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
