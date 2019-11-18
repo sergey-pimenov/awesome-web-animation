@@ -23,8 +23,6 @@ function Item({name, website, repo, stars}) {
     fetchData();
   }, [0]);
 
-  console.log('Render Item');
-
   return (
     <div className={s('item')}>
       <h3 className={s('name')}> { name } </h3>

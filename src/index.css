@@ -1,12 +1,2 @@
 @import 'minireset.css';
 @import './basic/styles/global.css';
-
-h1 {
-  width: 30px;
-  color: green;
-  font-size: 100px;
-}
-
-span {
-  color: grey;
-}
