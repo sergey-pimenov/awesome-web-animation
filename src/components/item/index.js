@@ -12,7 +12,8 @@ function Item({name, website, repo, stars}) {
   function fetchData() {
     fetch(`${API}${repo}`, {
       headers: new Headers({
-        'User-Agent': 'sergey-pimenov'
+        "Authorization": "token 7706ae46d4b5dd21f2294f11de07633177d796ae",
+        "User-Agent": "sergey-pimenov"
       }),
     })
       .then(response => response.json())
