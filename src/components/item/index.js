@@ -10,7 +10,11 @@ function Item({name, website, repo, stars}) {
   const [repoData, setRepoData] = useState({});
 
   function fetchData() {
-    fetch(`${API}${repo}`)
+    fetch(`${API}${repo}`, {
+      headers: new Headers({
+        "Authorization": "token 1fe8ff836fd6f2221fad6c6bb8497bdeb6686061"
+      }),
+    })
       .then(response => response.json())
       .then(data => setRepoData(data));
   }
