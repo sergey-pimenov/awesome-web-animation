@@ -1,0 +1,25 @@
+.item {
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid rgb(197, 197, 197, 0.2);
+  box-shadow: 3px 3px 3px rgba(197, 197, 197, 0.1);
+}
+
+.name {
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.info {
+  display: flex;
+  margin-top: 30px;
+}
+
+.infoItem:not(:last-child) {
+  margin-right: 15px;
+}
