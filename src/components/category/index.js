@@ -20,7 +20,6 @@ function Category({ categoryData, titleColor }) {
                 website={item.website}
                 repo={item.repo}
                 key={item.name}
-                stars={item.stargazers_count}
               />
             </li>
           );

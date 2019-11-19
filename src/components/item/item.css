@@ -1,8 +1,22 @@
 .item {
+  position: relative;
+  display: block;
   max-width: 300px;
   padding: 20px;
   border: 1px solid rgb(197, 197, 197, 0.2);
   box-shadow: 3px 3px 3px rgba(197, 197, 197, 0.1);
+}
+
+.itemLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.itemHeader {
+  display: flex;
 }
 
 .name {
@@ -12,14 +26,20 @@
 }
 
 .description {
+  position: relative;
+  z-index: 1;
   font-size: 14px;
 }
 
 .info {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 30px;
+  font-size: 12px;
 }
 
-.infoItem:not(:last-child) {
-  margin-right: 15px;
+.infoItem {
+  position: relative;
+  z-index: 1;
+  margin: 0 15px 15px 0;
 }
