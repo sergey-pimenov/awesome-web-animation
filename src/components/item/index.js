@@ -9,10 +9,12 @@ function Item({name, website, repo, stars}) {
   const s = classnames.bind(styles);
   const [repoData, setRepoData] = useState({});
 
+  console.log(process.env.API_URL)
+
   function fetchData() {
     fetch(`${API}${repo}`, {
       headers: new Headers({
-        "Authorization": "token 8452c5c3d366eee4519ccec495fd8d11a2a5cb85"
+        // "Authorization": "token 8452c5c3d366eee4519ccec495fd8d11a2a5cb85"
       }),
     })
       .then(response => response.json())
