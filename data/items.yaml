@@ -2,27 +2,11 @@
 svg:
   categoryTitle: SVG
   list:
-  - name: snap.svg
-    website: https://github.com/snapsvg
-    repo: adobe-webplatform/Snap.svg
-  - name: snap.svg
-    website: https://github.com/snapsvg
-    repo: adobe-webplatform/Snap.svg
-  - name: snap.svg
-    website: https://github.com/snapsvg
-    repo: adobe-webplatform/Snap.svg
-  - name: snap.svg
-    website: https://github.com/snapsvg
-    repo: adobe-webplatform/Snap.svg
-  - name: snap.svg
-    website: https://github.com/snapsvg
-    repo: adobe-webplatform/Snap.svg
-  - name: snap.svg
-    website: https://github.com/snapsvg
-    repo: adobe-webplatform/Snap.svg
-  - name: snap.svg
-    website: https://github.com/snapsvg
-    repo: adobe-webplatform/Snap.svg
-  - name: snap.svg
-    website: https://github.com/snapsvg
-    repo: adobe-webplatform/Snap.svg
+  - repo: adobe-webplatform/Snap.svg
+    bundleData:
+      github:
+        directory: dist
+        fileName: snap.svg-min.js
+  - repo: svgdotjs/svg.js
+  - repo: julianshapiro/velocity
+  - repo: maxwellito/vivus
