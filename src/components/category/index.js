@@ -14,13 +14,8 @@ function Category({ categoryData, titleColor }) {
       <ul className={s('items')}>
         {categoryData.list.map(item => {
           return (
-            <li className={s('item')}>
-              <Item
-                name={item.name}
-                website={item.website}
-                repo={item.repo}
-                key={item.name}
-              />
+            <li key={item.repo} className={s('item')}>
+              <Item repo={item.repo} bundleData={item.bundleData} />
             </li>
           );
         })}
