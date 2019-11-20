@@ -48,6 +48,7 @@
   "homepage": "https://github.com/web-animation/web-animation.github.io#readme",
   "dependencies": {
     "classnames": "^2.2.6",
+    "lodash.find": "^4.6.0",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
@@ -71,6 +72,7 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
+    "lodash": "^4.17.15",
     "minireset.css": "0.0.6",
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-static-files-copy": "^2.2.1",
