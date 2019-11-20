@@ -5,7 +5,7 @@ import msToDays from '../../utils/scripts/msToDays';
 import styles from './item.css';
 
 const API = 'https://api.github.com/repos/';
-const token = `token ${process.env.API_URL}`;
+const token = `token ${process.env.TOKEN}`;
 
 function Item({name, repo}) {
   const s = classnames.bind(styles);
