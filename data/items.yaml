@@ -8,5 +8,25 @@ svg:
         directory: dist
         fileName: snap.svg-min.js
   - repo: svgdotjs/svg.js
+    bundleData:
+      jsdelivr:
+        libName: svg.js
+        directory: dist
+        fileName: svg.min.js
   - repo: julianshapiro/velocity
+    bundleData:
+      jsdelivr:
+        libName: velocity-animate
+        directory: dist
+        fileName: velocity.min.js
   - repo: maxwellito/vivus
+    bundleData:
+      github:
+        directory: dist
+        fileName: vivus.min.js
+  - repo: ConnorAtherton/walkway
+    bundleData:
+      jsdelivr:
+        libName: walkway.js
+        directory: dist
+        fileName: walkway.min.js

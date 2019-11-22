@@ -3,41 +3,79 @@ import classnames from 'classnames/bind';
 import PropTypes from 'prop-types';
 import find from 'lodash.find';
 import msToDays from '../../utils/scripts/msToDays';
+import fetchDataToHook from '../../utils/scripts/fetchDataToHook';
 import styles from './item.css';
 
-const API = 'https://api.github.com/repos/';
-const token = `token ${process.env.TOKEN}`;
+const githubAPI = 'https://api.github.com/';
+const jsdelivrAPI = 'https://data.jsdelivr.com/v1';
+const githubToken = `token ${process.env.TOKEN}`;
 
 function Item({ repo, bundleData }) {
   const s = classnames.bind(styles);
   const [repoData, setRepoData] = useState(false);
   const [githubBundleData, setGithubBundleData] = useState(false);
-
-  function fetchData(callback, additional = '') {
-    fetch(`${API}${repo}${additional}`, {
-      headers: new Headers({
-        Authorization: token,
-      }),
-    })
-      .then(response => response.json())
-      .then(data => callback(data));
-  }
+  const [jsdelivrBundleData, setJsdelivrBundleData] = useState(false);
 
   useEffect(() => {
-    fetchData(setRepoData);
+    fetchDataToHook({
+      api: githubAPI,
+      callback: setRepoData,
+      path: `repos/${repo}`,
+      headers: {
+        Authorization: githubToken,
+      },
+    });
 
     if (bundleData && bundleData.github) {
-      fetchData(setGithubBundleData, `/contents/${bundleData.github.directory}`);
+      console.log(`fetch: ${  bundleData.github.fileName}`);
+  
+      fetchDataToHook({
+        api: githubAPI,
+        callback: setGithubBundleData,
+        path: `repos/${repo}/contents/${bundleData.github.directory}`,
+        headers: {
+          Authorization: githubToken,
+        },
+      });
+    }
+
+    if (bundleData && bundleData.jsdelivr) {
+      const apiURL = `${jsdelivrAPI}/package/npm/${bundleData.jsdelivr.libName}`;
+
+      fetch(apiURL)
+        .then(response => response.json())
+        .then(versions => {
+          const lastLibVersion = versions.tags.latest;
+
+          fetchDataToHook({
+            api: apiURL,
+            callback: setJsdelivrBundleData,
+            path: `@${lastLibVersion}`,
+          });
+        });
     }
   }, [0]);
 
-  let bundleFile;
+  let bundleFileSize = null;
 
   if (githubBundleData) {
     // Don't get file directly because return all file content. For example see to
     // property "content" at https://api.github.com/repos/maxwellito/vivus/contents/dist/vivus.min.js
     // I just need to get bundle size and I don't want download full content of bundle
-    bundleFile = find(githubBundleData, { name: bundleData.github.fileName });
+    const bundle = find(githubBundleData, { name: bundleData.github.fileName });
+    bundleFileSize = bundle ? bundle.size : null;
+  }
+
+  if (jsdelivrBundleData) {
+    let distDirectory;
+    let bundle = find(jsdelivrBundleData.files, { name: bundleData.jsdelivr.fileName });
+
+    if (!bundle) {
+      distDirectory = find(jsdelivrBundleData.files, { name: 'dist' });
+      bundle = find(distDirectory.files, { name: bundleData.jsdelivr.fileName });
+    }
+
+    bundleFileSize = bundle ? bundle.size : null;
   }
 
   let daysAgoUpdated;
@@ -93,13 +131,13 @@ function Item({ repo, bundleData }) {
             {daysAgoUpdated} days ago
           </a>
         </div>
-        {bundleFile && (
+        {bundleFileSize && (
           <div className={s('infoItem')}>
             <a href={repoData.stargazers_url}>
               <span role="img" aria-label="link">
                 Bundle size{' '}
               </span>
-              { Math.round(bundleFile.size / 1000)}kb
+              {Math.round(bundleFileSize / 1000)}kb
             </a>
           </div>
         )}
