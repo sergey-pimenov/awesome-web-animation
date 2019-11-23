@@ -4,7 +4,7 @@ import find from 'lodash.find';
 import styles from './infoBar.css';
 import msToDays from '../../utils/scripts/msToDays';
 
-function InfoBar({repoData, bundleData, githubBundleData, jsdelivrBundleData}) {
+function InfoBar({ repoData, bundleData, githubBundleData, jsdelivrBundleData }) {
   const s = classnames.bind(styles);
 
   let bundleFileSize = null;
@@ -36,8 +36,8 @@ function InfoBar({repoData, bundleData, githubBundleData, jsdelivrBundleData}) {
     const timeElapsed = Date.now() - updateDate;
     daysAgoUpdated = Math.round(msToDays(timeElapsed));
   }
-  
-  return(
+
+  return (
     <div className={s('infoBar')}>
       <div className={s('infoItem')}>
         <a href={repoData.stargazers_url}>
@@ -58,7 +58,7 @@ function InfoBar({repoData, bundleData, githubBundleData, jsdelivrBundleData}) {
       <div className={s('infoItem')}>
         <a href={repoData.stargazers_url}>
           <span role="img" aria-label="link">
-            🔥 updated{' '}
+            🔥 updated
           </span>
           {daysAgoUpdated} days ago
         </a>
@@ -67,14 +67,14 @@ function InfoBar({repoData, bundleData, githubBundleData, jsdelivrBundleData}) {
         <div className={s('infoItem')}>
           <a href={repoData.stargazers_url}>
             <span role="img" aria-label="link">
-              Bundle size{' '}
+              Bundle size
             </span>
             {Math.round(bundleFileSize / 1000)}kb
           </a>
         </div>
       )}
     </div>
-  )
+  );
 }
 
 export default InfoBar;
