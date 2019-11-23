@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import find from 'lodash.find';
 import s from './infoBar.css';
 import msToDays from '../../utils/scripts/msToDays';
+import star from './img/star.svg';
 
 function InfoBar({ repoData, bundleData, githubBundleData, jsdelivrBundleData }) {
   let bundleFileSize = null;
@@ -38,11 +39,11 @@ function InfoBar({ repoData, bundleData, githubBundleData, jsdelivrBundleData })
   return (
     <div className={s.infoBar}>
       <div className={s.infoItem}>
-        <img className={s.icon} alt="Stars"/>
+        <img className={s.icon} src={star} alt="Stars"/>
         {repoData.stargazers_count}
       </div>
       <div className={s.infoItem}>
-        <img className={s.icon} alt="Stars"/>
+        <img className={s.icon} src={star} alt="Stars"/>
         {daysAgoUpdated} days ago
       </div>
       <div className={s.infoItem}>

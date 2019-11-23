@@ -9,8 +9,8 @@
     "build": "parcel build src/index.html --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "prettier --write src/*.js src/**/*.js",
-    "lint:fix": "eslint --debug src/ --fix",
-    "stylelint:fix": "stylelint src/ --fix"
+    "lint:fix": "eslint --debug src/*.js --fix",
+    "stylelint:fix": "stylelint src/*.css --fix"
   },
   "husky": {
     "hooks": {
