@@ -1,12 +1,10 @@
 import React from 'react';
-import classnames from 'classnames/bind';
+import PropTypes from 'prop-types';
 import find from 'lodash.find';
-import styles from './infoBar.css';
+import s from './infoBar.css';
 import msToDays from '../../utils/scripts/msToDays';
 
 function InfoBar({ repoData, bundleData, githubBundleData, jsdelivrBundleData }) {
-  const s = classnames.bind(styles);
-
   let bundleFileSize = null;
 
   if (githubBundleData) {
@@ -38,8 +36,16 @@ function InfoBar({ repoData, bundleData, githubBundleData, jsdelivrBundleData })
   }
 
   return (
-    <div className={s('infoBar')}>
-      <div className={s('infoItem')}>
+    <div className={s.infoBar}>
+      <div className={s.infoItem}>
+        <img className={s.icon} alt="Stars"/>
+        {repoData.stargazers_count}
+      </div>
+      <div className={s.infoItem}>
+        <img className={s.icon} alt="Stars"/>
+        {daysAgoUpdated} days ago
+      </div>
+      <div className={s.infoItem}>
         <a href={repoData.stargazers_url}>
           <span role="img" aria-label="link">
             Issues:
@@ -47,24 +53,8 @@ function InfoBar({ repoData, bundleData, githubBundleData, jsdelivrBundleData })
           {repoData.open_issues_count}
         </a>
       </div>
-      <div className={s('infoItem')}>
-        <a href={repoData.stargazers_url}>
-          <span role="img" aria-label="link">
-            ⭐
-          </span>
-          {repoData.stargazers_count}
-        </a>
-      </div>
-      <div className={s('infoItem')}>
-        <a href={repoData.stargazers_url}>
-          <span role="img" aria-label="link">
-            🔥 updated
-          </span>
-          {daysAgoUpdated} days ago
-        </a>
-      </div>
       {bundleFileSize && (
-        <div className={s('infoItem')}>
+        <div className={s.infoItem}>
           <a href={repoData.stargazers_url}>
             <span role="img" aria-label="link">
               Bundle size
@@ -76,5 +66,14 @@ function InfoBar({ repoData, bundleData, githubBundleData, jsdelivrBundleData })
     </div>
   );
 }
+
+InfoBar.propTypes = {
+  repoData: PropTypes.oneOfType([PropTypes.bool, PropTypes.shape({
+    pushed_at: PropTypes.string.isRequired,
+    open_issues_count: PropTypes.number.isRequired,
+    stargazers_count: PropTypes.number.isRequired,
+    stargazers_url: PropTypes.string.isRequired,
+  }).isRequired]).isRequired
+};
 
 export default InfoBar;

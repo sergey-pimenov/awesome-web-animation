@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import classnames from 'classnames/bind';
 import PropTypes from 'prop-types';
 import fetchDataToHook from '../../utils/scripts/fetchDataToHook';
 import InfoBar from '../infoBar';
-import styles from './item.css';
+import s from './item.css';
 
 const githubAPI = 'https://api.github.com/';
 const jsdelivrAPI = 'https://data.jsdelivr.com/v1';
 const githubToken = `token ${process.env.TOKEN}`;
 
 function Item({ repo, bundleData }) {
-  const s = classnames.bind(styles);
-  const [repoData, setRepoData] = useState(false);
+  const [repoData, setRepoData] = useState(null);
   const [githubBundleData, setGithubBundleData] = useState(false);
   const [jsdelivrBundleData, setJsdelivrBundleData] = useState(false);
 
@@ -54,29 +52,33 @@ function Item({ repo, bundleData }) {
   }, [0]);
 
   return (
-    <div className={s('item')}>
-      <a
-        href={repoData.homepage || repoData.homepage}
-        aria-label={`Link to ${repoData.name}`}
-        className={s('itemLink')}
-      > </a>
-      <div className={s('itemHeader')}>
-        {repoData && (
-          <img
-            className={s('repoOwnerLogo')}
-            src={repoData.owner.avatar_url}
-            alt={repoData.owner.login}
-          />
-        )}
-        <h3 className={s('name')}> {repoData.name} </h3>
-      </div>
-      <p className={s('description')}> {repoData.description} </p>
-      <InfoBar
-        repoData={repoData}
-        bundleData={bundleData}
-        githubBundleData={githubBundleData}
-        jsdelivrBundleData={jsdelivrBundleData}
-      />
+    <div className={s.item}>
+      {
+        repoData && (
+          <div className={s.itemContent}>
+            <a
+              href={repoData.homepage || repoData.homepage}
+              aria-label={`Link to ${repoData.name}`}
+              className={s.itemLink}
+            > </a>
+            <div className={s.itemHeader}>
+                <img
+                  className={s.repoOwnerLogo}
+                  src={repoData.owner.avatar_url}
+                  alt={repoData.owner.login}
+                />
+              <h3 className={s.name}> {repoData.name} </h3>
+            </div>
+            <p className={s.description}> {repoData.description} </p>
+            <InfoBar
+              repoData={repoData}
+              bundleData={bundleData}
+              githubBundleData={githubBundleData}
+              jsdelivrBundleData={jsdelivrBundleData}
+            />
+          </div>
+        )
+      }
     </div>
   );
 }

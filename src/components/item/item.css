@@ -1,12 +1,18 @@
 .item {
   position: relative;
   display: flex;
-  flex-direction: column;
   max-width: 300px;
   min-height: 250px;
   padding: 20px;
   border: 1px solid rgb(197, 197, 197, 0.2);
   box-shadow: 3px 3px 3px rgba(197, 197, 197, 0.1);
+}
+
+.itemContent {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .itemLink {
