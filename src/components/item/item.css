@@ -39,21 +39,3 @@
   font-size: 14px;
   line-height: 1.7;
 }
-
-.info {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: auto;
-  padding-top: 30px;
-  font-size: 12px;
-}
-
-.infoItem {
-  position: relative;
-  z-index: 1;
-  margin-top: 15px;
-}
-
-.infoItem:not(:last-of-type) {
-  margin-right: 10px;
-}
