@@ -11,13 +11,11 @@ svg:
     bundleData:
       jsdelivr:
         libName: svg.js
-        directory: dist
         fileName: svg.min.js
   - repo: julianshapiro/velocity
     bundleData:
       jsdelivr:
         libName: velocity-animate
-        directory: dist
         fileName: velocity.min.js
   - repo: maxwellito/vivus
     bundleData:
@@ -28,5 +26,9 @@ svg:
     bundleData:
       jsdelivr:
         libName: walkway.js
-        directory: dist
         fileName: walkway.min.js
+  - repo: DmitryBaranovskiy/raphael
+    bundleData:
+      github:
+        directory: /
+        fileName: raphael.min.js
