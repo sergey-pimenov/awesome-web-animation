@@ -1,3 +1,5 @@
+/* @import './utils/styles/mixins.css'; */
+
 .item {
   position: relative;
   display: flex;
@@ -40,8 +42,10 @@
 }
 
 .description {
-  position: relative;
   z-index: 1;
   font-size: 14px;
   line-height: 1.7;
+  text-overflow: ellipsis;
+
+  /* @mixin limitTextLines 2, 14px, 1.5;  */
 }
