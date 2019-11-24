@@ -1,6 +1,6 @@
 .infoBar {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-top: auto;
   padding-top: 30px;
   font-size: 12px;
@@ -11,16 +11,16 @@
   z-index: 1;
   display: flex;
   align-items: center;
-  margin-top: 15px;
+  margin: 15px 15px 0 0;
 }
 
-.infoItem:not(:last-of-type) {
-  margin-right: 10px;
+.row {
+  display: flex;
 }
 
 .icon {
-  height: 20px;
-  margin-right: 5px;
+  height: 15px;
+  margin-right: 8px;
 }
 
 .accent {

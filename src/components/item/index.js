@@ -1,54 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import endpoint from '../../endpoints.json';
 import fetchDataToHook from '../../utils/scripts/fetchDataToHook';
 import InfoBar from '../infoBar';
 import s from './item.css';
 
-const githubAPI = 'https://api.github.com/';
-const jsdelivrAPI = 'https://data.jsdelivr.com/v1';
-const githubToken = `token ${process.env.TOKEN}`;
-
 function Item({ repo, bundleData }) {
   const [repoData, setRepoData] = useState(null);
-  const [githubBundleData, setGithubBundleData] = useState(false);
-  const [jsdelivrBundleData, setJsdelivrBundleData] = useState(false);
 
   useEffect(() => {
     fetchDataToHook({
-      api: githubAPI,
+      api: endpoint.github,
       callback: setRepoData,
       path: `repos/${repo}`,
       headers: {
-        Authorization: githubToken,
+        Authorization: `token ${process.env.TOKEN}`,
       },
     });
-
-    if (bundleData && bundleData.github) {
-      fetchDataToHook({
-        api: githubAPI,
-        callback: setGithubBundleData,
-        path: `repos/${repo}/contents/${bundleData.github.directory}`,
-        headers: {
-          Authorization: githubToken,
-        },
-      });
-    }
-
-    if (bundleData && bundleData.jsdelivr) {
-      const apiURL = `${jsdelivrAPI}/package/npm/${bundleData.jsdelivr.libName}`;
-
-      fetch(apiURL)
-        .then(response => response.json())
-        .then(versions => {
-          const lastLibVersion = versions.tags.latest;
-
-          fetchDataToHook({
-            api: apiURL,
-            callback: setJsdelivrBundleData,
-            path: `@${lastLibVersion}`,
-          });
-        });
-    }
   }, [0]);
 
   return (
@@ -69,12 +37,13 @@ function Item({ repo, bundleData }) {
                 />
               <h3 className={s.name}> {repoData.name} </h3>
             </div>
-            <p className={s.description}> {repoData.description} </p>
+            {repoData.description && (
+              <p className={s.description}> {repoData.description} </p>
+            )}
             <InfoBar
               repoData={repoData}
               bundleData={bundleData}
-              githubBundleData={githubBundleData}
-              jsdelivrBundleData={jsdelivrBundleData}
+              repo={repo}
             />
           </div>
         )

@@ -1,12 +1,48 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import find from 'lodash.find';
+import endpoint from '../../endpoints.json';
+import fetchDataToHook from '../../utils/scripts/fetchDataToHook';
 import s from './infoBar.css';
 import msToDays from '../../utils/scripts/msToDays';
 import star from './img/star.svg';
+import download from './img/download.svg';
+import fire from './img/fire.svg';
+import error from './img/error.svg';
 
-function InfoBar({ repoData, bundleData, githubBundleData, jsdelivrBundleData }) {
+function InfoBar({ repoData, bundleData, repo}) {
   let bundleFileSize = null;
+  const [githubBundleData, setGithubBundleData] = useState(false);
+  const [jsdelivrBundleData, setJsdelivrBundleData] = useState(false);
+
+  useEffect(() => {
+    if (bundleData && bundleData.github) {
+      fetchDataToHook({
+        api: endpoint.github,
+        callback: setGithubBundleData,
+        path: `repos/${repo}/contents/${bundleData.github.directory}`,
+        headers: {
+          Authorization: `token ${process.env.TOKEN}`,
+        },
+      });
+    }
+
+    if (bundleData && bundleData.jsdelivr) {
+      const apiURL = `${endpoint.jsdelivr}/package/npm/${bundleData.jsdelivr.libName}`;
+
+      fetch(apiURL)
+        .then(response => response.json())
+        .then(versions => {
+          const lastLibVersion = versions.tags.latest;
+
+          fetchDataToHook({
+            api: apiURL,
+            callback: setJsdelivrBundleData,
+            path: `@${lastLibVersion}`,
+          });
+        });
+    }
+  }, [0]);
 
   if (githubBundleData) {
     // Don't get file directly because return all file content. For example see to
@@ -38,32 +74,36 @@ function InfoBar({ repoData, bundleData, githubBundleData, jsdelivrBundleData })
 
   return (
     <div className={s.infoBar}>
-      <div className={s.infoItem}>
-        <img className={s.icon} src={star} alt="Stars"/>
-        {repoData.stargazers_count}
+      <div className={s.row}>
+        {repoData.stargazers_count && (
+          <div className={s.infoItem}>
+            <img className={s.icon} src={star} alt="Total stars on gitgub"/>
+            {repoData.stargazers_count}
+          </div>
+        )}
+        {daysAgoUpdated && (
+          <div className={s.infoItem}>
+            <img className={s.icon} src={fire} alt="Updated days ago"/>
+            {daysAgoUpdated} days ago
+          </div>
+        )}
       </div>
-      <div className={s.infoItem}>
-        <img className={s.icon} src={star} alt="Stars"/>
-        {daysAgoUpdated} days ago
-      </div>
-      <div className={s.infoItem}>
-        <a href={repoData.stargazers_url}>
-          <span role="img" aria-label="link">
-            Issues:
-          </span>
-          {repoData.open_issues_count}
-        </a>
-      </div>
-      {bundleFileSize && (
-        <div className={s.infoItem}>
-          <a href={repoData.stargazers_url}>
-            <span role="img" aria-label="link">
-              Bundle size
-            </span>
+      <div className={s.row}>
+        {repoData.open_issues_count && (
+          <div className={s.infoItem}>
+            <img className={s.icon} src={error} alt="Issues"/>
+            Issues: {}
+            {repoData.open_issues_count}
+          </div>
+        )}
+        {bundleFileSize && (
+          <a className={s.infoItem} href={repoData.stargazers_url}>
+            <img className={s.icon} src={download} alt="Stars"/>
+            Bundle size: { }
             {Math.round(bundleFileSize / 1000)}kb
           </a>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
