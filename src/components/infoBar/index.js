@@ -10,10 +10,11 @@ import download from './img/download.svg';
 import fire from './img/fire.svg';
 import error from './img/error.svg';
 
-function InfoBar({ repoData, bundleData, repo}) {
+function InfoBar({ repoData, bundleData, repo }) {
   let bundleFileSize = null;
   const [githubBundleData, setGithubBundleData] = useState(false);
   const [jsdelivrBundleData, setJsdelivrBundleData] = useState(false);
+  const openIssuesCount = repoData ? repoData.open_issues_count.toString() : null;
 
   useEffect(() => {
     if (bundleData && bundleData.github) {
@@ -59,7 +60,7 @@ function InfoBar({ repoData, bundleData, repo}) {
     if (!bundle) {
       distDirectory = find(jsdelivrBundleData.files, { name: 'dist' });
 
-      if(distDirectory) {
+      if (distDirectory) {
         bundle = find(distDirectory.files, { name: bundleData.jsdelivr.fileName });
       } else {
         console.warn(`Not correct "distDirectory" at jsdelivr for ${repo}`);
@@ -74,7 +75,7 @@ function InfoBar({ repoData, bundleData, repo}) {
   if (repoData.pushed_at) {
     const updateDate = Date.parse(repoData.pushed_at);
     const timeElapsed = Date.now() - updateDate;
-    daysAgoUpdated = Math.round(msToDays(timeElapsed));
+    daysAgoUpdated = Math.round(msToDays(timeElapsed)).toString();
   }
 
   return (
@@ -82,29 +83,30 @@ function InfoBar({ repoData, bundleData, repo}) {
       <div className={s.row}>
         {repoData.stargazers_count && (
           <div className={s.infoItem}>
-            <img className={s.icon} src={star} alt="Total stars on gitgub"/>
+            <img className={s.icon} src={star} alt="Total stars on gitgub" />
             {repoData.stargazers_count}
           </div>
         )}
         {daysAgoUpdated && (
           <div className={s.infoItem}>
-            <img className={s.icon} src={fire} alt="Updated days ago"/>
-            {daysAgoUpdated} days ago
+            <img className={s.icon} src={fire} alt="Updated days ago" />
+            {daysAgoUpdated !== '0' && (<>{daysAgoUpdated} days ago</>)}
+            {daysAgoUpdated === '0' && ( <>Updated today</>)}
           </div>
         )}
       </div>
       <div className={s.row}>
-        {repoData.open_issues_count && (
+        {openIssuesCount && (
           <div className={s.infoItem}>
-            <img className={s.icon} src={error} alt="Issues"/>
-            Issues: {}
-            {repoData.open_issues_count}
+            <img className={s.icon} src={error} alt="Issues" />
+            {openIssuesCount !== '0' && (<>Issues: {openIssuesCount}</>)}
+            {openIssuesCount === '0' && (<>No issues</>)}
           </div>
         )}
         {bundleFileSize && (
           <a className={s.infoItem} href={repoData.stargazers_url}>
-            <img className={s.icon} src={download} alt="Stars"/>
-            Bundle size: { }
+            <img className={s.icon} src={download} alt="Stars" />
+            Bundle size:
             {Math.round(bundleFileSize / 1000)}kb
           </a>
         )}
@@ -114,12 +116,15 @@ function InfoBar({ repoData, bundleData, repo}) {
 }
 
 InfoBar.propTypes = {
-  repoData: PropTypes.oneOfType([PropTypes.bool, PropTypes.shape({
-    pushed_at: PropTypes.string.isRequired,
-    open_issues_count: PropTypes.number.isRequired,
-    stargazers_count: PropTypes.number.isRequired,
-    stargazers_url: PropTypes.string.isRequired,
-  }).isRequired]).isRequired
+  repoData: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.shape({
+      pushed_at: PropTypes.string.isRequired,
+      open_issues_count: PropTypes.number.isRequired,
+      stargazers_count: PropTypes.number.isRequired,
+      stargazers_url: PropTypes.string.isRequired,
+    }).isRequired,
+  ]).isRequired,
 };
 
 export default InfoBar;
