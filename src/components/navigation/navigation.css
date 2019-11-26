@@ -1,6 +1,7 @@
 .navigation {
   position: sticky;
   top: 0;
+  z-index: 2;
   display: flex;
   justify-content: center;
   margin-bottom: 35px;
