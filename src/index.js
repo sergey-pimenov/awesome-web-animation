@@ -13,6 +13,7 @@ function App() {
       <Header />
       <Navigation />
       <Category categoryData={items.svg} titleColor="#e970aa" />
+      <Category categoryData={items.common} titleColor="#e970aa" />
     </div>
   );
 }

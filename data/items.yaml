@@ -12,11 +12,6 @@ svg:
       jsdelivr:
         libName: svg.js
         fileName: svg.min.js
-  - repo: julianshapiro/velocity
-    bundleData:
-      jsdelivr:
-        libName: velocity-animate
-        fileName: velocity.min.js
   - repo: maxwellito/vivus
     bundleData:
       github:
@@ -32,3 +27,85 @@ svg:
       github:
         directory: /
         fileName: raphael.min.js
+  - repo: alexk111/SVG-Morpheus
+    bundleData:
+      github:
+        directory: compile/minified
+        fileName: svg-morpheus.js
+  - repo: uxebu/bonsai
+common:
+  categoryTitle: SVG
+  list:
+  - repo: greensock/GSAP
+    bundleData:
+      github:
+        directory: dist
+        fileName: gsap.min.js
+  - repo: juliangarnier/anime
+    bundleData:
+      github:
+        directory: lib
+        fileName: anime.min.js
+  - repo: mojs/mojs
+    bundleData:
+      github:
+        directory: build
+        fileName: mo.min.js
+  - repo: ThrivingKings/animo.js
+    bundleData:
+      github:
+        directory: /
+        fileName: animo.min.js
+  - repo: visionmedia/move.js
+    bundleData:
+      github:
+        directory: /
+        fileName: move.min.js
+  - repo: julianshapiro/velocity
+    bundleData:
+      jsdelivr:
+        libName: velocity-animate
+        fileName: velocity.min.js
+  - repo: bendc/animateplus
+    bundleData:
+      jsdelivr:
+        libName: animateplus
+        fileName: animateplus.js
+  - repo: lvivski/animatic
+    bundleData:
+      github:
+        directory: /
+        fileName: animatic.min.js
+  - repo: just-animate/just-animate
+    bundleData:
+      jsdelivr:
+        libName: just-animate
+        fileName: just-animate.min.js
+  - repo: HaikuTeam/core
+    bundleData:
+      jsdelivr:
+        libName: '@haiku/core'
+        fileName: dom.bundle.min.js
+  - repo: sasha240100/between.js
+    bundleData:
+      github:
+        directory: build
+        fileName: between.js
+  - repo: jonobr1/two.js
+    bundleData:
+      github:
+        directory: build
+        fileName: two.min.js
+  - repo: kimmobrunfeldt/progressbar.js
+    bundleData:
+      github:
+        directory: dist
+        fileName: progressbar.min.js
+css:
+  categoryTitle: CSS
+  list:
+  - repo: daneden/animate.css
+    bundleData:
+      github:
+        directory: /
+        fileName: animate.min.css
