@@ -14,6 +14,10 @@ function App() {
       <Navigation />
       <Category categoryData={items.svg} titleColor="#e970aa" />
       <Category categoryData={items.common} titleColor="#e970aa" />
+      <Category categoryData={items.css} titleColor="#e970aa" />
+      <Category categoryData={items.canvas} titleColor="#e970aa" />
+      <Category categoryData={items.scroll} titleColor="#e970aa" />
+      <Category categoryData={items.text} titleColor="#e970aa" />
     </div>
   );
 }

@@ -41,6 +41,11 @@ common:
       github:
         directory: dist
         fileName: gsap.min.js
+  - repo: CreateJS/tweenjs
+    bundleData:
+      github:
+        directory: lib
+        fileName: tweenjs.min.js
   - repo: juliangarnier/anime
     bundleData:
       github:
@@ -109,3 +114,119 @@ css:
       github:
         directory: /
         fileName: animate.min.css
+  - repo: zurb/motion-ui
+  - repo: miniMAC/magic
+    bundleData:
+      github:
+        directory: dist
+        fileName: magic.min.css
+  - repo: lukehaas/css-loaders
+canvas:
+  categoryTitle: Canvas
+  list:
+  - repo: CreateJS/EaselJS
+    bundleData:
+      github:
+        directory: lib
+        fileName: easeljs.min.js
+  - repo: fabricjs/fabric.js
+    bundleData:
+      github:
+        directory: dist
+        fileName: fabric.min.js
+  - repo: paperjs/paper.js
+    bundleData:
+      jsdelivr:
+        libName: paper
+        fileName: paper-full.min.js
+  - repo: konvajs/konva
+    bundleData:
+      github:
+        directory: /
+        fileName: konva.min.js
+  - repo: jonobr1/two.js
+    bundleData:
+      github:
+        directory: build
+        fileName: two.min.js
+  - repo: koggdal/ocanvas
+    bundleData:
+      github:
+        directory: build/dist/latest
+        fileName: ocanvas.min.js
+  - repo: martinlaxenaire/curtainsjs
+    bundleData:
+      github:
+        directory: build
+        fileName: curtains.min.js
+  - repo: robin-dela/hover-effect
+    bundleData:
+      github:
+        directory: dist
+        fileName: hover-effect.js
+scroll:
+  categoryTitle: Scroll
+  list:
+  - repo: michalsnik/aos
+    bundleData:
+      jsdelivr:
+        libName: aos
+        fileName: aos.min.js
+  - repo: alexfoxy/laxxx
+    bundleData:
+      github:
+        directory: lib
+        fileName: lax.min.js
+  - repo: matthieua/WOW
+    bundleData:
+      github:
+        directory: dist
+        fileName: wow.min.js
+  - repo: scrollreveal/scrollreveal
+    bundleData:
+      github:
+        directory: dist
+        fileName: scrollreveal.min.js
+  - repo: janpaepke/ScrollMagic
+    bundleData:
+      github:
+        directory: scrollmagic/minified
+        fileName: ScrollMagic.min.js
+  - repo: alexcambose/motus
+    bundleData:
+      github:
+        directory: dist
+        fileName: motus.web.js
+  - repo: mciastek/sal
+    bundleData:
+      github:
+        directory: dist
+        fileName: sal.js
+text:
+  categoryTitle: Text
+  list:
+  - repo: yuanqing/malarkey
+    bundleData:
+      github:
+        directory: /
+        fileName: index.js
+  - repo: mattboldt/typed.js
+    bundleData:
+      github:
+        directory: lib
+        fileName: typed.min.js
+  - repo: ics-ikeda/shuffle-text
+    bundleData:
+      github:
+        directory: build
+        fileName: shuffle-text.min.js
+  - repo: akzhy/typebot
+    bundleData:
+      github:
+        directory: typebot/js/
+        fileName: typebot.min.js
+  - repo: bradley/Blotter
+    bundleData:
+      github:
+        directory: build
+        fileName: blotter.min.js
