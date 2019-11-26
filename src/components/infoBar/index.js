@@ -58,7 +58,12 @@ function InfoBar({ repoData, bundleData, repo}) {
 
     if (!bundle) {
       distDirectory = find(jsdelivrBundleData.files, { name: 'dist' });
-      bundle = find(distDirectory.files, { name: bundleData.jsdelivr.fileName });
+
+      if(distDirectory) {
+        bundle = find(distDirectory.files, { name: bundleData.jsdelivr.fileName });
+      } else {
+        console.warn(`Not correct "distDirectory" at jsdelivr for ${repo}`);
+      }
     }
 
     bundleFileSize = bundle ? bundle.size : null;
