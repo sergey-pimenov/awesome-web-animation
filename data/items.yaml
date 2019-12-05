@@ -1,7 +1,5 @@
 ---
 svg:
-  categoryTitle: SVG
-  list:
   - repo: adobe-webplatform/Snap.svg
     bundleData:
       github:
@@ -34,8 +32,6 @@ svg:
         fileName: svg-morpheus.js
   - repo: uxebu/bonsai
 common:
-  categoryTitle: SVG
-  list:
   - repo: greensock/GSAP
     bundleData:
       github:
@@ -96,19 +92,12 @@ common:
       github:
         directory: build
         fileName: between.js
-  - repo: jonobr1/two.js
-    bundleData:
-      github:
-        directory: build
-        fileName: two.min.js
   - repo: kimmobrunfeldt/progressbar.js
     bundleData:
       github:
         directory: dist
         fileName: progressbar.min.js
 css:
-  categoryTitle: CSS
-  list:
   - repo: daneden/animate.css
     bundleData:
       github:
@@ -122,8 +111,6 @@ css:
         fileName: magic.min.css
   - repo: lukehaas/css-loaders
 canvas:
-  categoryTitle: Canvas
-  list:
   - repo: CreateJS/EaselJS
     bundleData:
       github:
@@ -165,8 +152,6 @@ canvas:
         directory: dist
         fileName: hover-effect.js
 scroll:
-  categoryTitle: Scroll
-  list:
   - repo: michalsnik/aos
     bundleData:
       jsdelivr:
@@ -203,8 +188,6 @@ scroll:
         directory: dist
         fileName: sal.js
 text:
-  categoryTitle: Text
-  list:
   - repo: yuanqing/malarkey
     bundleData:
       github:
