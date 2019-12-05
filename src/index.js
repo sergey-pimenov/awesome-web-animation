@@ -4,22 +4,61 @@ import reactDOM from 'react-dom';
 import Header from './components/header';
 import Navigation from './components/navigation';
 import Category from './components/category';
-import items from '../data/items.yaml';
-import './index.css';
+import itemsData from '../data/items.yaml';
+import booksData from '../data/books.yaml';
+import s from './index.css';
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header />
       <Navigation />
-      <Category categoryData={items.svg} titleColor="#e970aa" />
-      <Category categoryData={items.common} titleColor="#e970aa" />
-      <Category categoryData={items.css} titleColor="#e970aa" />
-      <Category categoryData={items.canvas} titleColor="#e970aa" />
-      <Category categoryData={items.scroll} titleColor="#e970aa" />
-      <Category categoryData={items.text} titleColor="#e970aa" />
+      <div className={s.categories}>
+        <Category
+          name="Books"
+          categoryData={booksData.all}
+          listType="bookCards"
+          titleColor="#e970aa"
+        />
+        <Category
+          name="Common"
+          categoryData={itemsData.svg}
+          listType="defaultCards"
+          titleColor="#ad8abf"
+        />
+        <Category
+          name="Easing"
+          categoryData={itemsData.common}
+          listType="defaultCards"
+          titleColor="#72a2cf"
+        />
+        <Category
+          name="SVG"
+          categoryData={itemsData.css}
+          listType="defaultCards"
+          titleColor="#3fc3bf"
+        />
+        <Category
+          name="Scroll"
+          categoryData={itemsData.canvas}
+          listType="defaultCards"
+          titleColor="#67bc97"
+        />
+        <Category
+          name="CSS"
+          categoryData={itemsData.scroll}
+          listType="defaultCards"
+          titleColor="#80b97e"
+        />
+        <Category
+          name="SVG"
+          categoryData={itemsData.text}
+          listType="defaultCards"
+          titleColor="#acb253"
+        />
+      </div>
     </div>
   );
 }
 
-reactDOM.render(<App />, document.getElementById('app'));
+reactDOM.render(<App />, document.getElementById('appWrapper'));
