@@ -1,18 +1,28 @@
 import React from 'react';
 import s from './category.css';
 import Item from '../item';
+import Book from '../book';
 
-function Category({ categoryData, titleColor }) {
+function Category({ name, categoryData, listType, titleColor }) {
   return (
-    <section className={s.category}>
-      <h2 style={{ color: titleColor, }} className={s.title} id={categoryData.categoryTitle}>
-        {categoryData.categoryTitle}
+    <section className={`${s.category} ${s[listType]}`}>
+      <h2 style={{ color: titleColor, }} className={s.title} id={name}>
+        {name}
       </h2>
       <ul className={s.items}>
-        {categoryData.list.map(item => {
+        {categoryData.map(item => {
           return (
-            <li key={item.repo} className={s.itemWrapper}>
-              <Item repo={item.repo} bundleData={item.bundleData} />
+            <li
+              key={item.repo || item.googleBookId}
+              className={`${s.itemWrapper} 
+                          ${listType === 'bookCards' ? s.book : ''} 
+                          ${listType === 'defaultCards' ? s.default : ''}
+                        `}
+            >
+              {listType === 'defaultCards' && (
+                <Item repo={item.repo} bundleData={item.bundleData} />
+              )}
+              {listType === 'bookCards' && <Book googleBookId={item.googleBookId} />}
             </li>
           );
         })}
