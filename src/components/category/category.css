@@ -1,19 +1,39 @@
 .category {
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  margin: 160px auto 0 auto;
 }
 
 .title {
-  margin-bottom: 30px;
+  position: sticky;
+  top: 100px;
+  width: calc((100vw - 1070px) / 2);
+  padding-right: 40px;
   color: rgb(77, 77, 77);
   font-weight: 900;
-  font-size: 40px;
+  font-size: 5vw;
+  text-align: center;
+  transform: translate(-100%, 0);
 }
 
 .items {
   display: flex;
   flex-wrap: wrap;
+  align-self: center;
+  width: 1070px;
+  margin-top: -100px;
 }
 
 .itemWrapper {
   margin: 0 30px 30px 0;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.133) 0 1.6px 3.6px 0, rgba(0, 0, 0, 0.11) 0 0.3px 0.9px 0;
+
+  &.book {
+    margin: 0 30px 30px 0;
+  }
+}
+
+.bookCards {
+  /* 123123 */
 }

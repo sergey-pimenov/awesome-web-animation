@@ -1,16 +1,18 @@
 .header {
-  margin: 70px 0 70px 0;
+  margin: 150px 0 -30px 0;
 }
 
 .appTitle {
+  position: relative;
   font-weight: 600;
-  font-weight: 900;
-  font-size: 4vw;
-  line-height: 1.4;
+  font-size: 1.2vw;
+  line-height: 1.2;
+  line-height: 1.8;
   text-align: center;
 }
 
 strong {
+  position: relative;
   font-weight: 900;
   font-size: 8vw;
   background: linear-gradient(
@@ -22,4 +24,27 @@ strong {
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  /* text-shadow: -3px -3px 3px white; */
+  filter: drop-shadow(-5px -5px 0 white);
+}
+
+.sub {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  margin-bottom: 0;
+  padding: 30px 0;
+  font-size: 5vw;
+  transform: translateX(-50%);
+  opacity: 0.1;
+
+  /* background: linear-gradient(
+    45deg,
+    rgb(233, 112, 173),
+    #ffde00
+  );
+  color: rgb(255, 255, 255); */
+
+  /* border-bottom: 1px solid rgb(184, 184, 184); */
 }

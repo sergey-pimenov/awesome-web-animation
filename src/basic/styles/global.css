@@ -1,8 +1,10 @@
 body {
   min-height: 100vh;
-  padding: 0 40px;
+
+  /* padding-left: 40px; */
   color: rgb(77, 77, 77);
   font-family: sans-serif;
+  line-height: 1.5;
 }
 
 a {

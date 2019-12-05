@@ -4,15 +4,13 @@
   z-index: 2;
   display: flex;
   justify-content: center;
-  margin-bottom: 35px;
   padding: 15px 0;
-  background-color: white;
-  box-shadow: 0 5px 5px white;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
 }
 
 .item {
   font-weight: 900;
-  font-size: 20px;
 }
 
 .item:not(:last-child) {
@@ -20,9 +18,9 @@
 }
 
 .item::before {
-  color: lightgray;
+  /* color: lightgray; */
   font-weight: 400;
-  content: '#';
+  content: '# ';
 }
 
 .item:nth-child(1) {
@@ -30,29 +28,33 @@
 }
 
 .item:nth-child(2) {
-  color: #8d97c8;
+  color: #ad8abf;
 }
 
 .item:nth-child(3) {
-  color: #46b4dc;
+  color: #72a2cf;
 }
 
 .item:nth-child(4) {
-  color: #51c0ad;
+  color: #3fc3bf;
 }
 
 .item:nth-child(5) {
-  color: #88b877;
+  color: #67bc97;
 }
 
 .item:nth-child(6) {
-  color: #aab255;
+  color: #80b97e;
 }
 
 .item:nth-child(7) {
-  color: #eba814;
+  color: #acb253;
 }
 
 .item:nth-child(8) {
-  color: #ffce00;
+  color: #ffa800;
+}
+
+.item:nth-child(9) {
+  color: #ffde00;
 }

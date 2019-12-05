@@ -1,2 +1,7 @@
 @import 'minireset.css';
 @import './basic/styles/global.css';
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+}
