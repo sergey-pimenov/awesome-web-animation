@@ -1,31 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import useFetch from "react-fetch-hook";
 import PropTypes from 'prop-types';
 import LinesEllipsis from 'react-lines-ellipsis/lib/loose';
 import endpoint from '../../endpoints.json';
-import fetchDataToHook from '../../utils/scripts/fetchDataToHook';
 import InfoBar from '../infoBar';
 import s from './item.css';
 
 function Item({ repo, bundleData }) {
-  const [repoData, setRepoData] = useState(null);
-
-  useEffect(() => {
-    fetchDataToHook({
-      api: endpoint.github,
-      callback: setRepoData,
-      path: `repos/${repo}`,
-      headers: {
-        Authorization: `token ${process.env.TOKEN}`,
-      },
-    });
-  }, [0]);
+  const { isLoading, data: repoData } = useFetch(`${endpoint.github}repos/${repo}`, {headers: new Headers({
+    Authorization: `token ${process.env.GITHUB_TOKEN}`,
+  })});
 
   return (
     <div className={s.item}>
-      {repoData && (
+      {!isLoading && (
         <div className={s.itemContent}>
           <a
             href={repoData.homepage || repoData.html_url}
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label={`Link to ${repoData.name}`}
             className={s.itemLink}
           > </a>
