@@ -23,7 +23,7 @@ function InfoBar({ repoData, bundleData, repo }) {
         callback: setGithubBundleData,
         path: `repos/${repo}/contents/${bundleData.github.directory}`,
         headers: {
-          Authorization: `token ${process.env.TOKEN}`,
+          Authorization: `token ${process.env.GITHUB_TOKEN}`,
         },
       });
     }
@@ -97,18 +97,17 @@ function InfoBar({ repoData, bundleData, repo }) {
       </div>
       <div className={s.row}>
         {openIssuesCount && (
-          <div className={s.infoItem}>
+          <div className={s.infoItem} title="Issues on Github">
             <img className={s.icon} src={error} alt="Issues" />
-            {openIssuesCount !== '0' && (<>Issues: {openIssuesCount}</>)}
+            {openIssuesCount !== '0' && (<>{openIssuesCount} issues</>)}
             {openIssuesCount === '0' && (<>No issues</>)}
           </div>
         )}
         {bundleFileSize && (
-          <a className={s.infoItem} href={repoData.stargazers_url}>
-            <img className={s.icon} src={download} alt="Stars" />
-            Bundle size:
-            {Math.round(bundleFileSize / 1000)}kb
-          </a>
+          <div className={s.infoItem}>
+            <img style={{height: '9px',}} className={s.icon} src={download} alt="Stars" />
+            {Math.round(bundleFileSize / 1000)} kb
+          </div>
         )}
       </div>
     </div>
