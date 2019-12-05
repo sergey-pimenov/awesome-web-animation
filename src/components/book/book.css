@@ -1,0 +1,116 @@
+.book {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 500px;
+  height: 320px;
+  padding: 20px 20px 0 20px;
+}
+
+.cover {
+  width: 35%;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.133) 0 3.2px 7.2px 0, rgba(0, 0, 0, 0.11) 0 0.6px 1.8px 0;
+  transform-origin: 0 100%;
+  transition: all 0.15s;
+}
+
+.content {
+  flex: 1;
+  max-height: 100%;
+  padding: 0 30px;
+}
+
+.title {
+  margin-top: -4px;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.subTitle {
+  margin-top: 5px;
+  color: grey;
+  font-size: 12px;
+}
+
+.descriptionWrapper {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+    content: '';
+  }
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 12px;
+
+  br {
+    display: none;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  li {
+    position: relative;
+    margin-bottom: 10px;
+
+    &::before {
+      content: '-   ';
+    }
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+  padding: 10px 0;
+  color: gray;
+  font-size: 10px;
+  border-top: 1px rgba(0, 0, 0, 0.06) solid;
+}
+
+.sale {
+  margin-left: auto;
+  color: rgb(77, 77, 77);
+  font-weight: bold;
+}
+
+.currencyCode {
+  margin-left: 2px;
+  font-weight: normal;
+}
+
+.authors {
+  display: flex;
+  margin-right: 20px;
+}
+
+.author + .author:not(:first-child)::before {
+  content: ',';
+}
+
+.pageCount {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.pagesIcon {
+  height: 10px;
+  margin-right: 5px;
+}
