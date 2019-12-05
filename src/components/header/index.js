@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className={s.header}>
       <h1 className={s.appTitle}>
-        Usefull staff for <br /> <strong>web animation</strong>
+        <div className={s.sub}>awesome list</div> <strong>web animation</strong>
       </h1>
     </header>
   );
