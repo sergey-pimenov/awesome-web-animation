@@ -6,26 +6,26 @@ import s from './book.css';
 import pages from './img/pages.svg';
 
 function Books({ googleBookId }) {
-  // const { isLoading, data: bookData } = useFetch(
-  //   `https://www.googleapis.com/books/v1/volumes/${googleBookId}?key=${process.env.GOOGLE_KEY}`,
-  // );
   const { isLoading, data: bookData } = useFetch(
-    `https://www.googleapis.com/books/v1/volumes/${googleBookId}`,
+    `https://www.googleapis.com/books/v1/volumes/${googleBookId}?key=${process.env.GOOGLE_KEY}`,
   );
+  // const { isLoading, data: bookData } = useFetch(
+  //   `https://www.googleapis.com/books/v1/volumes/${googleBookId}`,
+  // );
 
   if (!isLoading) {
     // console.log(bookData);
-    console.log(bookData.volumeInfo.publishedDate);
+    // console.log(bookData.volumeInfo.publishedDate);
   }
 
   return (
     <a
-      href={[!isLoading ? bookData.volumeInfo.previewLink : '']}
+      href={[!isLoading && bookData ? bookData.volumeInfo.previewLink : '']}
       className={s.book}
       target="_blank"
       rel="noopener noreferrer"
     >
-      {!isLoading && bookData.volumeInfo && (
+      {!isLoading && bookData && (
         <>
           <img
             className={s.cover}

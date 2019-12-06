@@ -13,7 +13,7 @@ function Item({ repo, bundleData }) {
 
   return (
     <div className={s.item}>
-      {!isLoading && (
+      {!isLoading && repoData && (
         <div className={s.itemContent}>
           <a
             href={repoData.homepage || repoData.html_url}
