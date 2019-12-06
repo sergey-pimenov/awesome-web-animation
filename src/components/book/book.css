@@ -5,6 +5,10 @@
   max-width: 500px;
   height: 320px;
   padding: 20px 20px 0 20px;
+
+  @media all and (max-width: 540px) {
+    height: auto;
+  }
 }
 
 .cover {
@@ -14,6 +18,10 @@
   box-shadow: rgba(0, 0, 0, 0.133) 0 3.2px 7.2px 0, rgba(0, 0, 0, 0.11) 0 0.6px 1.8px 0;
   transform-origin: 0 100%;
   transition: all 0.15s;
+
+  @media all and (max-width: 540px) {
+    display: none;
+  }
 }
 
 .content {

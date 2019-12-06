@@ -1,7 +1,12 @@
 @import 'minireset.css';
 @import './basic/styles/global.css';
 
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
 .categories {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }

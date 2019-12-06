@@ -10,7 +10,7 @@ import s from './index.css';
 
 function App() {
   return (
-    <div className="app">
+    <div className={s.app}>
       <Header />
       <Navigation />
       <div className={s.categories}>

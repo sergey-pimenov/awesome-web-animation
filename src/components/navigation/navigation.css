@@ -3,18 +3,34 @@
   top: 0;
   z-index: 2;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 15px 0;
+  margin-bottom: 17vh;
+  padding: 5px 0;
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
+
+  @media all and (max-width: 767px) {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  @media all and (max-width: 540px) {
+    order: -1;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
 }
 
 .item {
+  flex-shrink: 0;
+  padding: 10px;
   font-weight: 900;
 }
 
 .item:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .item::before {
