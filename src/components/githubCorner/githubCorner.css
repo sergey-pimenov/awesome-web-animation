@@ -4,11 +4,11 @@
   right: 0;
   color: white;
   border: 0;
-
-  /* animation: changeColor 20s linear infinite alternate; */
-
-  /* fill: rgb(233, 112, 173); */
   fill: rgb(77, 77, 77);
+
+  @media all and (max-width: 540px) {
+    display: none;
+  }
 }
 
 @keyframes changeColor {
