@@ -1,0 +1,49 @@
+.githubIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  border: 0;
+
+  /* animation: changeColor 20s linear infinite alternate; */
+
+  /* fill: rgb(233, 112, 173); */
+  fill: rgb(77, 77, 77);
+}
+
+@keyframes changeColor {
+
+  50% {
+    fill: rgb(19, 202, 235);
+  }
+
+  100% {
+    fill: orange;
+  }
+}
+
+.octoArm {
+  transform-origin: 130px 106px;
+}
+
+.githubCorner:hover .octoArm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}

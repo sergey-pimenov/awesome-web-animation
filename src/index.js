@@ -1,9 +1,11 @@
 /* eslint-disable no-restricted-syntax, guard-for-in */
 import React from 'react';
 import reactDOM from 'react-dom';
+import GithubCorner from './components/githubCorner';
 import Header from './components/header';
 import Navigation from './components/navigation';
 import Category from './components/category';
+import Footer from './components/footer';
 import itemsData from '../data/items.yaml';
 import booksData from '../data/books.yaml';
 import s from './index.css';
@@ -11,6 +13,7 @@ import s from './index.css';
 function App() {
   return (
     <div className={s.app}>
+      <GithubCorner />
       <Header />
       <Navigation />
       <div className={s.categories}>
@@ -57,6 +60,7 @@ function App() {
           titleColor="#acb253"
         />
       </div>
+      <Footer />
     </div>
   );
 }
