@@ -2,12 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  max-width: 500px;
   height: 320px;
   padding: 20px 20px 0 20px;
 
   @media all and (max-width: 540px) {
     height: auto;
+    padding: 15px 15px 0 15px;
   }
 }
 
@@ -28,6 +28,10 @@
   flex: 1;
   max-height: 100%;
   padding: 0 30px;
+
+  @media all and (max-width: 540px) {
+    padding: 0;
+  }
 }
 
 .title {
@@ -35,18 +39,31 @@
   font-weight: bold;
   font-size: 25px;
   line-height: 1.2;
+
+  @media all and (max-width: 540px) {
+    font-size: 18px;
+  }
 }
 
 .subTitle {
   margin-top: 5px;
   color: grey;
   font-size: 12px;
+
+  @media all and (max-width: 540px) {
+    color: rgb(180, 180, 180);
+  }
 }
 
 .descriptionWrapper {
   position: relative;
-  height: 150px;
+  height: 130px;
+  margin-top: 20px;
   overflow: hidden;
+
+  @media all and (max-width: 540px) {
+    margin-top: 10px;
+  }
 
   &::after {
     position: absolute;
@@ -60,7 +77,6 @@
 }
 
 .description {
-  margin-top: 20px;
   font-size: 12px;
 
   br {

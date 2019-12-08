@@ -1,5 +1,6 @@
 .header {
   margin: 17vh 0 -1.5vw 0;
+  overflow: hidden;
 
   @media all and (max-width: 540px) {
     margin: 60px 0;
@@ -17,17 +18,9 @@
 
 strong {
   position: relative;
+  display: block;
   font-weight: 900;
   font-size: 8vw;
-  background: linear-gradient(
-    45deg,
-    rgb(233, 112, 173) 15%,
-    rgb(19, 202, 235) 50%,
-    orange 75%,
-    yellow
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   filter: drop-shadow(-5px -5px 0 white);
 
   @media all and (max-width: 540px) {

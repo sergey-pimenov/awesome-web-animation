@@ -1,9 +1,14 @@
 .item {
   position: relative;
   display: flex;
-  width: 325px;
+  flex: 1;
   height: 205px;
   padding: 20px 20px 10px 20px;
+
+  @media all and (max-width: 540px) {
+    height: auto;
+    padding: 15px 15px 10px 15px;
+  }
 }
 
 .itemContent {
@@ -42,4 +47,8 @@
   height: 100px;
   margin-top: 20px;
   font-size: 12px;
+
+  /* @media all and (max-width: 540px) {
+    height: 50px;
+  } */
 }

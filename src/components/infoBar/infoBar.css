@@ -5,6 +5,10 @@
   color: gray;
   font-size: 10px;
   border-top: 1px rgba(0, 0, 0, 0.06) solid;
+
+  @media all and (max-width: 540px) {
+    margin-top: 20px;
+  }
 }
 
 .infoItem {
