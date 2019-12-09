@@ -6,12 +6,17 @@ import s from './book.css';
 import pages from './img/pages.svg';
 
 function Books({ googleBookId }) {
-  // const { isLoading, data: bookData } = useFetch(
-  //   `https://www.googleapis.com/books/v1/volumes/${googleBookId}?key=${process.env.GOOGLE_KEY}`,
-  // );
   const { isLoading, data: bookData } = useFetch(
-    `https://www.googleapis.com/books/v1/volumes/${googleBookId}`,
+    `https://www.googleapis.com/books/v1/volumes/${googleBookId}?key=${process.env.GOOGLE_KEY}`,
   );
+
+  // const { isLoading, data: bookData } = useFetch(
+  //   `https://www.googleapis.com/books/v1/volumes/${googleBookId}`,
+  // );
+
+  if(!isLoading && bookData) {
+    console.log(bookData)
+  }
 
   return (
     <a
@@ -19,6 +24,8 @@ function Books({ googleBookId }) {
       className={s.book}
       target="_blank"
       rel="noopener noreferrer"
+      itemScope
+      itemType="http://schema.org/Book"
     >
       {!isLoading && bookData && (
         <>
@@ -26,13 +33,15 @@ function Books({ googleBookId }) {
             className={s.cover}
             src={bookData.volumeInfo.imageLinks.large || `../data/covers/${googleBookId}.png`}
             alt="Book cover"
+            itemProp="illustration"
           />
           <div className={s.content}>
-            <h2 className={s.title}> {bookData.volumeInfo.title} </h2>
+            <h2 itemProp="name" className={s.title}> {bookData.volumeInfo.title} </h2>
             <h3 className={s.subTitle}> {bookData.volumeInfo.subtitle} </h3>
             <div className={s.descriptionWrapper}>
               <div
                 className={s.description}
+                itemProp="about"
                 dangerouslySetInnerHTML={{
                   __html: bookData.volumeInfo.description.replace(/[<]br[^>]*[>]/gi, ''),
                 }}
@@ -43,34 +52,37 @@ function Books({ googleBookId }) {
             <div className={s.authors}>
               {bookData.volumeInfo.authors.map(author => {
                 return (
-                  <div key={author} className={s.author}>
-                    {' '}
-                    {author}{' '}
+                  <div key={author} itemProp="author" className={s.author}>
+                    {author}
                   </div>
                 );
               })}
             </div>
-            <time> {bookData.volumeInfo.publishedDate} </time>
-            <div className={s.pageCount}>
-              <img className={s.pagesIcon} src={pages} alt="Pages:"/>
-              {bookData.volumeInfo.pageCount}
-            </div>
+            <time itemProp="datePublished" dateTime={bookData.volumeInfo.publishedDate}> {bookData.volumeInfo.publishedDate} </time>
+            {/* In some cases the page count is too high - like one million pages. It's error on side of Google Books API */}
+            {bookData.volumeInfo.pageCount && bookData.volumeInfo.pageCount < 10000 && (
+              <div className={s.pageCount}>
+                <img className={s.pagesIcon} src={pages} alt="Pages:"/>
+                <span itemProp="numPages"> {bookData.volumeInfo.pageCount} </span>
+              </div>
+            )}
             {bookData.saleInfo.retailPrice && (
-              <div className={s.sale}>
-                {Math.round(bookData.saleInfo.retailPrice.amount)}
-                <span className={s.currencyCode}>
+              <div className={s.sale} itemProp="offers" itemScope itemType="http://schema.org/Offer">
+                <span itemProp="price">{Math.round(bookData.saleInfo.retailPrice.amount)}</span>
+                <span className={s.currencyCode} itemProp="priceCurrency">
                   {getSymbolFromCurrency(bookData.saleInfo.retailPrice.currencyCode)}
                 </span>
               </div>
             )}
           </div>
-          {/* 
-          <div>
-            <div> {bookData.saleInfo.listPrise} {bookData.saleInfo.currencyCode} </div>
-            <a href={bookData.accessInfo.webReaderLink} target="_blank" rel="noopener noreferrer">
-              Read demo
-            </a>
-          </div> */}
+          {/* Additional scheme data */}
+          <meta itemProp="publisher" content={bookData.volumeInfo.publisher} />
+          <meta itemProp="language" content={bookData.volumeInfo.language} />
+          {bookData.volumeInfo.categories && bookData.volumeInfo.categories.map(category => {
+            return (
+              <meta key={category} itemProp="keywords" content={category} />
+            );
+          })}
         </>
       )}
     </a>
