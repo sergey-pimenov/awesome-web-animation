@@ -24,37 +24,37 @@ function App() {
           titleColor="#e970aa"
         />
         <Category
-          name="Common"
+          name="SVG"
           categoryData={itemsData.svg}
           listType="defaultCards"
           titleColor="#ad8abf"
         />
         <Category
-          name="Easing"
+          name="Common"
           categoryData={itemsData.common}
           listType="defaultCards"
           titleColor="#72a2cf"
         />
         <Category
-          name="SVG"
+          name="CSS"
           categoryData={itemsData.css}
           listType="defaultCards"
           titleColor="#3fc3bf"
         />
         <Category
-          name="Scroll"
+          name="Canvas"
           categoryData={itemsData.canvas}
           listType="defaultCards"
           titleColor="#67bc97"
         />
         <Category
-          name="CSS"
+          name="Scroll"
           categoryData={itemsData.scroll}
           listType="defaultCards"
           titleColor="#80b97e"
         />
         <Category
-          name="SVG"
+          name="Text"
           categoryData={itemsData.text}
           listType="defaultCards"
           titleColor="#acb253"
