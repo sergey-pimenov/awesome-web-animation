@@ -13,24 +13,21 @@ function Navigation() {
       <a className={s.item} href="#Common">
         Common
       </a>
-      <a className={s.item} href="#Canvas">
-        Easing
-      </a>
-      <a className={s.item} href="#Canvas">
-        Scroll
+      <a className={s.item} href="#CSS">
+        CSS
       </a>
       <a className={s.item} href="#Canvas">
         Canvas
       </a>
-      <a className={s.item} href="#CSS">
-        CSS
+      <a className={s.item} href="#Scroll">
+        Scroll
       </a>
-      <a className={s.item} href="#Engines">
+      <a className={s.item} href="#Text">
         Text
       </a>
-      <a className={s.item} href="#Engines">
+      {/* <a className={s.item} href="#Engines">
         With GUI
-      </a>
+      </a> */}
     </nav>
   );
 }
