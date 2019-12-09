@@ -9,6 +9,7 @@
 
 .appTitle {
   position: relative;
+  color: rgb(140, 124, 165);
   font-weight: 600;
   font-size: 1.2vw;
   line-height: 1.2;
@@ -35,6 +36,7 @@ strong {
   left: 50%;
   margin-bottom: 0;
   padding: 30px 0;
+  color: rgb(95, 95, 95);
   font-size: 5vw;
   transform: translate(-50%, -50%);
   opacity: 0.1;
