@@ -6,17 +6,12 @@ import s from './book.css';
 import pages from './img/pages.svg';
 
 function Books({ googleBookId }) {
-  const { isLoading, data: bookData } = useFetch(
-    `https://www.googleapis.com/books/v1/volumes/${googleBookId}?key=${process.env.GOOGLE_KEY}`,
-  );
   // const { isLoading, data: bookData } = useFetch(
-  //   `https://www.googleapis.com/books/v1/volumes/${googleBookId}`,
+  //   `https://www.googleapis.com/books/v1/volumes/${googleBookId}?key=${process.env.GOOGLE_KEY}`,
   // );
-
-  if (!isLoading) {
-    // console.log(bookData);
-    // console.log(bookData.volumeInfo.publishedDate);
-  }
+  const { isLoading, data: bookData } = useFetch(
+    `https://www.googleapis.com/books/v1/volumes/${googleBookId}`,
+  );
 
   return (
     <a
