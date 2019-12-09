@@ -10,15 +10,14 @@
 
 .title {
   margin: 0 0 10px 20px;
+  padding-top: 50px;
   color: rgb(77, 77, 77);
   font-weight: 900;
   font-size: 50px;
 
-  /* text-shadow: -2px 2px 3px currentColor; */
-
   @media all and (min-width: 1400px) {
     position: sticky;
-    top: 100px;
+    top: 50px;
     padding-right: 40px;
     font-size: calc((100vw - 1070px * 1) / 12);
     text-align: right;
