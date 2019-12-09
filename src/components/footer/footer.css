@@ -2,12 +2,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin: 15vh 0 30vh 0;
+  color: rgb(255, 255, 255, 0.7);
   font-weight: 900;
   font-size: 3.8vh;
   line-height: 1.4;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -15,13 +15,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 1;
+  z-index: -1;
   display: block;
-  width: 47vh;
+  width: 42vh;
   transform: translate(-50%, -45%);
   transform-origin: 50% 50%;
-  mix-blend-mode: color-burn;
-  animation: love 0.5s infinite alternate;
+  animation: love 0.7s infinite alternate;
 }
 
 @keyframes love {
@@ -36,6 +35,6 @@
 }
 
 .lineThree {
-  margin-top: 0.5vh;
-  font-size: 0.7em;
+  margin-top: 0.65vh;
+  font-size: 0.54em;
 }
