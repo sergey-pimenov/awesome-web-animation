@@ -23,6 +23,7 @@
     "media-feature-parentheses-space-inside": "never",
     "media-feature-colon-space-after": "always",
     "declaration-colon-newline-after": null,
-    "at-rule-no-unknown": null
+    "at-rule-no-unknown": null,
+    "selector-pseudo-class-no-unknown": null
   }
 }
