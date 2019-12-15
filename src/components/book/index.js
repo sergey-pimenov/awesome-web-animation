@@ -4,13 +4,13 @@ import useFetch from 'react-fetch-hook';
 import Book from './book';
 
 function Container({ googleBookId }) {
-  const { isLoading, data: bookData } = useFetch(
-    `https://www.googleapis.com/books/v1/volumes/${googleBookId}?key=${process.env.GOOGLE_KEY}`,
-  );
-
-  // const { isLoading, data } = useFetch(
-  //   `https://www.googleapis.com/books/v1/volumes/${googleBookId}`,
+  // const { isLoading, data: bookData } = useFetch(
+  //   `https://www.googleapis.com/books/v1/volumes/${googleBookId}?key=${process.env.GOOGLE_KEY}`,
   // );
+
+  const { isLoading, data: bookData } = useFetch(
+    `https://www.googleapis.com/books/v1/volumes/${googleBookId}`,
+  );
 
   return !isLoading && <Book bookData={bookData} googleBookId={googleBookId}/>;
 }
