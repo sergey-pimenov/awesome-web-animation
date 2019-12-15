@@ -1,5 +1,5 @@
-/* eslint-disable react/no-danger */
 import React from 'react';
+import PropTypes from 'prop-types';
 import s from './guiTool.css';
 
 function GuiTool({ guiToolData: tool }) {
@@ -20,5 +20,14 @@ function GuiTool({ guiToolData: tool }) {
     </div>
   );
 }
+
+GuiTool.propTypes = {
+  guiToolData: PropTypes.shape({
+    name: PropTypes.string,
+    cover: PropTypes.string,
+    description: PropTypes.string,
+    url: PropTypes.string,
+  }).isRequired,
+};
 
 export default GuiTool;
