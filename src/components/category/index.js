@@ -7,17 +7,17 @@ import GuiTool from '../guiTool';
 
 function Category({ name, categoryData, listType, titleColor }) {
   return (
-    <section className={`${s.category} ${s[listType]}`} itemType="ItemList" itemScope>
-      <h2 style={{ color: titleColor, }} className={s.title} id={name}>
+    <section className={`${s.category} ${s[listType]}`} itemType="https://schema.org/ItemList" itemScope>
+      <h2 style={{ color: titleColor, }} className={s.title} id={name} itemProp="name">
         {name}
       </h2>
       <ul className={s.items}>
         {categoryData.map(item => {
           return (
             <li
-              itemType="itemListElement"
               key={item.repo || item.googleBookId || item.name}
               className={s.itemWrapper}
+              itemProp="itemListElement"
             >
               {listType === 'defaultCards' && (
                 <Item repo={item.repo} bundleData={item.bundleData} />
