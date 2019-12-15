@@ -6,17 +6,13 @@ import s from './book.css';
 import pages from './img/pages.svg';
 
 function Books({ googleBookId }) {
-  const { isLoading, data: bookData } = useFetch(
-    `https://www.googleapis.com/books/v1/volumes/${googleBookId}?key=${process.env.GOOGLE_KEY}`,
-  );
-
   // const { isLoading, data: bookData } = useFetch(
-  //   `https://www.googleapis.com/books/v1/volumes/${googleBookId}`,
+  //   `https://www.googleapis.com/books/v1/volumes/${googleBookId}?key=${process.env.GOOGLE_KEY}`,
   // );
 
-  if(!isLoading && bookData) {
-    console.log(bookData)
-  }
+  const { isLoading, data: bookData } = useFetch(
+    `https://www.googleapis.com/books/v1/volumes/${googleBookId}`,
+  );
 
   return (
     <a
@@ -38,7 +34,7 @@ function Books({ googleBookId }) {
           <div className={s.content}>
             <h2 itemProp="name" className={s.title}> {bookData.volumeInfo.title} </h2>
             <h3 className={s.subTitle}> {bookData.volumeInfo.subtitle} </h3>
-            <div className={s.descriptionWrapper}>
+            <div className={`${s.descriptionWrapper} textCropEffect`}>
               <div
                 className={s.description}
                 itemProp="about"
@@ -68,10 +64,10 @@ function Books({ googleBookId }) {
             )}
             {bookData.saleInfo.retailPrice && (
               <div className={s.sale} itemProp="offers" itemScope itemType="http://schema.org/Offer">
-                <span itemProp="price">{Math.round(bookData.saleInfo.retailPrice.amount)}</span>
                 <span className={s.currencyCode} itemProp="priceCurrency">
                   {getSymbolFromCurrency(bookData.saleInfo.retailPrice.currencyCode)}
-                </span>
+                </span>&nbsp;
+                <span itemProp="price">{Math.round(bookData.saleInfo.retailPrice.amount)}</span>
               </div>
             )}
           </div>
