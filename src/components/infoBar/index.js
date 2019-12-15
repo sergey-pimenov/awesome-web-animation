@@ -7,7 +7,6 @@ import s from './infoBar.css';
 import msToDays from '../../utils/scripts/msToDays';
 import star from './img/star.svg';
 import download from './img/download.svg';
-import fire from './img/fire.svg';
 import error from './img/error.svg';
 
 function InfoBar({ repoData, bundleData, repo }) {
@@ -82,31 +81,30 @@ function InfoBar({ repoData, bundleData, repo }) {
     <div className={s.infoBar}>
       <div className={s.row}>
         {repoData.stargazers_count && (
-          <div className={s.infoItem}>
+          <div className={`${s.infoItem} ${s.primary}`}>
             <img className={s.icon} src={star} alt="Total stars on gitgub" />
             {repoData.stargazers_count}
           </div>
         )}
+        {bundleFileSize && (
+          <div className={`${s.infoItem} ${s.primary}`}>
+            <img style={{height: '9px',}} className={s.icon} src={download} alt="Stars" />
+            {Math.round(bundleFileSize / 1000)} kb
+          </div>
+        )}
         {daysAgoUpdated && (
           <div className={s.infoItem}>
-            <img className={s.icon} src={fire} alt="Updated days ago" />
-            {daysAgoUpdated !== '0' && (<>{daysAgoUpdated} days ago</>)}
+            {daysAgoUpdated !== '0' && (<>Updated {daysAgoUpdated} days ago</>)}
             {daysAgoUpdated === '0' && ( <>Updated today</>)}
           </div>
         )}
       </div>
       <div className={s.row}>
         {openIssuesCount && (
-          <div className={s.infoItem} title="Issues on Github">
+          <div className={`${s.infoItem} ${s.issues}`} title="Issues on Github">
             <img className={s.icon} src={error} alt="Issues" />
             {openIssuesCount !== '0' && (<>{openIssuesCount} issues</>)}
             {openIssuesCount === '0' && (<>No issues</>)}
-          </div>
-        )}
-        {bundleFileSize && (
-          <div className={s.infoItem}>
-            <img style={{height: '9px',}} className={s.icon} src={download} alt="Stars" />
-            {Math.round(bundleFileSize / 1000)} kb
           </div>
         )}
       </div>
