@@ -1,0 +1,38 @@
+---
+all:
+  - name: SVG Artista
+    cover: 'data/covers/svgartista.png'
+    description: 'SVG Artista is a tool that helps you animate stroke and fill 
+    properties in your SVG images with plain CSS code. It should work fine with 
+    path, line, polyline, rect, circle, ellipse and polygon elements. It cannot 
+    animate SVG gradients though, so please keep that in mind.'
+    link: 'https://svgartista.net/about'
+  - name: Mantra
+    cover: 'data/covers/mantra.png'
+    description: 'Mantra is a timeline editing tool for web animations.
+    It is inspired by tools such as Adobe Flash and After Effects.'
+    link: 'https://jeremyckahn.github.io/mantra/'
+  - name: Animista
+    cover: 'data/covers/animista.png'
+    description: 'Animista is a place where you can play with a collection of 
+    pre-made css animations, tweak them and get only those you will actually use.'
+    link: 'https://animista.net/'
+  - name: Cssanimate
+    cover: 'data/covers/cssanimate.png'
+    description: 'Welcome to CssAnimate.com, tool for easy and fast creating 
+    CSS3 keyframes animation, right in your browser without using any desktop 
+    software. If you want to render complex and consistent CSS3 animation on your 
+    site this tool is made for you! You can create complex CSS3 keyframe 
+    animation without any coding and to get ready made css styles for using on your site.'
+    link: 'http://cssanimate.com/'
+  - name: Keyframer
+    cover: 'data/covers/keyframer.png'
+    description: 'Tool that help visualize animation components and output the code required.'
+    link: 'http://alexberg.in/keyframer/'
+  - name: CSS Animation Kit
+    cover: 'data/covers/css-animation-kit.png'
+    description: 'Select any predefined samples from top panel. Below samples 
+    there is a timeline of @keyframes. Timeline has 101 keyframes ( 0% to 100%) 
+    direction from left to right. Highlighted keyframe indicate that some 
+    style is assigned to that point. You can add new style at selected point.'
+    link: 'http://angrytools.com/css/animation/'

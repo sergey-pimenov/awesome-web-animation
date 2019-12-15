@@ -8,6 +8,7 @@ import Category from './components/category';
 import Footer from './components/footer';
 import itemsData from '../data/items.yaml';
 import booksData from '../data/books.yaml';
+import guiToolsData from '../data/gui.yaml';
 import s from './index.css';
 
 function App() {
@@ -58,6 +59,12 @@ function App() {
           categoryData={itemsData.text}
           listType="defaultCards"
           titleColor="#acb253"
+        />
+        <Category
+          name="GUI"
+          categoryData={guiToolsData.all}
+          listType="guiCards"
+          titleColor="#ffa800"
         />
       </div>
       <Footer />

@@ -25,9 +25,9 @@ function Navigation() {
       <a className={s.item} href="#Text">
         Text
       </a>
-      {/* <a className={s.item} href="#Engines">
+      <a className={s.item} href="#GUI">
         With GUI
-      </a> */}
+      </a>
     </nav>
   );
 }
