@@ -40,7 +40,8 @@
   align-self: flex-start;
   max-height: 23px;
   margin-right: 15px;
-  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.25));
+
+  /* filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.25)); */
 }
 
 .description {

@@ -2,7 +2,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 15vh 0 30vh 0;
+  align-items: center;
+  margin-bottom: 15vh;
   color: rgb(255, 255, 255, 0.7);
   font-weight: 900;
   font-size: 3.8vh;
@@ -11,7 +12,12 @@
   text-transform: uppercase;
 
   @media all and (max-width: 1090px) {
-    margin: 25vh 0;
+    margin: 10vh 0 14vh 0;
+  }
+
+  a {
+    width: 42vh;
+    padding: 15vh 0;
   }
 }
 
