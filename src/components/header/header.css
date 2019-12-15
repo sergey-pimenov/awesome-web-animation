@@ -22,7 +22,7 @@ strong {
   display: block;
   font-weight: 900;
   font-size: 8vw;
-  filter: drop-shadow(-5px -5px 0 white);
+  filter: drop-shadow(-0.03em -0.03em 0 white);
 
   @media all and (max-width: 540px) {
     font-size: 11vw;
