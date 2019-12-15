@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import s from './category.css';
 import Item from '../item';
 import Book from '../book';
@@ -6,7 +7,7 @@ import GuiTool from '../guiTool';
 
 function Category({ name, categoryData, listType, titleColor }) {
   return (
-    <section className={`${s.category} ${s[listType]}`}>
+    <section className={`${s.category} ${s[listType]}`} itemType="ItemList" itemScope>
       <h2 style={{ color: titleColor, }} className={s.title} id={name}>
         {name}
       </h2>
@@ -14,6 +15,7 @@ function Category({ name, categoryData, listType, titleColor }) {
         {categoryData.map(item => {
           return (
             <li
+              itemType="itemListElement"
               key={item.repo || item.googleBookId || item.name}
               className={s.itemWrapper}
             >
@@ -28,6 +30,12 @@ function Category({ name, categoryData, listType, titleColor }) {
       </ul>
     </section>
   );
+}
+
+Category.propTypes = {
+  name: PropTypes.string.isRequired,
+  listType: PropTypes.string.isRequired,
+  titleColor: PropTypes.string.isRequired,
 }
 
 export default Category;

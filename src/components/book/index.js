@@ -5,7 +5,7 @@ import getSymbolFromCurrency from 'currency-symbol-map';
 import s from './book.css';
 import pages from './img/pages.svg';
 
-function Books({ googleBookId }) {
+function Book({ googleBookId }) {
   // const { isLoading, data: bookData } = useFetch(
   //   `https://www.googleapis.com/books/v1/volumes/${googleBookId}?key=${process.env.GOOGLE_KEY}`,
   // );
@@ -15,16 +15,18 @@ function Books({ googleBookId }) {
   );
 
   return (
-    <a
-      href={[!isLoading && bookData ? bookData.volumeInfo.previewLink : '']}
-      className={s.book}
-      target="_blank"
-      rel="noopener noreferrer"
-      itemScope
-      itemType="http://schema.org/Book"
-    >
+    <div className={s.book} itemScope itemType="http://schema.org/Book">
       {!isLoading && bookData && (
         <>
+          <a
+            href={bookData.volumeInfo.previewLink}
+            className={s.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            itemProp="url"
+          >
+            Link to { bookData.volumeInfo.title }
+          </a>
           <img
             className={s.cover}
             src={bookData.volumeInfo.imageLinks.large || `../data/covers/${googleBookId}.png`}
@@ -81,8 +83,8 @@ function Books({ googleBookId }) {
           })}
         </>
       )}
-    </a>
+    </div>
   );
 }
 
-export default Books;
+export default Book;

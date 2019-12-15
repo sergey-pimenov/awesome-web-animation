@@ -29,7 +29,7 @@ function Item({ repo, bundleData }) {
   }
 
   return (
-    <div className={s.item} itemType="https://schema.org/CreativeWork">
+    <div className={s.item} itemType="https://schema.org/CreativeWork" itemScope>
       {!isLoading && repoData && (
         <div className={s.itemContent}>
           <a
@@ -38,12 +38,11 @@ function Item({ repo, bundleData }) {
             href={repoData.html_url}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Link to ${repoData.name}`}
-            className={s.itemLink}
-          > </a>
+            className={s.link}
+          > Link to {repoData.name} </a>
           <div className={s.itemHeader}>
             <img
-              itemProp={repoData.owner.avatar_url}
+              itemProp="image"
               className={s.repoOwnerLogo}
               src={repoData.owner.avatar_url}
               alt={repoData.owner.login}
