@@ -2,6 +2,7 @@ import React from 'react';
 import s from './category.css';
 import Item from '../item';
 import Book from '../book';
+import GuiTool from '../guiTool';
 
 function Category({ name, categoryData, listType, titleColor }) {
   return (
@@ -13,16 +14,14 @@ function Category({ name, categoryData, listType, titleColor }) {
         {categoryData.map(item => {
           return (
             <li
-              key={item.repo || item.googleBookId}
-              className={`${s.itemWrapper} 
-                          ${listType === 'bookCards' ? s.book : ''} 
-                          ${listType === 'defaultCards' ? s.default : ''}
-                        `}
+              key={item.repo || item.googleBookId || item.name}
+              className={s.itemWrapper}
             >
               {listType === 'defaultCards' && (
                 <Item repo={item.repo} bundleData={item.bundleData} />
               )}
               {listType === 'bookCards' && <Book googleBookId={item.googleBookId} />}
+              {listType === 'guiCards' && <GuiTool guiToolData={item} />}
             </li>
           );
         })}
