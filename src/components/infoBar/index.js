@@ -95,7 +95,7 @@ function InfoBar({ repoData, bundleData, repo }) {
         {daysAgoUpdated && (
           <div className={s.infoItem}>
             {daysAgoUpdated !== '0' && (<>Updated {daysAgoUpdated} days ago</>)}
-            {daysAgoUpdated === '0' && ( <>Updated today</>)}
+            {daysAgoUpdated === '0' && (<>Updated today</>)}
           </div>
         )}
       </div>

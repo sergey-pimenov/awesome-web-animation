@@ -22,8 +22,10 @@ function Item({ repo, bundleData }) {
     depends: [userAPIUrl] // users request will not be called until repoData not loaded
   });
 
-  if(!isUserDataLoading && userData) {
-    // console.log(userData)
+  const isAllDataLoaded = !isLoading && bundleData && !isUserDataLoading && userData;
+
+  if(!isLoading && repoData) {
+    console.log(repoData)
   }
 
   return (
@@ -31,6 +33,8 @@ function Item({ repo, bundleData }) {
       {!isLoading && repoData && (
         <div className={s.itemContent}>
           <a
+            itemProp="url"
+            content={repoData.html_url}
             href={repoData.html_url}
             target="_blank"
             rel="noopener noreferrer"
@@ -39,11 +43,12 @@ function Item({ repo, bundleData }) {
           > </a>
           <div className={s.itemHeader}>
             <img
+              itemProp={repoData.owner.avatar_url}
               className={s.repoOwnerLogo}
               src={repoData.owner.avatar_url}
               alt={repoData.owner.login}
             />
-            <h3 className={s.name}> {repoData.name} </h3>
+            <h3 itemProp="name" className={s.name}> {repoData.name} </h3>
           </div>
           {repoData.description && (
             <LinesEllipsis
@@ -59,9 +64,18 @@ function Item({ repo, bundleData }) {
         </div>
       )}
       {/* Additional scheme data */}
-      {/* {!isUserDataLoading && userData (
-        <meta itemProp="author" content={userData.name}/>
-      )} */}
+      {isAllDataLoaded && (
+        <>
+          <meta itemProp="author" content={userData.name}/>
+          <meta itemProp="about" content="Web-animation tool"/>
+          <meta itemProp="dateCreated" content={repoData.created_at}/>
+          <meta itemProp="dateModified" content={repoData.pushed_at}/>
+          <meta itemProp="genre" content={repoData.language}/>
+          {repoData.licence && (
+            <meta itemProp="license" content={repoData.licence.name}/>
+          )}
+        </>
+      )}
     </div>
   );
 }
