@@ -110,13 +110,23 @@ css:
         directory: dist
         fileName: magic.min.css
   - repo: lukehaas/css-loaders
+  - repo: tobiasahlin/SpinKit
+    bundleData:
+      github:
+        directory: /
+        fileName: spinkit.min.css
+  - repo: tictail/bounce.js
+    bundleData:
+      jsdelivr:
+        libName: bounce.js
+        fileName: bounce.min.js
 canvas:
   - repo: CreateJS/EaselJS
     bundleData:
       github:
         directory: lib
         fileName: easeljs.min.js
-  - repo: fabricjs/fabric.js
+  - repo: fabricjs/fabric.js 
     bundleData:
       github:
         directory: dist
