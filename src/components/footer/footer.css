@@ -9,6 +9,10 @@
   line-height: 1.4;
   text-align: center;
   text-transform: uppercase;
+
+  @media all and (max-width: 1090px) {
+    margin: 25vh 0;
+  }
 }
 
 .love {
@@ -24,7 +28,6 @@
 }
 
 @keyframes love {
-
   100% {
     transform: translate(-50%, -45%) scale(1.03, 1.03);
   }

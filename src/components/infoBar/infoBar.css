@@ -1,21 +1,39 @@
 .infoBar {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 35px;
   margin-top: auto;
   color: gray;
   font-size: 10px;
   border-top: 1px rgba(0, 0, 0, 0.06) solid;
 
   @media all and (max-width: 540px) {
+    flex-wrap: wrap;
+    height: auto;
     margin-top: 20px;
+    padding: 5px 0;
   }
 }
 
 .infoItem {
-  position: relative;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
-  margin: 10px 20px 0 0;
+  margin-right: 20px;
+
+  @media all and (max-width: 540px) {
+    padding: 5px 0;
+  }
+
+  &.primary {
+    color: rgb(107, 107, 107);
+    font-weight: bold;
+  }
+
+  &.issues {
+    margin-right: 0;
+  }
 }
 
 .row {
@@ -24,7 +42,7 @@
 
 .icon {
   height: 10px;
-  margin-right: 4px;
+  margin: -1px 4px 0 0;
 }
 
 .accent {

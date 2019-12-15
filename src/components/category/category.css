@@ -3,8 +3,8 @@
   flex-direction: column;
   margin: 0 auto 80px auto;
 
-  @media all and (min-width: 541px) {
-    padding-left: 30px;
+  @media all and (max-width: 1090px) {
+    margin: 0 auto;
   }
 }
 
@@ -15,19 +15,22 @@
   font-weight: 900;
   font-size: 50px;
 
+  @media all and (max-width: 1090px) {
+    font-size: 30px;
+  }
+
   @media all and (min-width: 1400px) {
     position: sticky;
     top: 50px;
-    padding-right: 40px;
+    padding-right: 50px;
     font-size: calc((100vw - 1070px * 1) / 12);
     text-align: right;
-    transform: translate(calc(-100% - 1px), -100%);
+    transform: translate(-100%, 0);
   }
 
   @media all and (min-width: 1800px) {
     padding-right: 60px;
     font-size: calc((100vw - 1070px) / 12);
-    transform: translate(-100%, 0);
   }
 }
 
@@ -36,11 +39,11 @@
   flex-wrap: wrap;
   max-width: 1065px;
 
-  @media all and (max-width: 540px) {
+  @media all and (max-width: 1090px) {
     margin: 0 10px;
   }
 
-  @media all and (max-width: 1071px) {
+  @media all and (max-width: 1090px) {
     flex-direction: column;
   }
 
@@ -57,19 +60,50 @@
   margin: 0 30px 30px 0;
   border-radius: 2px;
   box-shadow: rgba(0, 0, 0, 0.133) 0 1.6px 3.6px 0, rgba(0, 0, 0, 0.11) 0 0.3px 0.9px 0;
+  transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
 
-  @media all and (max-width: 540px) {
-    margin: 0 0 30px 0;
+  &:hover {
+    background-color: rgb(251, 251, 251);
+
+    :global .textCropEffect::after {
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(251, 251, 251));
+    }
+  }
+
+  &:active,
+  &:focus-within {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(251, 251, 251));
+    box-shadow: rgba(0, 0, 0, 0.133) 0 3.2px 7.2px 0, rgba(0, 0, 0, 0.11) 0 0.6px 1.8px 0;
+    transform: scale(1.02);
+
+    :global .textCropEffect::after {
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(251, 251, 251));
+    }
+  }
+
+  @media all and (max-width: 1089px) {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin: 0 0 20px 0;
+    }
+
+    & > * {
+      max-width: 450px;
+    }
   }
 }
 
-@media all and (min-width: 541px) {
-
+@media all and (min-width: 1090px) {
   .bookCards .itemWrapper {
-    flex-basis: 500px;
+    width: 502px;
   }
 
   .defaultCards .itemWrapper {
-    flex-basis: 325px;
+    width: 325px;
+  }
+
+  .guiCards .itemWrapper {
+    margin-bottom: 60px;
   }
 }

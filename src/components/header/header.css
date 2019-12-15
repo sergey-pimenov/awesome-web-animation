@@ -3,7 +3,7 @@
   overflow: hidden;
 
   @media all and (max-width: 540px) {
-    margin: 60px 0;
+    margin: 30px 0 10px 0;
   }
 }
 
