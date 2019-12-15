@@ -16,7 +16,6 @@
     "number-leading-zero": "always",
     "comment-whitespace-inside": "always",
     "at-rule-no-vendor-prefix": true,
-    "rule-empty-line-before": "always-multi-line",
     "selector-pseudo-element-colon-notation": "double",
     "media-feature-range-operator-space-before": "always",
     "media-feature-range-operator-space-after": "always",
@@ -24,6 +23,7 @@
     "media-feature-colon-space-after": "always",
     "declaration-colon-newline-after": null,
     "at-rule-no-unknown": null,
-    "selector-pseudo-class-no-unknown": null
+    "selector-pseudo-class-no-unknown": null,
+    "rule-empty-line-before": null
   }
 }

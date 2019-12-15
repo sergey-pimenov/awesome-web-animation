@@ -12,7 +12,6 @@
 }
 
 @keyframes changeColor {
-
   50% {
     fill: rgb(19, 202, 235);
   }
@@ -31,7 +30,6 @@
 }
 
 @keyframes octocat-wave {
-
   0%,
   100% {
     transform: rotate(0);
