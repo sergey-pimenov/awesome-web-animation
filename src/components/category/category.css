@@ -50,10 +50,6 @@
   }
 
   @media all and (min-width: 1400px) {
-    margin-top: calc((100vw - 1070px * 1) / -4);
-  }
-
-  @media all and (min-width: 1800px) {
     margin-top: calc((100vw - 1070px * 1) / -8);
   }
 }
