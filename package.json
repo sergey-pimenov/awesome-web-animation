@@ -32,6 +32,10 @@
       {
         "staticPath": "data",
         "staticOutDir": "data"
+      },
+      {
+        "staticPath": "static",
+        "staticOutDir": "/"
       }
     ],
     "watcherGlob": "**"
