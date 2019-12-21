@@ -6,7 +6,7 @@ all:
     properties in your SVG images with plain CSS code. It should work fine with 
     path, line, polyline, rect, circle, ellipse and polygon elements. It cannot 
     animate SVG gradients though, so please keep that in mind.'
-    link: 'https://svgartista.net/about'
+    link: 'https://svgartista.net'
   - name: Mantra
     cover: 'data/covers/mantra.png'
     description: 'Mantra is a timeline editing tool for web animations.
@@ -25,6 +25,18 @@ all:
     site this tool is made for you! You can create complex CSS3 keyframe 
     animation without any coding and to get ready made css styles for using on your site.'
     link: 'http://cssanimate.com/'
+  - name: Ceaser
+    cover: 'data/covers/ceaser.png'
+    description: 'Now that we can use CSS transitions in all the modern browsers, let’s 
+    make them pretty. I love the classic Penner equations with Flash and jQuery, so I 
+    included most of those. If you’re anything like me*, you probably thought this about 
+    the default easing options: “ease-in, ease-out...yawn.” The mysterious cubic-bezier 
+    has a lot of potential, but was cumbersome to use. Until now. Also, touch-device friendly!'
+  - name: Cubic Bezier
+    cover: 'data/covers/cubic-bezier.png'
+    description: 'A great utility for creating Bezier curves. You can import and export 
+    curves to/from your library to share them with others.'
+    link: 'https://cubic-bezier.com/'
   - name: Keyframer
     cover: 'data/covers/keyframer.png'
     description: 'Tool that help visualize animation components and output the code required.'

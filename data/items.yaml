@@ -97,6 +97,11 @@ common:
       github:
         directory: dist
         fileName: progressbar.min.js
+  - repo: gre/bezier-easing
+    bundleData:
+      jsdelivr:
+        libName: 'bezier-easing'
+        fileName: bezier-easing.min.js
 css:
   - repo: daneden/animate.css
     bundleData:
