@@ -21,8 +21,9 @@ strong {
   position: relative;
   display: block;
   font-weight: 900;
-  font-size: 8vw;
-  filter: drop-shadow(-0.03em -0.03em 0 white);
+  font-size: 7.2vw;
+  filter: drop-shadow(0 -0.015em 0 white) drop-shadow(-0.015em 0 0 white)
+    drop-shadow(0.015em 0 0 white);
 
   @media all and (max-width: 540px) {
     font-size: 11vw;
@@ -31,15 +32,14 @@ strong {
 
 .sub {
   position: absolute;
-  top: -40px;
-  top: 3.9vw;
+  top: 3.5vw;
   left: 50%;
   margin-bottom: 0;
   padding: 30px 0;
   color: rgb(95, 95, 95);
-  font-size: 5vw;
+  font-size: 4.2vw;
   transform: translate(-50%, -50%);
-  opacity: 0.1;
+  opacity: 0.085;
 
   @media all and (max-width: 540px) {
     font-size: 8vw;

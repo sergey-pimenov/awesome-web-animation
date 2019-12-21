@@ -1,7 +1,13 @@
 .guiTool {
   position: relative;
-  display: block;
-  padding-bottom: 20px;
+  display: flex;
+  height: 350px;
+
+  @media all and (max-width: 1112px) {
+    display: block;
+    height: auto;
+    padding-bottom: 20px;
+  }
 }
 
 .link {
@@ -15,21 +21,44 @@
 }
 
 .cover {
-  width: 100%;
-  max-height: 80vh;
+  width: 680px;
+  height: 100%;
   object-fit: cover;
   object-position: center top;
-  border-top: 1px rgb(240, 240, 240) solid;
-  border-bottom: 1px rgb(240, 240, 240) solid;
+  border-right: 1px rgb(240, 240, 240) solid;
+
+  @media all and (max-width: 1112px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.content {
+  padding: 0 30px;
+
+  @media all and (max-width: 1112px) {
+    padding: 0 15px;
+  }
 }
 
 .title {
-  margin: 10px 20px 0 20px;
+  margin-top: 20px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
+  font-family: Inria Serif, sans-serif;
+
+  @media all and (max-width: 1112px) {
+    margin-top: 10px;
+    font-size: 14px;
+  }
 }
 
 .description {
-  margin: 10px 20px 0 20px;
-  font-size: 14px;
+  margin-top: 10px;
+  font-size: 13px;
+
+  @media all and (max-width: 1112px) {
+    margin-top: 5px;
+    font-size: 12px;
+  }
 }

@@ -6,12 +6,13 @@
   margin-bottom: 15vh;
   color: rgb(255, 255, 255, 0.7);
   font-weight: 900;
-  font-size: 3.8vh;
+  font-size: 3.9vh;
+  font-family: 'Lato', sans-serif;
   line-height: 1.4;
   text-align: center;
   text-transform: uppercase;
 
-  @media all and (max-width: 1090px) {
+  @media all and (max-width: 1112px) {
     margin: 10vh 0 14vh 0;
   }
 
@@ -28,14 +29,14 @@
   z-index: -1;
   display: block;
   width: 42vh;
-  transform: translate(-50%, -45%);
+  transform: translate(-50%, -46%);
   transform-origin: 50% 50%;
   animation: love 0.7s infinite alternate;
 }
 
 @keyframes love {
   100% {
-    transform: translate(-50%, -45%) scale(1.03, 1.03);
+    transform: translate(-50%, -46%) scale(1.03, 1.03);
   }
 }
 

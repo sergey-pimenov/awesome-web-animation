@@ -17,12 +17,12 @@ function Item({ repoData, bundleData = null, userData = null, repo }) {
           className={s.link}
         > Link to {repoData.name} </a>
         <div className={s.itemHeader}>
-          <img
+          {/* <img
             itemProp="image"
             className={s.repoOwnerLogo}
             src={repoData.owner.avatar_url}
             alt={repoData.owner.login}
-          />
+          /> */}
           <h3 itemProp="name" className={s.name}> {repoData.name} </h3>
         </div>
         {repoData.description && (

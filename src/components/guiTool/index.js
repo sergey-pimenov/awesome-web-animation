@@ -15,8 +15,10 @@ function GuiTool({ guiToolData: tool }) {
         Link to {tool.name}
       </a>
       <img className={s.cover} src={tool.cover} alt={`Cover of ${tool.name}`} itemProp="image"/>
-      <h2 className={s.title} itemProp="name"> {tool.name} </h2>
-      <p className={s.description} itemProp="about"> {tool.description} </p>
+      <div className={s.content}>
+        <h2 className={s.title} itemProp="name"> {tool.name} </h2>
+        <p className={s.description} itemProp="about"> {tool.description} </p>
+      </div>
     </div>
   );
 }

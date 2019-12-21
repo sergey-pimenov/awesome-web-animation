@@ -7,6 +7,7 @@
   justify-content: center;
   margin-bottom: 17vh;
   padding: 5px 0;
+  font-size: 18px;
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
 
@@ -27,16 +28,24 @@
   flex-shrink: 0;
   padding: 10px;
   font-weight: 900;
+  transition: all 0.1s;
+
+  &::before {
+    font-weight: 400;
+    content: '# ';
+  }
+
+  &:focus {
+    transform: scale(1.1);
+
+    &::before {
+      transform: scale(0.2);
+    }
+  }
 }
 
 .item:not(:last-child) {
   margin-right: 20px;
-}
-
-.item::before {
-  /* color: lightgray; */
-  font-weight: 400;
-  content: '# ';
 }
 
 .item:nth-child(1) {
