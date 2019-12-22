@@ -12,7 +12,13 @@ function Container({ googleBookId }) {
     `https://www.googleapis.com/books/v1/volumes/${googleBookId}`,
   );
 
-  return !isLoading && <Book bookData={bookData} googleBookId={googleBookId}/>;
+  if (!localStorage.getItem(googleBookId) && !isLoading) {
+    localStorage.setItem(googleBookId, JSON.stringify(bookData));
+  }
+
+  const alreadyAtLocalStorage = localStorage.getItem(googleBookId);
+
+  return (!isLoading || alreadyAtLocalStorage) && <Book bookData={alreadyAtLocalStorage ? JSON.parse(localStorage.getItem(googleBookId)) : bookData} googleBookId={googleBookId}/>;
 }
 
 Container.propTypes = {

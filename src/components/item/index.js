@@ -1,5 +1,5 @@
 import React from 'react';
-import useFetch from "react-fetch-hook";
+import useFetch from 'react-fetch-hook';
 import PropTypes from 'prop-types';
 import Item from './item';
 import endpoint from '../../endpoints.json';
@@ -8,21 +8,37 @@ function Container({ repo, bundleData }) {
   const { isLoading, data: repoData } = useFetch(`${endpoint.github}repos/${repo}`, {
     headers: new Headers({
       Authorization: `token ${process.env.GITHUB_TOKEN}`,
-    })
-  });
-
-  const userAPIUrl = repoData && repoData.owner && repoData.owner.url; 
-
-  const { isLoading: isUserDataLoading, data: userData } = useFetch(repoData ? repoData.owner.url : '', {
-    headers: new Headers({
-      Authorization: `token ${process.env.GITHUB_TOKEN}`,
     }),
-    depends: [userAPIUrl] // users request will not be called until repoData not loaded
   });
+
+  const userAPIUrl = repoData && repoData.owner && repoData.owner.url;
+
+  const { isLoading: isUserDataLoading, data: userData } = useFetch(
+    repoData ? repoData.owner.url : '',
+    {
+      headers: new Headers({
+        Authorization: `token ${process.env.GITHUB_TOKEN}`,
+      }),
+      depends: [userAPIUrl], // users request will not be called until repoData not loaded
+    },
+  );
 
   const isAllDataLoaded = !isLoading && !isUserDataLoading && userData;
 
-  return isAllDataLoaded ? <Item repoData={repoData} bundleData={bundleData} userData={userData} repo={repo}/> : <></>;
+  if (!localStorage.getItem(repo) && !isLoading) {
+    localStorage.setItem(repo, JSON.stringify(repoData));
+  }
+
+  const alreadyAtLocalStorage = localStorage.getItem(repo);
+
+  return isAllDataLoaded || alreadyAtLocalStorage ? (
+    <Item
+      repoData={alreadyAtLocalStorage ? JSON.parse(localStorage.getItem(repo)) : repoData}
+      bundleData={bundleData}
+      userData={userData}
+      repo={repo}
+    />
+  ) : (<></>);
 }
 
 Item.propTypes = {
@@ -36,7 +52,7 @@ Item.propTypes = {
       libName: PropTypes.string,
       fileName: PropTypes.string,
     }),
-  })
+  }),
 };
 
 export default Container;
