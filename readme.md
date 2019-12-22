@@ -1,5 +1,7 @@
 ![Cover](readme_assets/header.png)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/692bdbac-34dc-4783-8a4e-e4a586fee7b6/deploy-status)](https://app.netlify.com/sites/web-animation/deploys)
+
 # [✨ See also web-page version of this list ✨](https://web-animation.netlify.com/)
 
 ### Categories:
