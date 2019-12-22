@@ -6,18 +6,21 @@ import endpoint from '../../endpoints.json';
 
 function Container({ repo, bundleData }) {
   const alreadyAtLocalStorage = localStorage.getItem(repo);
+  const repoDataLocalStorage = JSON.parse(localStorage.getItem(repo));
 
   const { isLoading, data: repoData } = useFetch(`${endpoint.github}repos/${repo}`, {
     headers: new Headers({
       Authorization: `token ${process.env.GITHUB_TOKEN}`,
     }),
-    depends: [!alreadyAtLocalStorage]
+    depends: [!alreadyAtLocalStorage],
   });
 
-  const userAPIUrl = repoData && repoData.owner && repoData.owner.url;
+  const userAPIUrl =
+    (repoDataLocalStorage && repoDataLocalStorage.owner && repoDataLocalStorage.owner.url) ||
+    (repoData && repoData.owner && repoData.owner.url);
 
   const { isLoading: isUserDataLoading, data: userData } = useFetch(
-    repoData ? repoData.owner.url : '',
+    (repoData || alreadyAtLocalStorage) ? userAPIUrl : '',
     {
       headers: new Headers({
         Authorization: `token ${process.env.GITHUB_TOKEN}`,
@@ -26,7 +29,7 @@ function Container({ repo, bundleData }) {
     },
   );
 
-  const isAllDataLoaded = !isLoading && !isUserDataLoading && userData;
+  const isAllDataLoaded = (!isLoading || alreadyAtLocalStorage) && !isUserDataLoading && userData;
 
   if (!localStorage.getItem(repo) && !isLoading) {
     localStorage.setItem(repo, JSON.stringify(repoData));
