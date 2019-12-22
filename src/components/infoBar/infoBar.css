@@ -26,6 +26,10 @@
     padding: 5px 0;
   }
 
+  @media all and (max-width: 360px) {
+    margin-right: 10px;
+  }
+
   &.primary {
     color: rgb(107, 107, 107);
     font-weight: bold;
