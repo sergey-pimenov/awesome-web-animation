@@ -8,7 +8,8 @@ function Container({ googleBookId }) {
   //   `https://www.googleapis.com/books/v1/volumes/${googleBookId}?key=${process.env.GOOGLE_KEY}`,
   // );
 
-  const alreadyAtLocalStorage = localStorage.getItem(googleBookId);
+  const alreadyAtLocalStorage = localStorage.getItem(googleBookId) && localStorage.getItem(googleBookId) !== 'undefined';
+  const bookDataLocalStorage = alreadyAtLocalStorage && JSON.parse(localStorage.getItem(googleBookId));
 
   const { isLoading, data: bookData } = useFetch(
     `https://www.googleapis.com/books/v1/volumes/${googleBookId}`,
@@ -21,7 +22,7 @@ function Container({ googleBookId }) {
     localStorage.setItem(googleBookId, JSON.stringify(bookData));
   }
 
-  return (!isLoading || alreadyAtLocalStorage) && <Book bookData={alreadyAtLocalStorage ? JSON.parse(localStorage.getItem(googleBookId)) : bookData} googleBookId={googleBookId}/>;
+  return (!isLoading || alreadyAtLocalStorage) && <Book bookData={bookDataLocalStorage || bookData} googleBookId={googleBookId}/>;
 }
 
 Container.propTypes = {

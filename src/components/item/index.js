@@ -5,8 +5,8 @@ import Item from './item';
 import endpoint from '../../endpoints.json';
 
 function Container({ repo, bundleData }) {
-  const alreadyAtLocalStorage = localStorage.getItem(repo);
-  const repoDataLocalStorage = JSON.parse(localStorage.getItem(repo));
+  const alreadyAtLocalStorage = localStorage.getItem(repo) && localStorage.getItem(repo) !== 'undefined';
+  const repoDataLocalStorage = alreadyAtLocalStorage && JSON.parse(localStorage.getItem(repo));
 
   const { isLoading, data: repoData } = useFetch(`${endpoint.github}repos/${repo}`, {
     headers: new Headers({
@@ -31,13 +31,13 @@ function Container({ repo, bundleData }) {
 
   const isAllDataLoaded = (!isLoading || alreadyAtLocalStorage) && !isUserDataLoading && userData;
 
-  if (!localStorage.getItem(repo) && !isLoading) {
+  if (!alreadyAtLocalStorage) {
     localStorage.setItem(repo, JSON.stringify(repoData));
   }
 
   return isAllDataLoaded || alreadyAtLocalStorage ? (
     <Item
-      repoData={alreadyAtLocalStorage ? JSON.parse(localStorage.getItem(repo)) : repoData}
+      repoData={repoDataLocalStorage || repoData}
       bundleData={bundleData}
       userData={userData}
       repo={repo}
