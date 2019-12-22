@@ -5,8 +5,6 @@ body {
   line-height: 1.5;
 }
 
-/* <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,800|Antic+Didone|Antic+Slab|Bellefair|Bentham|Cardo:400,700|Caudex:400,700|Cormorant+Garamond:400,700|Cormorant+Infant:400,700|Cormorant+SC:400,700|Crimson+Text:400,700|EB+Garamond:400,700|Fanwood+Text|Gelasio:400,700|Gilda+Display|Halant:400,700|Inria+Serif:400,700|Junge|Libre+Baskerville:400,700|Lora:400,700|Maitree:400,700|Mate|Merriweather:400,900|Merriweather:400,800|Noto+Serif+KR:400,900|Noto+Serif:400,700|PT+Serif:400,700|Playfair+Display:400,900|Roboto+Slab:400,800,900|Scope+One|Slabo+27px|Taviraj:400,700,800,900|Tinos:400,700|Zilla+Slab:400,700&display=swap" rel="stylesheet"> */
-
 html {
   scroll-behavior: smooth;
 }
