@@ -5,10 +5,13 @@ import Item from './item';
 import endpoint from '../../endpoints.json';
 
 function Container({ repo, bundleData }) {
+  const alreadyAtLocalStorage = localStorage.getItem(repo);
+
   const { isLoading, data: repoData } = useFetch(`${endpoint.github}repos/${repo}`, {
     headers: new Headers({
       Authorization: `token ${process.env.GITHUB_TOKEN}`,
     }),
+    depends: [!alreadyAtLocalStorage]
   });
 
   const userAPIUrl = repoData && repoData.owner && repoData.owner.url;
@@ -19,7 +22,7 @@ function Container({ repo, bundleData }) {
       headers: new Headers({
         Authorization: `token ${process.env.GITHUB_TOKEN}`,
       }),
-      depends: [userAPIUrl], // users request will not be called until repoData not loaded
+      depends: [userAPIUrl],
     },
   );
 
@@ -28,8 +31,6 @@ function Container({ repo, bundleData }) {
   if (!localStorage.getItem(repo) && !isLoading) {
     localStorage.setItem(repo, JSON.stringify(repoData));
   }
-
-  const alreadyAtLocalStorage = localStorage.getItem(repo);
 
   return isAllDataLoaded || alreadyAtLocalStorage ? (
     <Item

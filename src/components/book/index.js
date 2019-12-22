@@ -8,15 +8,18 @@ function Container({ googleBookId }) {
   //   `https://www.googleapis.com/books/v1/volumes/${googleBookId}?key=${process.env.GOOGLE_KEY}`,
   // );
 
+  const alreadyAtLocalStorage = localStorage.getItem(googleBookId);
+
   const { isLoading, data: bookData } = useFetch(
     `https://www.googleapis.com/books/v1/volumes/${googleBookId}`,
+    {
+      depends: [!alreadyAtLocalStorage], // users request will not be called until repoData not loaded
+    }
   );
 
   if (!localStorage.getItem(googleBookId) && !isLoading) {
     localStorage.setItem(googleBookId, JSON.stringify(bookData));
   }
-
-  const alreadyAtLocalStorage = localStorage.getItem(googleBookId);
 
   return (!isLoading || alreadyAtLocalStorage) && <Book bookData={alreadyAtLocalStorage ? JSON.parse(localStorage.getItem(googleBookId)) : bookData} googleBookId={googleBookId}/>;
 }
