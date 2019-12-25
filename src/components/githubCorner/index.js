@@ -3,7 +3,7 @@ import s from './githubCorner.css';
 
 function GithubCorner() {
   return (
-    <a href="https://github.com/sergey-pimenov/web-animation"
+    <a href="https://github.com/sergey-pimenov/awesome-web-animation"
        target="_blank"
        rel="noopener noreferrer"
        className={s.githubCorner}
