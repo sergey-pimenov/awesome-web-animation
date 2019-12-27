@@ -1,7 +1,9 @@
 ![Cover](readme_assets/header.png)
 
 <p align="center">
-  <img src="https://awesome.re/badge.svg" alt="Awesome">
+  <a href="https://awesome.re/">
+    <img src="https://awesome.re/badge.svg" alt="Awesome">
+  </a>
   <img src="https://api.netlify.com/api/v1/badges/692bdbac-34dc-4783-8a4e-e4a586fee7b6/deploy-status" alt="Netlify deploy status">
 </p>
 
