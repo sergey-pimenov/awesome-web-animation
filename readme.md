@@ -1,6 +1,9 @@
 ![Cover](readme_assets/header.png)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/692bdbac-34dc-4783-8a4e-e4a586fee7b6/deploy-status)](https://app.netlify.com/sites/awesome-web-animation/deploys)
+<p align="center">
+  <img src="https://awesome.re/badge.svg" alt="Awesome">
+  <img src="https://api.netlify.com/api/v1/badges/692bdbac-34dc-4783-8a4e-e4a586fee7b6/deploy-status" alt="Netlify deploy status">
+</p>
 
 # [✨ See also web-page version of this list ✨](https://awesome-web-animation.netlify.com)
 
