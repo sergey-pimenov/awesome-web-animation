@@ -4,7 +4,9 @@
   <a href="https://awesome.re/">
     <img src="https://awesome.re/badge.svg" alt="Awesome">
   </a>
-  <img src="https://api.netlify.com/api/v1/badges/692bdbac-34dc-4783-8a4e-e4a586fee7b6/deploy-status" alt="Netlify deploy status">
+  <a href="https://awesome-web-animation.netlify.com">
+    <img src="https://api.netlify.com/api/v1/badges/692bdbac-34dc-4783-8a4e-e4a586fee7b6/deploy-status" alt="Netlify deploy status">
+  </a>
 </p>
 
 <h3 align="center">✨ <a href="https://awesome-web-animation.netlify.com">See also web-page version of this list </a> ✨</h3>
