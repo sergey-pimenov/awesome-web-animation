@@ -25,11 +25,6 @@ svg:
       github:
         directory: /
         fileName: raphael.min.js
-  - repo: alexk111/SVG-Morpheus
-    bundleData:
-      github:
-        directory: compile/minified
-        fileName: svg-morpheus.js
   - repo: uxebu/bonsai
 common:
   - repo: greensock/GSAP

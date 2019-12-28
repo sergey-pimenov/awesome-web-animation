@@ -26,7 +26,6 @@
 - [Vivus](https://github.com/maxwellito/vivus) - Library to make drawing animation on SVG.
 - [Walkway](https://github.com/ConnorAtherton/walkway) - An easy way to animate SVG elements.
 - [Raphael](https://github.com/DmitryBaranovskiy/raphael) - JavaScript Vector Library.
-- [SVG Morpheus](https://github.com/alexk111/SVG-Morpheus) - JavaScript library enabling SVG icons to morph from one to the other. It implements Material Design Delightful Details transitions.
 - [Bonsai](https://github.com/uxebu/bonsai) - BonsaiJS is a graphics library and renderer.
 
 ## Common
