@@ -1,14 +1,9 @@
+# Awesome Web Animation [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+
 <a href="https://awesome-web-animation.netlify.com">
   <img src="readme_assets/header.png">
 </a>
 
-# Awesome Web Animation
-
-<p align="center">
-  <a href="https://awesome.re/">
-    <img src="https://awesome.re/badge.svg" alt="Awesome">
-  </a>
-</p>
 
 ## Contents
 - [SVG](#svg)
