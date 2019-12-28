@@ -11,7 +11,7 @@
   </a>
 </p>
 
-<h3 align="center">✨ <a href="https://awesome-web-animation.netlify.com">See also web-page version of this list </a> ✨</h3>
+<h3 align="center">✨ <a href="https://awesome-web-animation.netlify.com">See also web page version of this list </a> ✨</h3>
 
 ## Contents
 - [SVG](#svg)
