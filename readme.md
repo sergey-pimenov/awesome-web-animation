@@ -1,4 +1,6 @@
-![Cover](readme_assets/header.png)
+<a href="https://awesome-web-animation.netlify.com">
+  <img src="readme_assets/header.png">
+</a>
 
 <p align="center">
   <a href="https://awesome.re/">
