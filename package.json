@@ -4,7 +4,7 @@
   "description": "List of usefull tools for creating web-animation",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html --host 127.0.0.1",
+    "start": "parcel src/index.html --host 192.168.0.104",
     "start:localhost": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -45,7 +45,7 @@
     "url": "git+https://github.com/web-animation/web-animation.github.io.git"
   },
   "author": "Sergey Pimenov",
-  "license": "ISC",
+  "license": "CC0",
   "bugs": {
     "url": "https://github.com/web-animation/web-animation.github.io/issues"
   },
