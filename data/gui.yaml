@@ -32,6 +32,7 @@ all:
     included most of those. If you’re anything like me*, you probably thought this about 
     the default easing options: “ease-in, ease-out...yawn.” The mysterious cubic-bezier 
     has a lot of potential, but was cumbersome to use. Until now. Also, touch-device friendly!'
+    link: 'https://matthewlein.com/tools/ceaser'
   - name: Cubic Bezier
     cover: 'data/covers/cubic-bezier.png'
     description: 'A great utility for creating Bezier curves. You can import and export 
