@@ -102,6 +102,7 @@ common:
       jsdelivr:
         libName: 'bezier-easing'
         fileName: bezier-easing.min.js
+  - repo: glslify/glsl-easings
 css:
   - repo: daneden/animate.css
     bundleData:
