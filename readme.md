@@ -2,16 +2,13 @@
   <img src="readme_assets/header.png">
 </a>
 
+# Awesome Web Animation
+
 <p align="center">
   <a href="https://awesome.re/">
     <img src="https://awesome.re/badge.svg" alt="Awesome">
   </a>
-  <a href="https://awesome-web-animation.netlify.com">
-    <img src="https://api.netlify.com/api/v1/badges/692bdbac-34dc-4783-8a4e-e4a586fee7b6/deploy-status" alt="Netlify deploy status">
-  </a>
 </p>
-
-<h3 align="center">✨ <a href="https://awesome-web-animation.netlify.com">See also web page version of this list </a> ✨</h3>
 
 ## Contents
 - [SVG](#svg)
@@ -152,3 +149,11 @@ This book will help you create practical / usable / wickedly-cool animations in 
 <img src="data/covers/RmphScK8u-gC.jpg" width="200"/>
 
 Foundation HTML5 Animation with JavaScript covers everything that you need to know to create dynamic scripted animation using the HTML5 canvas. It provides information on all the relevant math you'll need, before moving on to physics concepts like acceleration, velocity, easing, springs, collision detection, conservation of momentum, 3D, and forward and inverse kinematics. Foundation HTML5 Animation with JavaScript is a fantastic resource for all web developers working in HTML5 or switching over from Flash to create standards-compliant games, applications, and animations that will work across all modern browsers and most mobile devices, including iPhones, iPads, and Android devices. -->
+
+<h3 align="center">✨<a href="https://awesome-web-animation.netlify.com"> See also web page version of this list </a>✨</h3>
+
+<p align="center">
+  <a align="center" href="https://awesome-web-animation.netlify.com">
+    <img src="https://api.netlify.com/api/v1/badges/692bdbac-34dc-4783-8a4e-e4a586fee7b6/deploy-status" alt="Netlify deploy status">
+  </a>
+</p>
