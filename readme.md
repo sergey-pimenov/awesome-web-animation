@@ -7,7 +7,7 @@
   <img src="https://api.netlify.com/api/v1/badges/692bdbac-34dc-4783-8a4e-e4a586fee7b6/deploy-status" alt="Netlify deploy status">
 </p>
 
-# [✨ See also web-page version of this list ✨](https://awesome-web-animation.netlify.com)
+## [✨ See also web-page version of this list ✨](https://awesome-web-animation.netlify.com)
 
 ## Contents
 - [SVG](#svg)
