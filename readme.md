@@ -152,5 +152,5 @@ Foundation HTML5 Animation with JavaScript covers everything that you need to kn
 
 ## License
 
-See [LICENCE.md](license.md)
+See [license.md](license.md)
 
