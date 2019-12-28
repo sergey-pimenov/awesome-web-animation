@@ -152,8 +152,3 @@ This book will help you create practical / usable / wickedly-cool animations in 
 <img src="data/covers/RmphScK8u-gC.jpg" width="200"/>
 
 Foundation HTML5 Animation with JavaScript covers everything that you need to know to create dynamic scripted animation using the HTML5 canvas. It provides information on all the relevant math you'll need, before moving on to physics concepts like acceleration, velocity, easing, springs, collision detection, conservation of momentum, 3D, and forward and inverse kinematics. Foundation HTML5 Animation with JavaScript is a fantastic resource for all web developers working in HTML5 or switching over from Flash to create standards-compliant games, applications, and animations that will work across all modern browsers and most mobile devices, including iPhones, iPads, and Android devices. -->
-
-## License
-
-See [license](license)
-
