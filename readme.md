@@ -9,9 +9,8 @@
 
 # [✨ See also web-page version of this list ✨](https://awesome-web-animation.netlify.com)
 
-### Categories:
-#### [Tools](#tools-1)
-- [SVG](#svg)
+## Contents
+- [SVG](#SVG)
 - [Common](#common)
 - [CSS](#css)
 - [Canvas](#canvas)
@@ -20,11 +19,7 @@
 - [GUI tools](#gui-tools)
 - [Books](#books)
 
----
-
-### Tools:
-
-##### SVG:
+## SVG:
  * [Snap.svg](https://github.com/adobe-webplatform/Snap.svg)
  * [Svg.js](https://github.com/svgdotjs/svg.js)
  * [Vivus](https://github.com/maxwellito/vivus)
@@ -33,9 +28,7 @@
  * [SVG Morpheus](https://github.com/alexk111/SVG-Morpheus)
  * [Bonsai](https://github.com/uxebu/bonsai)
 
- ---
-
-##### Common:
+## Common:
  * [GSAP](https://github.com/greensock/GSAP)
  * [TweenJS](https://github.com/CreateJS/TweenJS)
  * [Anime.js](https://github.com/juliangarnier/anime)
@@ -52,9 +45,7 @@
  * [Bezier easing](https://github.com/gre/bezier-easing)
  * [Glsl easings](https://github.com/glslify/glsl-easings)
 
----
-
-##### CSS:
+## CSS:
  * [Animate.css](https://github.com/daneden/animate.css)
  * [Motion-ui](https://github.com/foundation/motion-ui)
  * [Magic](https://github.com/miniMAC/magic)
@@ -62,9 +53,7 @@
  * [SpinKit](https://github.com/tobiasahlin/SpinKit)
  * [Bounce.js](https://github.com/tictail/bounce.js)
 
----
-
-##### Canvas:
+## Canvas:
  * [EaselJS](https://github.com/CreateJS/EaselJS)
  * [Fabric.js](https://github.com/fabricjs/fabric.js)
  * [Paper.js](https://github.com/paperjs/paper.js)
@@ -74,9 +63,7 @@
  * [Curtainsjs](https://github.com/martinlaxenaire/curtainsjs)
  * [Hover-effect](https://github.com/robin-dela/hover-effect)
 
----
-
-##### Animate on scroll:
+## Animate on scroll:
  * [AOS](https://github.com/michalsnik/aos)
  * [Laxxx](https://github.com/alexfoxy/laxxx)
  * [Wow](https://github.com/matthieua/WOW)
@@ -85,9 +72,7 @@
  * [Motus](https://github.com/alexcambose/motus)
  * [Sal](https://github.com/mciastek/sal)
 
----
-
-##### Text
+## Text
 
  * [Malarkey](https://github.com/yuanqing/malarkey)
  * [Typed.js](https://github.com/mattboldt/typed.js)
@@ -95,9 +80,7 @@
  * [Typebot](https://github.com/akzhy/typebot)
  * [Blotter](https://github.com/bradley/Blotter)
 
----
-
-##### GUI tools:
+## GUI tools:
  * [Svgartista](https://svgartista.net/)
  * [Mantra](https://jeremyckahn.github.io/mantra/)
  * [Animista](https://animista.net/)
@@ -105,9 +88,7 @@
  * [Keyframer](http://alexberg.in/keyframer/)
  * [CSS Animation Kit](http://angrytools.com/css/animation/)
 
----
-
-### Books:
+## Books:
 * [SVG animation](https://www.amazon.com/SVG-Animations-Implementations-Responsive-Animation/dp/1491939702)
 * [Creating Web Animations: Bringing Your UIs to Life](https://www.amazon.com/Creating-Web-Animations-Bringing-Your/dp/1491957514/)
 * [Transitions and Animations in CSS: Adding Motion with CSS](https://www.amazon.com/Transitions-Animations-CSS-Adding-Motion/dp/149192988X/)
