@@ -3,7 +3,9 @@
   flex-direction: column;
   margin: 0 auto 80px auto;
 
-  @media all and (max-width: 1112px) {
+  @media all and (max-width: 1111px) {
+    width: 100%;
+    max-width: 420px;
     margin: 0 auto;
   }
 }
@@ -15,7 +17,7 @@
   font-weight: 900;
   font-size: 50px;
 
-  @media all and (max-width: 1112px) {
+  @media all and (max-width: 1111px) {
     font-size: 30px;
   }
 
@@ -41,12 +43,12 @@
   max-width: 1095px;
   padding-left: 30px;
 
-  @media all and (max-width: 1112px) {
+  @media all and (max-width: 1111px) {
     margin: 0 10px;
     padding-left: 0;
   }
 
-  @media all and (max-width: 1112px) {
+  @media all and (max-width: 1111px) {
     flex-direction: column;
   }
 
@@ -88,10 +90,6 @@
 
     &:not(:last-child) {
       margin: 0 0 20px 0;
-    }
-
-    & > * {
-      max-width: 420px;
     }
   }
 }

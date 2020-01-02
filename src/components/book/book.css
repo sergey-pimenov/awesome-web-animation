@@ -5,7 +5,7 @@
   height: 320px;
   padding: 20px 20px 0 20px;
 
-  @media all and (max-width: 1112px) {
+  @media all and (max-width: 1111px) {
     height: auto;
     padding: 15px 15px 0 15px;
   }
@@ -30,7 +30,7 @@
   transform-origin: 0 100%;
   transition: all 0.15s;
 
-  @media all and (max-width: 1112px) {
+  @media all and (max-width: 1111px) {
     display: none;
   }
 }
@@ -40,7 +40,7 @@
   max-height: 100%;
   padding: 0 30px;
 
-  @media all and (max-width: 1112px) {
+  @media all and (max-width: 1111px) {
     padding: 0;
   }
 }
@@ -53,7 +53,7 @@
   font-family: Inria Serif, sans-serif;
   line-height: 1.2;
 
-  @media all and (max-width: 1112px) {
+  @media all and (max-width: 1111px) {
     font-size: 18px;
   }
 }
@@ -63,7 +63,7 @@
   color: grey;
   font-size: 12px;
 
-  @media all and (max-width: 1112px) {
+  @media all and (max-width: 1111px) {
     color: rgb(180, 180, 180);
   }
 }
@@ -74,7 +74,7 @@
   margin-top: 20px;
   overflow: hidden;
 
-  @media all and (max-width: 1112px) {
+  @media all and (max-width: 1111px) {
     margin-top: 10px;
   }
 

@@ -11,7 +11,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media all and (max-width: 1112px) {
+  @media all and (max-width: 1111px) {
     margin: 10vh 0 14vh 0;
   }
 

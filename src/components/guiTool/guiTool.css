@@ -3,7 +3,7 @@
   display: flex;
   height: 350px;
 
-  @media all and (max-width: 1112px) {
+  @media all and (max-width: 1111px) {
     display: block;
     height: auto;
     padding-bottom: 20px;
@@ -27,7 +27,7 @@
   object-position: center top;
   border-right: 1px rgb(240, 240, 240) solid;
 
-  @media all and (max-width: 1112px) {
+  @media all and (max-width: 1111px) {
     width: 100%;
     height: auto;
   }
@@ -36,7 +36,7 @@
 .content {
   padding: 0 30px;
 
-  @media all and (max-width: 1112px) {
+  @media all and (max-width: 1111px) {
     padding: 0 15px;
   }
 }
@@ -47,7 +47,7 @@
   font-size: 24px;
   font-family: Inria Serif, sans-serif;
 
-  @media all and (max-width: 1112px) {
+  @media all and (max-width: 1111px) {
     margin-top: 10px;
     font-size: 14px;
   }
@@ -57,7 +57,7 @@
   margin-top: 10px;
   font-size: 13px;
 
-  @media all and (max-width: 1112px) {
+  @media all and (max-width: 1111px) {
     margin-top: 5px;
     font-size: 12px;
   }
