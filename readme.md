@@ -1,7 +1,7 @@
 # Awesome Web Animation [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
 <a href="https://awesome-web-animation.netlify.com">
-  <img src="readme_assets/header.png">
+  <img src="readme_assets/header.svg">
 </a>
 
 
