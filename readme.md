@@ -1,7 +1,7 @@
 # Awesome Web Animation [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
 <a href="https://awesome-web-animation.netlify.com">
-  <img src="readme_assets/header.svg">
+  <img src="readme_assets/header.png">
 </a>
 
 This list contains the most useful tools and data for creating web animations.
