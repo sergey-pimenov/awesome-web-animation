@@ -4,6 +4,10 @@
   <img src="readme_assets/header.svg">
 </a>
 
+This list contains the most useful tools and data for creating web animations.
+* Any libraries that help animate anything in the browser - Canvas, SVG, text, scroll etc.
+* Books about animation in the browser.
+* GUI tools for animation that can be exported to the browser.
 
 ## Contents
 - [SVG](#svg)
