@@ -45,6 +45,7 @@ This list contains the most useful tools and data for creating web animations.
 - [Progressbar.js](https://github.com/kimmobrunfeldt/progressbar.js) - Responsive and slick progress bars.
 - [Bezier easing](https://github.com/gre/bezier-easing) - Cubic-bezier implementation for your JavaScript animation easings.
 - [Glsl easings](https://github.com/glslify/glsl-easings) - Easing functions in GLSL.
+- [ES6-tween](https://github.com/tweenjs/es6-tween) - ES6 version of tween.js.
 
 ## CSS
 

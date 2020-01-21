@@ -98,6 +98,11 @@ common:
         libName: 'bezier-easing'
         fileName: bezier-easing.min.js
   - repo: glslify/glsl-easings
+  - repo: tweenjs/es6-tween
+    bundleData:
+      jsdelivr:
+        libName: es6-tween
+        fileName: Tween.min.js
 css:
   - repo: daneden/animate.css
     bundleData:
