@@ -37,7 +37,10 @@
   font-size: 24px;
   font-family: Inria Serif, sans-serif;
   line-height: 0.7;
-  text-transform: capitalize;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
 }
 
 .repoOwnerLogo {
