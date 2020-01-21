@@ -57,7 +57,9 @@ function InfoBar({ repoData, bundleData, repo }) {
     let bundle = find(jsdelivrBundleData.files, { name: bundleData.jsdelivr.fileName });
 
     if (!bundle) {
-      distDirectory = find(jsdelivrBundleData.files, { name: 'dist' });
+      distDirectory = find(jsdelivrBundleData.files, { name: 'dist' }) ||
+                      find(jsdelivrBundleData.files, { name: 'bundled' });
+  
 
       if (distDirectory) {
         bundle = find(distDirectory.files, { name: bundleData.jsdelivr.fileName });
