@@ -27,6 +27,7 @@ This list contains the most useful tools and data for creating web animations.
 - [Walkway](https://github.com/ConnorAtherton/walkway) - An easy way to animate SVG elements.
 - [Raphael](https://github.com/DmitryBaranovskiy/raphael) - JavaScript Vector Library.
 - [Bonsai](https://github.com/uxebu/bonsai) - BonsaiJS is a graphics library and renderer.
+- [SVGR](https://github.com/gregberge/svgr) - Transform SVGs into React components.
 
 ## Common
 
@@ -46,6 +47,7 @@ This list contains the most useful tools and data for creating web animations.
 - [Bezier easing](https://github.com/gre/bezier-easing) - Cubic-bezier implementation for your JavaScript animation easings.
 - [Glsl easings](https://github.com/glslify/glsl-easings) - Easing functions in GLSL.
 - [ES6-tween](https://github.com/tweenjs/es6-tween) - ES6 version of tween.js.
+- [Motion](https://github.com/framer/motion) - Open source, production-ready animation and gesture library for React.
 
 ## CSS
 
@@ -70,7 +72,7 @@ This list contains the most useful tools and data for creating web animations.
 ## Animate on scroll
 
 - [AOS](https://github.com/michalsnik/aos) - Animate on scroll library.
-- [Laxxx](https://github.com/alexfoxy/laxxx) - Simple & light weight (3kb minified & zipped) vanilla JavaScript plugin to create smooth & beautiful animations when you scrolllll! 
+- [Laxxx](https://github.com/alexfoxy/laxxx) - Simple & light weight (3kb minified & zipped) vanilla JavaScript plugin to create smooth & beautiful animations when you scrolllll!
 - [Wow](https://github.com/matthieua/WOW) - Reveal CSS animation as you scroll down a page.
 - [Scrollreveal](https://github.com/scrollreveal/scrollreveal) - Animate elements as they scroll into view.
 - [ScrollMagic](https://github.com/janpaepke/ScrollMagic) - The JavaScript library for magical scroll interactions.
