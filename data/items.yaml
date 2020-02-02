@@ -229,3 +229,10 @@ text:
       github:
         directory: build
         fileName: blotter.min.js
+react:
+  - repo: gregberge/svgr
+  - repo: framer/motion
+    bundleData:
+      jsdelivr:
+        libName: framer-motion
+        fileName: framer-motion.js

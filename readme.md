@@ -70,7 +70,7 @@ This list contains the most useful tools and data for creating web animations.
 ## Animate on scroll
 
 - [AOS](https://github.com/michalsnik/aos) - Animate on scroll library.
-- [Laxxx](https://github.com/alexfoxy/laxxx) - Simple & light weight (3kb minified & zipped) vanilla JavaScript plugin to create smooth & beautiful animations when you scrolllll! 
+- [Laxxx](https://github.com/alexfoxy/laxxx) - Simple & light weight (3kb minified & zipped) vanilla JavaScript plugin to create smooth & beautiful animations when you scrolllll!
 - [Wow](https://github.com/matthieua/WOW) - Reveal CSS animation as you scroll down a page.
 - [Scrollreveal](https://github.com/scrollreveal/scrollreveal) - Animate elements as they scroll into view.
 - [ScrollMagic](https://github.com/janpaepke/ScrollMagic) - The JavaScript library for magical scroll interactions.
@@ -84,6 +84,12 @@ This list contains the most useful tools and data for creating web animations.
 - [Shuffle-text](https://github.com/ics-ikeda/shuffle-text) - Shuffle-text is JavaScript text effect library such as cool legacy of Flash.
 - [Typebot](https://github.com/akzhy/typebot) - JavaScript library for typing animation.
 - [Blotter](https://github.com/bradley/Blotter) - A JavaScript API for drawing unconventional text effects on the web.
+
+## React
+
+- [Motion](https://github.com/framer/motion) - Open source, production-ready animation and gesture library for React.
+- [SVGR](https://github.com/gregberge/svgr) - Transform SVGs into React components.
+
 
 ## GUI tools
 
