@@ -40,10 +40,11 @@
 .items {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1095px;
+  width: 1095px;
   padding-left: 30px;
 
   @media all and (max-width: 1111px) {
+    width: auto;
     margin: 0 10px;
     padding-left: 0;
   }
