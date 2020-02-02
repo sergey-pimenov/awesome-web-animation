@@ -17,6 +17,7 @@ This list contains the most useful tools and data for creating web animations.
 - [Animate on scroll](#animate-on-scroll)
 - [Text](#text)
 - [GUI tools](#gui-tools)
+- [React](#react)
 - [Books](#books)
 
 ## SVG
