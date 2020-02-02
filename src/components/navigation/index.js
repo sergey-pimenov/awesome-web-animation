@@ -25,6 +25,9 @@ function Navigation() {
       <a className={s.item} href="#Text">
         Text
       </a>
+      <a className={s.item} href="#React">
+        React
+      </a>
       <a className={s.item} href="#GUI">
         With GUI
       </a>

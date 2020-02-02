@@ -61,10 +61,16 @@ function App() {
           titleColor="#acb253"
         />
         <Category
+          name="React"
+          categoryData={itemsData.react}
+          listType="defaultCards"
+          titleColor="#ebc20d"
+        />
+        <Category
           name="GUI"
           categoryData={guiToolsData.all}
           listType="guiCards"
-          titleColor="#ffa800"
+          titleColor="#ffae13"
         />
       </div>
       <Footer />
