@@ -167,6 +167,11 @@ canvas:
       github:
         directory: dist
         fileName: hover-effect.js
+  - repo: williamngan/pts
+    bundleData:
+      github:
+        directory: dist
+        fileName: pts.min.js
 scroll:
   - repo: michalsnik/aos
     bundleData:
