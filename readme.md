@@ -67,7 +67,7 @@ This list contains the most useful tools and data for creating web animations.
 - [Ocanvas](https://github.com/koggdal/ocanvas) - JavaScript library for object-based canvas drawing.
 - [Curtainsjs](https://github.com/martinlaxenaire/curtainsjs) - Lightweight vanilla WebGL JavaScript library that turns HTML DOM elements into interactive textured planes.
 - [Hover-effect](https://github.com/robin-dela/hover-effect) - JavaScript library to draw and animate images on hover.
-- [Pts.js](https://github.com/williamngan/pts) - Pts is a typescript/javascript library for visualization and creative-coding..
+- [Pts.js](https://github.com/williamngan/pts) - Pts is a typescript/javascript library for visualization and creative-coding.
 
 ## Animate on scroll
 
