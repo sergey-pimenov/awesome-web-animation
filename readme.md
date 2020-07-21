@@ -68,6 +68,7 @@ This list contains the most useful tools and data for creating web animations.
 - [Curtainsjs](https://github.com/martinlaxenaire/curtainsjs) - Lightweight vanilla WebGL JavaScript library that turns HTML DOM elements into interactive textured planes.
 - [Hover-effect](https://github.com/robin-dela/hover-effect) - JavaScript library to draw and animate images on hover.
 - [Pts.js](https://github.com/williamngan/pts) - Pts is a typescript/javascript library for visualization and creative-coding.
+- [tsParticles](https://github.com/matteobruni/tsparticles/) - tsParticles is a lightweight typescript/javascript library for creating easily particles animations.
 
 ## Animate on scroll
 
@@ -91,6 +92,7 @@ This list contains the most useful tools and data for creating web animations.
 
 - [Motion](https://github.com/framer/motion) - Open source, production-ready animation and gesture library for React.
 - [SVGR](https://github.com/gregberge/svgr) - Transform SVGs into React components.
+- [React tsParticles](https://github.com/matteobruni/tsparticles/blob/master/components/react/README.md) - ReactJS wrapper for *tsParticles*
 
 
 ## GUI tools
