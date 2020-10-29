@@ -19,6 +19,7 @@ This list contains the most useful tools and data for creating web animations.
 - [GUI tools](#gui-tools)
 - [React](#react)
 - [Books](#books)
+- [Videos](#videos)
 
 ## SVG
 
@@ -165,3 +166,7 @@ Foundation HTML5 Animation with JavaScript covers everything that you need to kn
     <img src="https://api.netlify.com/api/v1/badges/692bdbac-34dc-4783-8a4e-e4a586fee7b6/deploy-status" alt="Netlify deploy status">
   </a>
 </p>
+
+## Videos
+
+- [Yuri Artyukh youtube channel](https://www.youtube.com/user/flintyara) - This man creates amazing web animations using various technologies for this, and recording it all in steam format.
