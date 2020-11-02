@@ -172,3 +172,4 @@ Foundation HTML5 Animation with JavaScript covers everything that you need to kn
     <img src="https://api.netlify.com/api/v1/badges/692bdbac-34dc-4783-8a4e-e4a586fee7b6/deploy-status" alt="Netlify deploy status">
   </a>
 </p>
+
