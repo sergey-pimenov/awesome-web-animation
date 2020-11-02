@@ -4,8 +4,8 @@
   "description": "List of usefull tools for creating web-animation",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html --host 192.168.0.104",
-    "start:localhost": "parcel src/index.html",
+    "start": "parcel src/index.html",
+    "start:network": "parcel src/index.html --host 192.168.0.104",
     "build": "parcel build src/index.html --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "prettier --write src/*.js src/**/*.js",
