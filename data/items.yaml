@@ -160,7 +160,7 @@ canvas:
   - repo: martinlaxenaire/curtainsjs
     bundleData:
       github:
-        directory: build
+        directory: dist
         fileName: curtains.min.js
   - repo: robin-dela/hover-effect
     bundleData:
@@ -243,3 +243,4 @@ react:
         libName: framer-motion
         fileName: framer-motion.js
   - repo: matteobruni/tsparticles
+  - repo: pmndrs/react-spring
