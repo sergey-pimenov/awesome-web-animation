@@ -4,7 +4,7 @@
   "description": "List of usefull tools for creating web-animation",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html --host 192.168.0.104",
+    "start": "parcel src/index.html",
     "start:localhost": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1",
