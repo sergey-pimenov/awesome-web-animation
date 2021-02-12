@@ -167,6 +167,12 @@ canvas:
       github:
         directory: dist
         fileName: hover-effect.js
+  - repo: williamngan/pts
+    bundleData:
+      github:
+        directory: dist
+        fileName: pts.min.js
+  - repo: matteobruni/tsparticles
 scroll:
   - repo: michalsnik/aos
     bundleData:
@@ -236,3 +242,4 @@ react:
       jsdelivr:
         libName: framer-motion
         fileName: framer-motion.js
+  - repo: matteobruni/tsparticles
