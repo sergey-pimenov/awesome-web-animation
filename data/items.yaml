@@ -103,6 +103,7 @@ common:
       jsdelivr:
         libName: es6-tween
         fileName: Tween.min.js
+  - repo: sfi0zy/weeee
 css:
   - repo: daneden/animate.css
     bundleData:
