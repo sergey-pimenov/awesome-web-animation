@@ -12,6 +12,10 @@
     "lint:fix": "eslint --debug src/*.js --fix",
     "stylelint:fix": "stylelint src/*.css --fix"
   },
+  "engines" : { 
+    "npm" : "6.14.12",
+    "node" : "10.24.1"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
