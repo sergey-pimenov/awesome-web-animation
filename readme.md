@@ -29,6 +29,7 @@ This list contains the most useful tools and data for creating web animations.
 - [Walkway](https://github.com/ConnorAtherton/walkway) - An easy way to animate SVG elements.
 - [Raphael](https://github.com/DmitryBaranovskiy/raphael) - JavaScript Vector Library.
 - [Bonsai](https://github.com/uxebu/bonsai) - BonsaiJS is a graphics library and renderer.
+- [`<qr-code>`](https://github.com/bitjson/qr-code) – Web component for animating custom, SVG-based QR codes.
 
 ## Common
 
