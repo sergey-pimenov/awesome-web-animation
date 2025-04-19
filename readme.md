@@ -35,6 +35,7 @@ This list contains the most useful tools and data for creating web animations.
 - [GSAP](https://github.com/greensock/GSAP) - JavaScript animation library.
 - [TweenJS](https://github.com/CreateJS/TweenJS) - A simple but powerful tweening / animation library for JavaScript. Part of the CreateJS suite of libraries.
 - [Anime.js](https://github.com/juliangarnier/anime) - JavaScript animation engine.
+- [AnimBase](https://github.com/agusmade/animbase) - Lightweight declarative animation engine using `data-*` attributes and frame-based timelines with per-value easing.
 - [Mojs](https://github.com/mojs/mojs) - The motion graphics toolbelt for the web.
 - [Animo.js](https://github.com/ThrivingKings/animo.js) - A powerful little tool for managing CSS animations.
 - [Move.js](https://github.com/visionmedia/move.js) - CSS3 backed JavaScript animation framework.
