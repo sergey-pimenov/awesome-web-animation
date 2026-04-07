@@ -9,6 +9,7 @@ This list contains the most useful tools and data for creating web animations.
 * Books about animation in the browser.
 * GUI tools for animation that can be exported to the browser.
 
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested AI agent system prompts for web animation workflow orchestration, automated UI motion pipeline management, and multi-agent coordination. MIT licensed.
 ## Contents
 - [SVG](#svg)
 - [Common](#common)
