@@ -1,5 +1,6 @@
 ---
 svg:
+  - repo: varstatt/loopkit
   - repo: adobe-webplatform/Snap.svg
     bundleData:
       github:
