@@ -89,6 +89,7 @@ This list contains the most useful tools and data for creating web animations.
 - [Shuffle-text](https://github.com/ics-ikeda/shuffle-text) - Shuffle-text is JavaScript text effect library such as cool legacy of Flash.
 - [Typebot](https://github.com/akzhy/typebot) - JavaScript library for typing animation.
 - [Blotter](https://github.com/bradley/Blotter) - A JavaScript API for drawing unconventional text effects on the web.
+- [Vysmo Text](https://github.com/vysmodev/vysmo) - Tiny text animation library with 243 presets (enter/exit/emphasis), grapheme-safe splitting via Intl.Segmenter, and scroll scrubbing. Tree-shakable, ~3 KB gzipped.
 
 ## React
 
