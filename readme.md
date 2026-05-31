@@ -108,6 +108,7 @@ This list contains the most useful tools and data for creating web animations.
 - [Keyframer](http://alexberg.in/keyframer/) - Tool that help visualize animation components and output the code required.
 - [CSS Animation Kit](http://angrytools.com/css/animation/) - Select any predefined samples from top panel. Below samples there is a timeline of @keyframes. Timeline has 101 keyframes ( 0% to 100%) direction from left to right. Highlighted keyframe indicate that some style is assigned to that point. You can add new style at selected point.
 
+- [IconKing](https://iconking.net) - Free browser-based Lottie animation previewer, color editor, and .json ↔ .lottie format converter. Preview any Lottie file, edit colors without After Effects, and optimize file size. No account needed.
 ## Books
 
 ### [SVG animation](https://www.amazon.com/SVG-Animations-Implementations-Responsive-Animation/dp/1491939702)
