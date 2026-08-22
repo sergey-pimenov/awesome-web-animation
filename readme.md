@@ -84,7 +84,6 @@ This list contains the most useful tools and data for creating web animations.
 
 ## Text
 
-- [Word Animator](https://wordanimator.com/) - Free in-browser animated text generator with 92+ styles, customizable motion effects, and instant SVG/GIF/MP4 downloads.
 - [Malarkey](https://github.com/yuanqing/malarkey) - Simulate a typewriter effect in vanilla JavaScript.
 - [Typed.js](https://github.com/mattboldt/typed.js) - A JavaScript Typing Animation Library.
 - [Shuffle-text](https://github.com/ics-ikeda/shuffle-text) - Shuffle-text is JavaScript text effect library such as cool legacy of Flash.

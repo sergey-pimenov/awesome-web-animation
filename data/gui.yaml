@@ -1,5 +1,9 @@
 ---
 all:
+  - name: Word Animator
+    cover: 'data/covers/wordanimator.png'
+    description: 'Free online vector animation creator for customizable SVG text animations, logo animations, animated map paths, and infographic charts with multi-format export (SVG, PNG, GIF, MP4, WebM).'
+    link: 'https://wordanimator.com'
   - name: SVG Artista
     cover: 'data/covers/svgartista.png'
     description: 'SVG Artista is a tool that helps you animate stroke and fill 
