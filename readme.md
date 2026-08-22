@@ -84,6 +84,7 @@ This list contains the most useful tools and data for creating web animations.
 
 ## Text
 
+- [Word Animator](https://wordanimator.com/) - Free in-browser animated text generator with 92+ styles, customizable motion effects, and instant SVG/GIF/MP4 downloads.
 - [Malarkey](https://github.com/yuanqing/malarkey) - Simulate a typewriter effect in vanilla JavaScript.
 - [Typed.js](https://github.com/mattboldt/typed.js) - A JavaScript Typing Animation Library.
 - [Shuffle-text](https://github.com/ics-ikeda/shuffle-text) - Shuffle-text is JavaScript text effect library such as cool legacy of Flash.
@@ -99,6 +100,7 @@ This list contains the most useful tools and data for creating web animations.
 
 ## GUI tools
 
+- [Word Animator](https://wordanimator.com/) - Free online animation maker for customizable SVG text animations, logo animations, animated maps, and infographic paths with multi-format export (SVG, PNG, GIF, MP4, WebM).
 - [Svgartista](https://svgartista.net/) - SVG Artista is a tool that helps you animate stroke and fill properties in your SVG images with plain CSS code. It should work fine with path, line, polyline, rect, circle, ellipse and polygon elements. It cannot animate SVG gradients though, so please keep that in mind.
 - [Mantra](https://jeremyckahn.github.io/mantra/) - Mantra is a timeline editing tool for web animations. It is inspired by tools such as Adobe Flash and After Effects.
 - [Animista](https://animista.net/) - Animista is a place where you can play with a collection of pre-made css animations, tweak them and get only those you will actually use.
