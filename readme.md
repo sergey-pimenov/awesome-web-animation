@@ -49,6 +49,7 @@ This list contains the most useful tools and data for creating web animations.
 - [Glsl easings](https://github.com/glslify/glsl-easings) - Easing functions in GLSL.
 - [ES6-tween](https://github.com/tweenjs/es6-tween) - ES6 version of tween.js.
 - [Weeee.js](https://github.com/sfi0zy/weeee) - Tiny Javascript tweening engine.
+- [Halloween.js](https://github.com/rogulia/halloween.js) - Zero-dependency Halloween screen-corner decorations and ambient page effects for any website.
 
 ## CSS
 
