@@ -96,6 +96,7 @@ This list contains the most useful tools and data for creating web animations.
 - [SVGR](https://github.com/gregberge/svgr) - Transform SVGs into React components.
 - [React tsParticles](https://github.com/matteobruni/tsparticles/blob/master/components/react/README.md) - ReactJS wrapper for *tsParticles*
 - [React spring](https://www.react-spring.io/) - Open source, spring-physics based animation library for React that supports interpolations. Fast and easy to use.
+- [AtomicMotion UI](https://github.com/michellesijiama/atomicmotion-ui) - Open source collection of copy-paste micro-interactions and animated UI components for React.
 
 ## GUI tools
 
