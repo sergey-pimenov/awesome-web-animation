@@ -245,3 +245,4 @@ react:
         fileName: framer-motion.js
   - repo: matteobruni/tsparticles
   - repo: pmndrs/react-spring
+  - repo: michellesijiama/atomicmotion-ui
