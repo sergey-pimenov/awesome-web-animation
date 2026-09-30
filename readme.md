@@ -149,6 +149,8 @@ This list contains the most useful tools and data for creating web animations.
 - [Cables](https://cables.gl/) - Visual programming tool for interactive WebGL content. Connect operators into patches and export real-time visuals to your website.
 - [Easings.net](https://easings.net/) - Visual cheat sheet of easing functions. Compare curves, preview motion, and copy CSS or JavaScript snippets.
 
+- [IconKing](https://iconking.net) - Free browser-based Lottie animation previewer, color editor, and .json ↔ .lottie format converter. No upload required.
+
 ## Books
 
 ### [Animation at Work](https://abookapart.com/products/animation-at-work.html)
