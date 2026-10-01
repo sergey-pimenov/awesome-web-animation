@@ -148,6 +148,7 @@ This list contains the most useful tools and data for creating web animations.
 - [Spline](https://spline.design/) - Real-time 3D design tool that runs in the browser. Build interactive 3D scenes and export them to websites with the Spline runtime.
 - [Cables](https://cables.gl/) - Visual programming tool for interactive WebGL content. Connect operators into patches and export real-time visuals to your website.
 - [Easings.net](https://easings.net/) - Visual cheat sheet of easing functions. Compare curves, preview motion, and copy CSS or JavaScript snippets.
+- [Animation Handbook](https://matinmonshizadeh.github.io/animation-handbook/) - Web animation techniques, each with a live demo, plain settings and a prompt for AI assistants.
 
 ## Books
 
