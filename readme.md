@@ -106,6 +106,7 @@ This list contains the most useful tools and data for creating web animations.
 - [Rellax](https://github.com/dixonandmoe/rellax) - Lightweight vanilla JavaScript parallax library.
 - [ScrollOut](https://github.com/scroll-out/scroll-out) - Scroll effects for reveal, parallax, and CSS variables.
 - [Atropos](https://github.com/nolimits4web/atropos) - Touch-friendly 3D parallax hover effects.
+- [Free GSAP Effects](https://github.com/jaydickinson/free-gsap-effects) - MIT-licensed, copy-paste GSAP scroll, text and hover effects with live demos and reduced-motion fallbacks.
 
 ## Text
 
