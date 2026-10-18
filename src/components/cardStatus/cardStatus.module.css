@@ -1,0 +1,49 @@
+.skeleton {
+  min-height: 175px;
+  padding: 20px;
+}
+
+.item {
+  min-height: 175px;
+}
+
+.book {
+  min-height: 320px;
+}
+
+.gui {
+  min-height: 350px;
+}
+
+.line {
+  height: 16px;
+  margin-bottom: 12px;
+  background: linear-gradient(90deg, #eee, #f6f6f6, #eee);
+  background-size: 200% 100%;
+  border-radius: 2px;
+  animation: shimmer 1.2s ease-in-out infinite;
+}
+
+.short {
+  width: 40%;
+}
+
+.medium {
+  width: 70%;
+}
+
+.error {
+  padding: 20px;
+  color: rgb(136, 136, 136);
+  font-size: 14px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
+}

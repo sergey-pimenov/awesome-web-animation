@@ -49,3 +49,39 @@ all:
     direction from left to right. Highlighted keyframe indicate that some 
     style is assigned to that point. You can add new style at selected point.'
     link: 'http://angrytools.com/css/animation/'
+  - name: Rive
+    cover: 'data/covers/rive.png'
+    description: 'Rive is a real-time interactive animation tool for websites,
+    apps, and games. Design vector graphics and state machines in the editor,
+    then ship the same file with open-source runtimes for the web.'
+    link: 'https://rive.app/'
+  - name: LottieFiles
+    cover: 'data/covers/lottiefiles.png'
+    description: 'LottieFiles is a platform for creating, editing, and shipping
+    Lottie and dotLottie animations. Browse a huge motion library, use Lottie
+    Creator in the browser, and export lightweight files for web, iOS, and Android.'
+    link: 'https://lottiefiles.com/'
+  - name: SVGator
+    cover: 'data/covers/svgator.png'
+    description: 'SVGator is a browser-based SVG animation tool with a visual
+    timeline. Animate stroke, fill, morph, and motion along a path, then export
+    CSS, JavaScript, or Lottie without writing code.'
+    link: 'https://www.svgator.com/'
+  - name: Spline
+    cover: 'data/covers/spline.png'
+    description: 'Spline is a real-time 3D design tool that runs in the browser.
+    Build interactive 3D scenes and export them to websites with the Spline
+    runtime.'
+    link: 'https://spline.design/'
+  - name: Cables
+    cover: 'data/covers/cables.png'
+    description: 'Cables is a visual programming tool for interactive WebGL
+    content. Connect operators into patches, prototype real-time visuals, and
+    export them to your website.'
+    link: 'https://cables.gl/'
+  - name: Easings.net
+    cover: 'data/covers/easings.png'
+    description: 'Easings.net is a visual cheat sheet of easing functions.
+    Compare curves, preview motion, and copy CSS or JavaScript snippets for
+    your animations.'
+    link: 'https://easings.net/'

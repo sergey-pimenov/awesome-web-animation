@@ -1,18 +1,169 @@
 ---
 all:
-  -
-    googleBookId: 92ZiDgAAQBAJ
-  -
-    googleBookId: Ano3DwAAQBAJ
-  -
-    googleBookId: NK9rDgAAQBAJ
-  -
-    googleBookId: bx2OrgEACAAJ
-  -
-    googleBookId: 4Wo0BwAAQBAJ
-  -
-    googleBookId: 848sBQAAQBAJ
-  -
-    googleBookId: 47ffoQEACAAJ
-  -
-    googleBookId: RmphScK8u-gC
+  - googleBookId: AnimationAtWork
+    title: Animation at Work
+    authors:
+      - Rachel Nabors
+    publishedDate: '2017-08-22'
+    pageCount: 80
+    publisher: A Book Apart
+    language: en
+    categories:
+      - Web
+      - Animation
+    cover: data/covers/animation-at-work.jpg
+    previewLink: https://abookapart.com/products/animation-at-work.html
+    description: >
+      Animation isn’t merely decorative—it’s an invaluable tool for creating a better web.
+      Start with science: by understanding the human visual processing system, you can design
+      delightful animation that works to ease cognitive load. Rachel Nabors guides you through
+      the anatomy of web animations, patterns, and communication decisions across teams.
+  - googleBookId: 92ZiDgAAQBAJ
+    title: SVG Animations
+    subtitle: From Common UX Implementations to Complex Responsive Animation
+    authors:
+      - Sarah Drasner
+    publishedDate: '2017-03-17'
+    pageCount: 246
+    publisher: O'Reilly Media
+    language: en
+    categories:
+      - Web
+      - Animation
+    cover: data/covers/92ZiDgAAQBAJ.jpg
+    description: >
+      SVG is extremely powerful, with its reduced HTTP requests and crispness on any display.
+      It becomes increasingly more interesting as you explore its capabilities for responsive
+      animation and performance boons. When you animate SVG, you must be aware of normal image
+      traits like composition, color, implementation, and optimization. But when you animate,
+      it increases the complexity of each of these factors exponentially.
+  - googleBookId: Ano3DwAAQBAJ
+    title: Designing Interface Animation
+    subtitle: Meaningful Motion for User Experience
+    authors:
+      - Val Head
+    publishedDate: '2016-07'
+    pageCount: 240
+    publisher: Rosenfeld Media
+    language: en
+    categories:
+      - Web
+      - Animation
+    cover: data/covers/Ano3DwAAQBAJ.jpg
+    description: >
+      Effective interface animation deftly combines form and function to improve feedback,
+      aid in orientation, direct attention, show causality, and express your brands personality.
+      Designing Interface Animation shows you how to create web animation that balances purpose
+      and style while blending seamlessly into the users experience. This book is a crash course
+      in motion design theory and practice for web designers, UX professionals, and front-end
+      developers alike.
+  - googleBookId: NK9rDgAAQBAJ
+    title: Creating Web Animations
+    subtitle: Bringing Your UIs to Life
+    authors:
+      - Kirupa Chinnathambi
+    publishedDate: '2017-05-02'
+    pageCount: 208
+    publisher: O'Reilly Media
+    language: en
+    categories:
+      - Web
+      - Animation
+    cover: data/covers/NK9rDgAAQBAJ.jpg
+    description: >
+      Thanks to faster browsers, better web standards support, and more powerful devices, the
+      web now defines the next generation of user interfaces that are fun, practical, fluid,
+      and memorable. The key? Animation. But learning how to create animations is hard, and
+      existing learning material doesnt explain the context of the UI problem that animations
+      are trying to solve. Thats where this book comes in.
+  - googleBookId: bx2OrgEACAAJ
+    title: Transitions and Animations in CSS
+    subtitle: Adding Motion with CSS
+    authors:
+      - Estelle Weyl
+    publishedDate: '2016'
+    publisher: O'Reilly Media
+    language: en
+    categories:
+      - Web
+      - CSS
+    cover: data/covers/bx2OrgEACAAJ.png
+    description: >
+      Add life and depth to your web applications and improve user experience through the
+      discrete use of CSS transitions and animations. With this concise guide, you'll learn
+      how to make page elements move or change in appearance, whether you want to realistically
+      bounce a ball, gradually expand a drop-down menu, or simply bring attention to an element
+      when users hover over it.
+  - googleBookId: 4Wo0BwAAQBAJ
+    title: Web Animation using JavaScript
+    subtitle: Develop & Design
+    authors:
+      - Julian Shapiro
+    publishedDate: '2015'
+    publisher: Peachpit Press
+    language: en
+    categories:
+      - Web
+      - Animation
+    cover: data/covers/4Wo0BwAAQBAJ.jpg
+    description: >
+      We've come a long way since the days of flashing banner ads and scrolling news tickers.
+      Today, the stunning motion design of iOS and Android dramatically improves a users
+      experience — instead of detracting from it. The best sites and apps of today leverage
+      animation to improve the feel and intuitiveness of their interfaces. Sites without
+      animation are starting to feel antiquated. This book provides you with a technical
+      foundation to implement animation in a way thats both visually stunning and
+      programmatically maintainable.
+  - googleBookId: 848sBQAAQBAJ
+    title: CSS Animations and Transitions for the Modern Web
+    authors:
+      - Steven Bradley
+    publishedDate: '2014'
+    publisher: Adobe Press
+    language: en
+    categories:
+      - Web
+      - CSS
+    cover: data/covers/848sBQAAQBAJ.png
+    description: >
+      Modern websites use a variety of animated effects not only to improve usability but also
+      to delight and surprise users. Some of these effects require complex scripting or
+      programming skills, but many are within the grasp of designers who are already familiar
+      with CSS and HTML. CSS Animations and Transitions for the Modern Web shows designers how
+      to add movement to web pages over time using CSS3 style definitions.
+  - googleBookId: 47ffoQEACAAJ
+    title: Animation in HTML, CSS, and JavaScript
+    authors:
+      - Kirupa Chinnathambi
+    publishedDate: '2014'
+    language: en
+    categories:
+      - Web
+      - Animation
+    cover: data/covers/47ffoQEACAAJ.png
+    description: >
+      This book will help you create practical / usable / wickedly-cool animations in HTML,
+      CSS, and JavaScript. Each chapter is filled with cleanly explained concepts, beautifully
+      illustrated diagrams, colorific code snippets, and cringeworthy one-liners guaranteed to
+      make your friend who laughs at everything groan. You will start by learning how to create
+      animations and transitions in CSS. Towards the end, you will learn how to create
+      animations in JavaScript by manipulating DOM elements as well as pushing pixels on the canvas.
+  - googleBookId: RmphScK8u-gC
+    title: Foundation HTML5 Animation with JavaScript
+    authors:
+      - Billy Lamberta
+      - Keith Peters
+    publishedDate: '2011'
+    pageCount: 504
+    publisher: Apress
+    language: en
+    categories:
+      - Web
+      - Animation
+    cover: data/covers/RmphScK8u-gC.jpg
+    description: >
+      Foundation HTML5 Animation with JavaScript covers everything that you need to know to
+      create dynamic scripted animation using the HTML5 canvas. It provides information on all
+      the relevant math you'll need, before moving on to physics concepts like acceleration,
+      velocity, easing, springs, collision detection, conservation of momentum, 3D, and forward
+      and inverse kinematics.

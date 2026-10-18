@@ -29,6 +29,9 @@ This list contains the most useful tools and data for creating web animations.
 - [Walkway](https://github.com/ConnorAtherton/walkway) - An easy way to animate SVG elements.
 - [Raphael](https://github.com/DmitryBaranovskiy/raphael) - JavaScript Vector Library.
 - [Bonsai](https://github.com/uxebu/bonsai) - BonsaiJS is a graphics library and renderer.
+- [Lazy Line Painter](https://github.com/merri-ment/lazy-line-painter) - A modern JavaScript library for SVG path animation.
+- [Flubber](https://github.com/veltman/flubber) - Tools for smoother SVG shape morphing and interpolation.
+- [Lottie](https://github.com/airbnb/lottie-web) - Render After Effects animations natively on the web as SVG or Canvas.
 
 ## Common
 
@@ -49,6 +52,11 @@ This list contains the most useful tools and data for creating web animations.
 - [Glsl easings](https://github.com/glslify/glsl-easings) - Easing functions in GLSL.
 - [ES6-tween](https://github.com/tweenjs/es6-tween) - ES6 version of tween.js.
 - [Weeee.js](https://github.com/sfi0zy/weeee) - Tiny Javascript tweening engine.
+- [Theatre.js](https://github.com/theatre-js/theatre) - Motion design editor for the web.
+- [Popmotion](https://github.com/Popmotion/popmotion) - Simple animation libraries for delightful user interfaces.
+- [AutoAnimate](https://github.com/formkit/auto-animate) - Zero-config, drop-in animation utility for smooth DOM transitions.
+- [KUTE.js](https://github.com/thednp/kute.js) - JavaScript animation engine for modern browsers.
+- [Rive](https://github.com/rive-app/rive-wasm) - Web runtime for interactive Rive animations.
 - [Halloween.js](https://github.com/rogulia/halloween.js) - Zero-dependency Halloween screen-corner decorations and ambient page effects for any website.
 
 ## CSS
@@ -59,6 +67,11 @@ This list contains the most useful tools and data for creating web animations.
 - [Css-loaders](https://github.com/lukehaas/css-loaders) - A collection of loading spinners animated with CSS.
 - [SpinKit](https://github.com/tobiasahlin/SpinKit) - A collection of loading indicators animated with CSS.
 - [Bounce.js](https://github.com/tictail/bounce.js) - Create beautiful CSS3 powered animations in no time.
+- [AnimXYZ](https://github.com/ingram-projects/animxyz) - Composable CSS animation toolkit powered by CSS variables.
+- [Hover.css](https://github.com/IanLunn/Hover) - A collection of CSS3 powered hover effects.
+- [CSShake](https://github.com/elrumordelaluz/csshake) - CSS classes to shake your DOM.
+- [Whirl](https://github.com/jh3y/whirl) - CSS loading animations with minimal effort.
+- [CSS Doodle](https://github.com/css-doodle/css-doodle) - A web component for drawing patterns with CSS.
 
 ## Canvas
 
@@ -72,6 +85,13 @@ This list contains the most useful tools and data for creating web animations.
 - [Hover-effect](https://github.com/robin-dela/hover-effect) - JavaScript library to draw and animate images on hover.
 - [Pts.js](https://github.com/williamngan/pts) - Pts is a typescript/javascript library for visualization and creative-coding.
 - [tsParticles](https://github.com/matteobruni/tsparticles/) - tsParticles is a lightweight typescript/javascript library for creating easily particles animations.
+- [PixiJS](https://github.com/pixijs/pixijs) - Fast 2D WebGL renderer for interactive graphics and animation.
+- [p5.js](https://github.com/processing/p5.js) - Creative coding library for drawing and animation on canvas.
+- [Zdog](https://github.com/metafizzy/zdog) - Round, flat, designer-friendly pseudo-3D engine for canvas and SVG.
+- [canvas-confetti](https://github.com/catdad/canvas-confetti) - Performant confetti animation in the browser.
+- [Vanta.js](https://github.com/tengbao/vanta) - Animated 3D backgrounds for your website.
+- [Three.js](https://github.com/mrdoob/three.js) - JavaScript 3D library.
+- [Matter.js](https://github.com/liabru/matter-js) - A 2D rigid body physics engine for the web.
 
 ## Animate on scroll
 
@@ -82,6 +102,11 @@ This list contains the most useful tools and data for creating web animations.
 - [ScrollMagic](https://github.com/janpaepke/ScrollMagic) - The JavaScript library for magical scroll interactions.
 - [Motus](https://github.com/alexcambose/motus) - Animation library that mimics CSS keyframes when scrolling.
 - [Sal](https://github.com/mciastek/sal) - Performance focused, lightweight scroll animation library.
+- [Lenis](https://github.com/darkroomengineering/lenis) - Lightweight, accessible smooth scroll library.
+- [Locomotive Scroll](https://github.com/locomotivemtl/locomotive-scroll) - Detection of elements in viewport and smooth scrolling with parallax.
+- [Rellax](https://github.com/dixonandmoe/rellax) - Lightweight vanilla JavaScript parallax library.
+- [ScrollOut](https://github.com/scroll-out/scroll-out) - Scroll effects for reveal, parallax, and CSS variables.
+- [Atropos](https://github.com/nolimits4web/atropos) - Touch-friendly 3D parallax hover effects.
 
 ## Text
 
@@ -90,6 +115,10 @@ This list contains the most useful tools and data for creating web animations.
 - [Shuffle-text](https://github.com/ics-ikeda/shuffle-text) - Shuffle-text is JavaScript text effect library such as cool legacy of Flash.
 - [Typebot](https://github.com/akzhy/typebot) - JavaScript library for typing animation.
 - [Blotter](https://github.com/bradley/Blotter) - A JavaScript API for drawing unconventional text effects on the web.
+- [Splitting](https://github.com/shshaw/Splitting) - Microlibrary to split text into words and characters for CSS animation.
+- [TypeIt](https://github.com/alexmacarthur/typeit) - The most versatile JavaScript typewriter effect library.
+- [TypewriterJS](https://github.com/tameemsafi/typewriterjs) - Native JavaScript plugin for typewriter text effects.
+- [NumberFlow](https://github.com/barvian/number-flow) - Animated number component for React, Vue, Svelte, and vanilla JS.
 
 ## React
 
@@ -97,6 +126,12 @@ This list contains the most useful tools and data for creating web animations.
 - [SVGR](https://github.com/gregberge/svgr) - Transform SVGs into React components.
 - [React tsParticles](https://github.com/matteobruni/tsparticles/blob/master/components/react/README.md) - ReactJS wrapper for *tsParticles*
 - [React spring](https://www.react-spring.io/) - Open source, spring-physics based animation library for React that supports interpolations. Fast and easy to use.
+- [Lottie React](https://github.com/Gamote/lottie-react) - React component for rendering Lottie animations.
+- [Rive React](https://github.com/rive-app/rive-react) - React runtime for interactive Rive animations.
+- [React Flip Toolkit](https://github.com/aholachek/react-flip-toolkit) - Lightweight magic-move library for configurable layout transitions.
+- [Remotion](https://github.com/remotion-dev/remotion) - Create videos programmatically with React.
+- [React Three Fiber](https://github.com/pmndrs/react-three-fiber) - A React renderer for Three.js.
+- [React Transition Group](https://github.com/reactjs/react-transition-group) - Perform animations when a React component enters or leaves the DOM.
 
 ## GUI tools
 
@@ -108,8 +143,22 @@ This list contains the most useful tools and data for creating web animations.
 - [Cubic Bezier](https://cubic-bezier.com/) - A great utility for creating Bezier curves. You can import and export curves to/from your library to share them with others.
 - [Keyframer](http://alexberg.in/keyframer/) - Tool that help visualize animation components and output the code required.
 - [CSS Animation Kit](http://angrytools.com/css/animation/) - Select any predefined samples from top panel. Below samples there is a timeline of @keyframes. Timeline has 101 keyframes ( 0% to 100%) direction from left to right. Highlighted keyframe indicate that some style is assigned to that point. You can add new style at selected point.
+- [Rive](https://rive.app/) - Real-time interactive animation tool for websites, apps, and games. Design vector graphics and state machines in the editor, then ship them with open-source runtimes for the web.
+- [LottieFiles](https://lottiefiles.com/) - Platform for creating, editing, and shipping Lottie and dotLottie animations. Browse a huge motion library or use Lottie Creator in the browser.
+- [SVGator](https://www.svgator.com/) - Browser-based SVG animation tool with a visual timeline. Animate stroke, fill, morph, and motion along a path, then export CSS, JavaScript, or Lottie.
+- [Spline](https://spline.design/) - Real-time 3D design tool that runs in the browser. Build interactive 3D scenes and export them to websites with the Spline runtime.
+- [Cables](https://cables.gl/) - Visual programming tool for interactive WebGL content. Connect operators into patches and export real-time visuals to your website.
+- [Easings.net](https://easings.net/) - Visual cheat sheet of easing functions. Compare curves, preview motion, and copy CSS or JavaScript snippets.
 
 ## Books
+
+### [Animation at Work](https://abookapart.com/products/animation-at-work.html)
+
+<img src="data/covers/animation-at-work.jpg" width="200"/>
+
+&nbsp;
+
+Animation isn’t merely decorative—it’s an invaluable tool for creating a better web. Start with science: by understanding the human visual processing system, you can design delightful animation that works to ease cognitive load. Rachel Nabors guides you through the anatomy of web animations, patterns, and communication decisions across teams. This book will prepare you to identify and prioritize opportunities to integrate animation into design systems for building better experiences.
 
 ### [SVG animation](https://www.amazon.com/SVG-Animations-Implementations-Responsive-Animation/dp/1491939702)
 
@@ -166,6 +215,10 @@ Foundation HTML5 Animation with JavaScript covers everything that you need to kn
 ## Videos
 
 - [Yuri Artyukh youtube channel](https://www.youtube.com/user/flintyara) - This man creates amazing web animations using various technologies for this, and recording it all in steam format.
+- [GSAP Learning](https://www.youtube.com/@GreenSockLearning) - Official GreenSock channel with GSAP tutorials, scroll demos, and plugin walkthroughs.
+- [Hyperplexed](https://www.youtube.com/@Hyperplexed) - Creative front-end motion breakdowns: hover effects, text animation, and award-style interactions.
+- [The Coding Train](https://www.youtube.com/@TheCodingTrain) - Daniel Shiffman teaches creative coding, canvas animation, and p5.js in an approachable format.
+- [Kevin Powell](https://www.youtube.com/@KevinPowell) - Practical CSS animation, transitions, and modern layout techniques.
 
 <h3 align="center">✨<a href="https://awesome-web-animation.netlify.com"> See also web page version of this list </a>✨</h3>
 

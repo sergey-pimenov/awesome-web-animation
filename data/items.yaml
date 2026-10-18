@@ -26,6 +26,9 @@ svg:
         directory: /
         fileName: raphael.min.js
   - repo: uxebu/bonsai
+  - repo: merri-ment/lazy-line-painter
+  - repo: veltman/flubber
+  - repo: airbnb/lottie-web
 common:
   - repo: greensock/GSAP
     bundleData:
@@ -104,6 +107,24 @@ common:
         libName: es6-tween
         fileName: Tween.min.js
   - repo: sfi0zy/weeee
+  - repo: theatre-js/theatre
+  - repo: Popmotion/popmotion
+    bundleData:
+      jsdelivr:
+        libName: popmotion
+        fileName: popmotion.min.js
+  - repo: formkit/auto-animate
+    bundleData:
+      jsdelivr:
+        libName: '@formkit/auto-animate'
+        fileName: index.min.js
+  - repo: thednp/kute.js
+    bundleData:
+      jsdelivr:
+        libName: kute.js
+        fileName: kute.min.js
+  - repo: rive-app/rive-wasm
+  - repo: rogulia/halloween.js
 css:
   - repo: daneden/animate.css
     bundleData:
@@ -127,6 +148,23 @@ css:
       jsdelivr:
         libName: bounce.js
         fileName: bounce.min.js
+  - repo: ingram-projects/animxyz
+    bundleData:
+      jsdelivr:
+        libName: '@animxyz/core'
+        fileName: animxyz.min.css
+  - repo: IanLunn/Hover
+  - repo: elrumordelaluz/csshake
+    bundleData:
+      jsdelivr:
+        libName: csshake
+        fileName: csshake.min.css
+  - repo: jh3y/whirl
+  - repo: css-doodle/css-doodle
+    bundleData:
+      jsdelivr:
+        libName: css-doodle
+        fileName: css-doodle.min.js
 canvas:
   - repo: CreateJS/EaselJS
     bundleData:
@@ -174,6 +212,25 @@ canvas:
         directory: dist
         fileName: pts.min.js
   - repo: matteobruni/tsparticles
+  - repo: pixijs/pixijs
+    bundleData:
+      jsdelivr:
+        libName: pixi.js
+        fileName: pixi.min.js
+  - repo: processing/p5.js
+  - repo: metafizzy/zdog
+    bundleData:
+      jsdelivr:
+        libName: zdog
+        fileName: zdog.dist.min.js
+  - repo: catdad/canvas-confetti
+  - repo: tengbao/vanta
+    bundleData:
+      jsdelivr:
+        libName: vanta
+        fileName: vanta.net.min.js
+  - repo: mrdoob/three.js
+  - repo: liabru/matter-js
 scroll:
   - repo: michalsnik/aos
     bundleData:
@@ -210,6 +267,31 @@ scroll:
       github:
         directory: dist
         fileName: sal.js
+  - repo: darkroomengineering/lenis
+    bundleData:
+      jsdelivr:
+        libName: lenis
+        fileName: lenis.min.js
+  - repo: locomotivemtl/locomotive-scroll
+    bundleData:
+      jsdelivr:
+        libName: locomotive-scroll
+        fileName: locomotive-scroll.min.js
+  - repo: dixonandmoe/rellax
+    bundleData:
+      jsdelivr:
+        libName: rellax
+        fileName: rellax.min.js
+  - repo: scroll-out/scroll-out
+    bundleData:
+      jsdelivr:
+        libName: scroll-out
+        fileName: scroll-out.min.js
+  - repo: nolimits4web/atropos
+    bundleData:
+      jsdelivr:
+        libName: atropos
+        fileName: atropos.min.js
 text:
   - repo: yuanqing/malarkey
     bundleData:
@@ -236,6 +318,14 @@ text:
       github:
         directory: build
         fileName: blotter.min.js
+  - repo: shshaw/Splitting
+    bundleData:
+      jsdelivr:
+        libName: splitting
+        fileName: splitting.min.js
+  - repo: alexmacarthur/typeit
+  - repo: tameemsafi/typewriterjs
+  - repo: barvian/number-flow
 react:
   - repo: gregberge/svgr
   - repo: framer/motion
@@ -245,3 +335,13 @@ react:
         fileName: framer-motion.js
   - repo: matteobruni/tsparticles
   - repo: pmndrs/react-spring
+  - repo: Gamote/lottie-react
+  - repo: rive-app/rive-react
+  - repo: aholachek/react-flip-toolkit
+  - repo: remotion-dev/remotion
+  - repo: pmndrs/react-three-fiber
+  - repo: reactjs/react-transition-group
+    bundleData:
+      jsdelivr:
+        libName: react-transition-group
+        fileName: react-transition-group.min.js

@@ -1,0 +1,18 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[redirects]]
+  from = "/api/github/*"
+  to = "https://api.github.com/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/jsdelivr/*"
+  to = "https://data.jsdelivr.com/:splat"
+  status = 200
+  force = true

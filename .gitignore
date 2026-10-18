@@ -2,3 +2,7 @@ node_modules
 .cache
 dist
 .env.local
+test-results
+playwright-report
+blob-report
+playwright/.cache

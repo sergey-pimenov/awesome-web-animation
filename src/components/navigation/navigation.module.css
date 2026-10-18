@@ -47,39 +47,3 @@
 .item:not(:last-child) {
   margin-right: 20px;
 }
-
-.item:nth-child(1) {
-  color: #e970ad;
-}
-
-.item:nth-child(2) {
-  color: #ad8abf;
-}
-
-.item:nth-child(3) {
-  color: #72a2cf;
-}
-
-.item:nth-child(4) {
-  color: #3fc3bf;
-}
-
-.item:nth-child(5) {
-  color: #67bc97;
-}
-
-.item:nth-child(6) {
-  color: #80b97e;
-}
-
-.item:nth-child(7) {
-  color: #acb253;
-}
-
-.item:nth-child(8) {
-  color: #ebc20d;
-}
-
-.item:nth-child(9) {
-  color: #ffae13;
-}
