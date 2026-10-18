@@ -57,6 +57,7 @@ This list contains the most useful tools and data for creating web animations.
 - [AutoAnimate](https://github.com/formkit/auto-animate) - Zero-config, drop-in animation utility for smooth DOM transitions.
 - [KUTE.js](https://github.com/thednp/kute.js) - JavaScript animation engine for modern browsers.
 - [Rive](https://github.com/rive-app/rive-wasm) - Web runtime for interactive Rive animations.
+- [Halloween.js](https://github.com/rogulia/halloween.js) - Zero-dependency Halloween screen-corner decorations and ambient page effects for any website.
 
 ## CSS
 

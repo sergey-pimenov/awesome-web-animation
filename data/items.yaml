@@ -124,6 +124,7 @@ common:
         libName: kute.js
         fileName: kute.min.js
   - repo: rive-app/rive-wasm
+  - repo: rogulia/halloween.js
 css:
   - repo: daneden/animate.css
     bundleData:
