@@ -32,6 +32,7 @@ This list contains the most useful tools and data for creating web animations.
 - [Lazy Line Painter](https://github.com/merri-ment/lazy-line-painter) - A modern JavaScript library for SVG path animation.
 - [Flubber](https://github.com/veltman/flubber) - Tools for smoother SVG shape morphing and interpolation.
 - [Lottie](https://github.com/airbnb/lottie-web) - Render After Effects animations natively on the web as SVG or Canvas.
+- [svg-loaders-react](https://github.com/ajwann/svg-loaders-react) - Zero-dependency React components for Sam Herbert's SVG Loaders (12 animated SVG spinners).
 
 ## Common
 
