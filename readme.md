@@ -57,6 +57,7 @@ This list contains the most useful tools and data for creating web animations.
 - [AutoAnimate](https://github.com/formkit/auto-animate) - Zero-config, drop-in animation utility for smooth DOM transitions.
 - [KUTE.js](https://github.com/thednp/kute.js) - JavaScript animation engine for modern browsers.
 - [Rive](https://github.com/rive-app/rive-wasm) - Web runtime for interactive Rive animations.
+- [Tactile UI](https://tactileui.dev) - A component library of interface objects that work like real hardware, such as an odometer that carries and a pin screen you press a word into.
 
 ## CSS
 
