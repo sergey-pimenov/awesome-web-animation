@@ -105,6 +105,7 @@ This list contains the most useful tools and data for creating web animations.
 - [Locomotive Scroll](https://github.com/locomotivemtl/locomotive-scroll) - Detection of elements in viewport and smooth scrolling with parallax.
 - [Rellax](https://github.com/dixonandmoe/rellax) - Lightweight vanilla JavaScript parallax library.
 - [ScrollOut](https://github.com/scroll-out/scroll-out) - Scroll effects for reveal, parallax, and CSS variables.
+- [svg-scroll-draw](https://github.com/DhruvilChauahan0210/ink-scroll) - Scroll-driven SVG line drawing, reveals, pinning, split text and video scrubbing, using CSS scroll timelines where the browser supports them.
 - [Atropos](https://github.com/nolimits4web/atropos) - Touch-friendly 3D parallax hover effects.
 
 ## Text
