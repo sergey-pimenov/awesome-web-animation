@@ -57,6 +57,7 @@ This list contains the most useful tools and data for creating web animations.
 - [AutoAnimate](https://github.com/formkit/auto-animate) - Zero-config, drop-in animation utility for smooth DOM transitions.
 - [KUTE.js](https://github.com/thednp/kute.js) - JavaScript animation engine for modern browsers.
 - [Rive](https://github.com/rive-app/rive-wasm) - Web runtime for interactive Rive animations.
+- [Effect Atlas](https://github.com/effect-atlas/effect-atlas) - A growing library of 50+ web motion effects (cursors, hovers, text, scroll, page transitions) in plain JavaScript and CSS, each with notes written for AI coding tools.
 
 ## CSS
 
